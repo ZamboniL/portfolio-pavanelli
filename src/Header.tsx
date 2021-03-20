@@ -23,6 +23,8 @@ const Image = styled.img`
 
 const Logo = styled.img`
   width: 12rem;
+  pointer-events: none;
+  user-select: none;
   position: absolute;
   top: 0;
   bottom: 0;
