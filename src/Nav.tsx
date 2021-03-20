@@ -1,21 +1,22 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { ModalContext } from "./Context/ModalContext";
+import { LinksTextProps } from "./Header";
 
-const Links: React.FC = () => {
+const Links: React.FC<LinksTextProps> = ({ linksText }) => {
   const { changeAboutModal, changeContactModal } = useContext(ModalContext);
 
   return (
     <Nav>
       <ul>
         <li>
-          <a>projetos</a>
+          <a>{linksText.primeiro}</a>
         </li>
         <li>
-          <a onClick={() => changeContactModal()}>contato</a>
+          <a onClick={() => changeContactModal()}>{linksText.segundo}</a>
         </li>
         <li>
-          <a onClick={() => changeAboutModal()}>sobre</a>
+          <a onClick={() => changeAboutModal()}>{linksText.terceiro}</a>
         </li>
       </ul>
     </Nav>

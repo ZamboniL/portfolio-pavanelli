@@ -5,10 +5,14 @@ import Modal from "./Modal";
 import { useContext } from "react";
 import { ModalContext } from "./Context/ModalContext";
 
-const About: React.FC = ({}) => {
+export interface PageProps {
+  title: string;
+}
+
+const About: React.FC<PageProps> = ({ title }) => {
   const { aboutModal, changeAboutModal } = useContext(ModalContext);
   return (
-    <Modal open={aboutModal} setOpen={changeAboutModal} title="Sobre">
+    <Modal open={aboutModal} setOpen={changeAboutModal} title={title}>
       <p>Olá!</p>{" "}
       <p>
         Me chamo Lucas Pavanelli e sou um Designer que trabalha nos segmentos de

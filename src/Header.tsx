@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import Links from "./Nav";
 
-const Header: React.FC = () => {
+export interface LinksTextProps {
+  linksText: { primeiro: string; segundo: string; terceiro: string };
+}
+
+const Header: React.FC<LinksTextProps> = ({ linksText }) => {
   return (
     <Hero>
-      <Links />
+      <Links linksText={linksText} />
       <Image src="/portfolioBg.png" />
       <Logo src="/logo.svg" />
     </Hero>

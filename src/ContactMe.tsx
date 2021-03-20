@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import { PageProps } from "./About";
 import { ModalContext } from "./Context/ModalContext";
 import Modal from "./Modal";
 
-const ContactMe: React.FC = () => {
+const ContactMe: React.FC<PageProps> = ({ title }) => {
   const { contactModal, changeContactModal } = useContext(ModalContext);
   return (
-    <Modal open={contactModal} setOpen={changeContactModal} title="contato">
+    <Modal open={contactModal} setOpen={changeContactModal} title={title}>
       <Form>
         <div>
           <input type="text" placeholder="Seu Nome" />

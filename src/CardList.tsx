@@ -1,12 +1,25 @@
 import styled from "styled-components";
 import Card from "./Card";
 
-const CardList: React.FC = () => {
+interface CardListProps {
+  list: [
+    {
+      fields: { link: string; image: { fields: { file: { url: string } } } };
+      sys: { id: string };
+    }
+  ];
+}
+
+const CardList: React.FC<CardListProps> = ({ list }) => {
   const cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <List>
-      {cardArray.map((number) => (
-        <Card key={number} />
+      {list.map((item) => (
+        <Card
+          src={item.fields.image.fields.file.url}
+          href={item.fields.link}
+          key={item.sys.id}
+        />
       ))}
     </List>
   );
