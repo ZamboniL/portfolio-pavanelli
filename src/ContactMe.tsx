@@ -71,6 +71,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   input[type="submit"] {
+    -webkit-appearance: none;
     border: 2px solid black;
     background: white;
     margin-top: 1rem;
