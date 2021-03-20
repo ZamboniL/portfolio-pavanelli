@@ -1,5 +1,5 @@
 const theme = {
-  pallete: {
+  colors: {
     dark: {
       main: "#0A0A0A",
     },

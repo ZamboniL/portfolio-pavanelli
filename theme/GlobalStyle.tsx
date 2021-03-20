@@ -11,4 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  html, body, #__next {
+    height: 100%
+  }
+
+  #__next {
+    background: ${({ theme }) => theme.colors.dark.main}
+  }
+
 `;
