@@ -24,6 +24,17 @@ textarea, input {
   outline: none;
 }
 
+@media (min-width: ${({ theme }) => theme.breakpoints.md}) {
 
+  html, body, #__next {
+    font: ${({ theme }) => `400 ${theme.rootFont.md} ${theme.font}`};
+  }
+}
+
+@media (min-width: ${({ theme }) => theme.breakpoints.bg}) {
+  html, body, #__next {
+    font: ${({ theme }) => `400 ${theme.rootFont.bg} ${theme.font}`};
+  }
+}
 
 `;

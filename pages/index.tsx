@@ -1,5 +1,6 @@
 import About from "../src/About";
 import Card from "../src/Card";
+import CardList from "../src/CardList";
 import ContactMe from "../src/ContactMe";
 import { ModalProvider } from "../src/Context/ModalContext";
 import Header from "../src/Header";
@@ -9,10 +10,8 @@ const Home: React.FC = () => {
     <>
       <ModalProvider>
         <Header />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <CardList />
+
         <About />
         <ContactMe />
       </ModalProvider>

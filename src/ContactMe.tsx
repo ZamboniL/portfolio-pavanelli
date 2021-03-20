@@ -8,8 +8,11 @@ const ContactMe: React.FC = () => {
   return (
     <Modal open={contactModal} setOpen={changeContactModal} title="contato">
       <Form>
-        <input type="text" placeholder="Seu Nome" />
-        <input type="email" placeholder="Seu E-mail" />
+        <div>
+          <input type="text" placeholder="Seu Nome" />
+          <input type="email" placeholder="Seu E-mail" />
+        </div>
+
         <textarea
           name=""
           placeholder="Sua Mensagem..."
@@ -25,7 +28,8 @@ const ContactMe: React.FC = () => {
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  * {
+  input,
+  textarea {
     width: 100%;
     font-size: 1rem;
     padding: 0.5rem;
@@ -33,8 +37,25 @@ const Form = styled.form`
     ::placeholder {
       color: ${({ theme }) => theme.colors.dark.medium};
     }
-    :nth-child(2) {
+  }
+
+  > div > *:nth-child(2) {
+    margin: 1rem 0;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    div {
+      display: flex;
       margin: 1rem 0;
+
+      *:last-child {
+        margin: unset;
+        margin-left: 2rem;
+      }
+    }
+    input,
+    textarea {
+      padding: 1rem;
     }
   }
 `;

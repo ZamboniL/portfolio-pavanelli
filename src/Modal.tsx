@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { X } from "@styled-icons/bootstrap/X";
+import { Close } from "@styled-icons/material/Close";
 
 export interface ModalProps {
   open: Boolean;
@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ title, setOpen, open, children }) => {
       <Container>
         <Header>
           <Title>{title}</Title>
-          <X onClick={() => setOpen()} />
+          <Close onClick={() => setOpen()} />
         </Header>
         <article>{children}</article>
       </Container>
@@ -27,8 +27,13 @@ const Container = styled.div`
   padding: 1rem;
   line-height: 1.3rem;
   width: 100%;
-  article {
-    padding: 0.5rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 2rem;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    max-width: 56rem;
+    margin: 0 auto;
   }
 `;
 
@@ -40,6 +45,8 @@ const Header = styled.header`
   margin: 1rem 0;
   svg:first-of-type {
     width: 3rem;
+    margin: 0 -0.5rem;
+    cursor: pointer;
   }
 `;
 
