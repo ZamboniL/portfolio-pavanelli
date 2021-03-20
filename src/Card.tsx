@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface CardProps {
-  src: string;
+  src?: string;
   href?: string;
 }
 

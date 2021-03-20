@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import styled from "styled-components";
-import { PageProps } from "./About";
 import { ModalContext } from "./Context/ModalContext";
 import Modal from "./Modal";
 import emailjs from "emailjs-com";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { ContentContext } from "./Context/ContentContext";
 
 type FormValues = {
   name: string;
@@ -12,10 +12,13 @@ type FormValues = {
   message: string;
 };
 
-const ContactMe: React.FC<PageProps> = ({ title }) => {
+const ContactMe: React.FC = () => {
   const { contactModal, changeContactModal } = useContext(ModalContext);
+  const { secondTitle } = useContext(ContentContext);
+
   const { handleSubmit, register, errors, clearErrors } = useForm<FormValues>();
   const hasError = !!errors.name || !!errors.email || !!errors.message;
+
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     emailjs
       .send(
@@ -30,7 +33,7 @@ const ContactMe: React.FC<PageProps> = ({ title }) => {
       });
   };
   return (
-    <Modal open={contactModal} setOpen={changeContactModal} title={title}>
+    <Modal open={contactModal} setOpen={changeContactModal} title={secondTitle}>
       <Form onSubmit={handleSubmit(onSubmit)}>
         {hasError && (
           <p style={{ color: "red" }}>Por favor preencha todos os campos.</p>

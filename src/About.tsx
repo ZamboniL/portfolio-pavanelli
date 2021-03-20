@@ -4,15 +4,14 @@ import { Linkedin } from "@styled-icons/bootstrap/Linkedin";
 import Modal from "./Modal";
 import { useContext } from "react";
 import { ModalContext } from "./Context/ModalContext";
+import { ContentContext } from "./Context/ContentContext";
 
-export interface PageProps {
-  title: string;
-}
 
-const About: React.FC<PageProps> = ({ title }) => {
+const About: React.FC = () => {
   const { aboutModal, changeAboutModal } = useContext(ModalContext);
+  const { firstTitle } = useContext(ContentContext);
   return (
-    <Modal open={aboutModal} setOpen={changeAboutModal} title={title}>
+    <Modal open={aboutModal} setOpen={changeAboutModal} title={firstTitle}>
       <p>Olá!</p>{" "}
       <p>
         Me chamo Lucas Pavanelli e sou um Designer que trabalha nos segmentos de

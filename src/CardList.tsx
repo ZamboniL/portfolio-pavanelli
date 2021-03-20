@@ -1,21 +1,15 @@
+import { useContext } from "react";
 import styled from "styled-components";
 import Card from "./Card";
+import { ContentContext } from "./Context/ContentContext";
 
-interface CardListProps {
-  list: [
-    {
-      fields: { link: string; image: { fields: { file: { url: string } } } };
-      sys: { id: string };
-    }
-  ];
-}
-
-const CardList: React.FC<CardListProps> = ({ list }) => {
+const CardList: React.FC = () => {
+  const { projects } = useContext(ContentContext);
   return (
     <List>
-      {list.map((item) => (
+      {projects.map((item) => (
         <Card
-          src={item.fields.image.fields.file.url}
+          src={item.fields.image?.fields.file.url}
           href={item.fields.link}
           key={item.sys.id}
         />
