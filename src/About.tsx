@@ -29,16 +29,16 @@ const About: React.FC<PageProps> = ({ title }) => {
       <p>Obrigado.</p>
       <Socials>
         <a
-          href="https://www.behance.net/lucaspavanelli"
           rel="noopener noreferrer"
           target="_blank"
+          href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/"
         >
           <Linkedin />
         </a>
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/"
+          href="https://www.behance.net/lucaspavanelli"
         >
           <Behance />
         </a>
