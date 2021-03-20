@@ -28,8 +28,20 @@ const About: React.FC<PageProps> = ({ title }) => {
       </p>
       <p>Obrigado.</p>
       <Socials>
-        <Linkedin />
-        <Behance />
+        <a
+          href="https://www.behance.net/lucaspavanelli"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Linkedin />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/"
+        >
+          <Behance />
+        </a>
       </Socials>
     </Modal>
   );
@@ -41,7 +53,7 @@ const Socials = styled.section`
     fill: white;
     margin-top: 1rem;
   }
-  svg:last-of-type {
+  a:last-of-type {
     margin-left: 1rem;
   }
 `;

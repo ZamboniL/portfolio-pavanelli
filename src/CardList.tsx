@@ -11,7 +11,6 @@ interface CardListProps {
 }
 
 const CardList: React.FC<CardListProps> = ({ list }) => {
-  const cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <List>
       {list.map((item) => (
@@ -49,7 +48,7 @@ const List = styled.section`
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: unset;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: ${({ theme }) => theme.maxWidth};
     margin: 0 auto;
 

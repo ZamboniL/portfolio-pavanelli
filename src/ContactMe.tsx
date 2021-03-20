@@ -3,24 +3,62 @@ import styled from "styled-components";
 import { PageProps } from "./About";
 import { ModalContext } from "./Context/ModalContext";
 import Modal from "./Modal";
+import emailjs from "emailjs-com";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+type FormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 const ContactMe: React.FC<PageProps> = ({ title }) => {
   const { contactModal, changeContactModal } = useContext(ModalContext);
+  const { handleSubmit, register, errors, clearErrors } = useForm<FormValues>();
+  const hasError = !!errors.name || !!errors.email || !!errors.message;
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    emailjs
+      .send(
+        "service_1qkj3gg",
+        "template_v7qu4f9",
+        data,
+        "user_DfRX9vjlbDchfEWzkAwUB"
+      )
+      .finally(() => {
+        clearErrors();
+        changeContactModal();
+      });
+  };
   return (
     <Modal open={contactModal} setOpen={changeContactModal} title={title}>
-      <Form>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        {hasError && (
+          <p style={{ color: "red" }}>Por favor preencha todos os campos.</p>
+        )}
         <div>
-          <input type="text" placeholder="Seu Nome" />
-          <input type="email" placeholder="Seu E-mail" />
+          <input
+            name="name"
+            type="text"
+            placeholder="Seu Nome"
+            ref={register({ required: true })}
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Seu E-mail"
+            ref={register({ required: true })}
+          />
         </div>
 
         <textarea
-          name=""
+          name="message"
           placeholder="Sua Mensagem..."
           id=""
           cols={30}
           rows={10}
+          ref={register({ required: true })}
         />
+        <input type="submit" />
       </Form>
     </Modal>
   );
@@ -29,6 +67,12 @@ const ContactMe: React.FC<PageProps> = ({ title }) => {
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  input[type="submit"] {
+    border: 2px solid black;
+    background: white;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
   input,
   textarea {
     width: 100%;
