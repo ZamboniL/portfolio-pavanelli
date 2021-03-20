@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import theme from "./GlobalTheme";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -12,11 +13,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100%
+    font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
+    color: ${({ theme }) => theme.colors.light.main};
+    background: ${({ theme }) => theme.colors.dark.main}
+
   }
 
-  #__next {
-    background: ${({ theme }) => theme.colors.dark.main}
-  }
+textarea, input {
+  font-family: ${({ theme }) => theme.font};
+  outline: none;
+}
+
+
 
 `;

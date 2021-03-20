@@ -1,27 +1,23 @@
-import styled from "styled-components";
+import About from "../src/About";
+import Card from "../src/Card";
+import ContactMe from "../src/ContactMe";
+import { ModalProvider } from "../src/Context/ModalContext";
+import Header from "../src/Header";
 
 const Home: React.FC = () => {
   return (
-    <Hero>
-      <Image src="/portfolioBg.png" />
-      <Logo src="/logo.svg" />
-    </Hero>
+    <>
+      <ModalProvider>
+        <Header />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <About />
+        <ContactMe />
+      </ModalProvider>
+    </>
   );
 };
-
-const Hero = styled.header`
-  height: 100%;
-`;
-
-const Image = styled.img`
-  width: 100%;
-`;
-
-const Logo = styled.img`
-  width: 15rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-`;
 
 export default Home;
