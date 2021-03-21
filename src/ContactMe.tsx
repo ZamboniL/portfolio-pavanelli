@@ -64,7 +64,9 @@ const ContactMe: React.FC = () => {
           rows={10}
           ref={register({ required: true })}
         />
-        <button type="submit">{loading ? <BeatLoader /> : <>Enviar</>}</button>
+        <button type="submit">
+          {loading ? <BeatLoader size={12} /> : <>Enviar</>}
+        </button>
       </Form>
     </Modal>
   );
