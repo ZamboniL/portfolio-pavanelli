@@ -42,7 +42,8 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
             rel="stylesheet"
           />
-          
+          <link rel="icon" href="logo.svg" sizes="any" type="image/svg+xml" />
+
           <link rel="canonical" href={process.env.SITE_URL} />
         </Head>
         <body>

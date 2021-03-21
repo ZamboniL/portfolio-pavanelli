@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Head>
-          <title>Portfólio de Lucas Pavanelli</title>
+          <title>Reis Design</title>
         </Head>
         <Component {...pageProps} />
       </ThemeProvider>
