@@ -10,7 +10,13 @@ const Links: React.FC = () => {
     <Nav>
       <ul>
         <li>
-          <a>{navText.primeiro}</a>
+          <a
+            onClick={() => {
+              window.scrollTo(0, document.body.scrollHeight);
+            }}
+          >
+            {navText.primeiro}
+          </a>
         </li>
         <li>
           <a onClick={() => changeContactModal()}>{navText.segundo}</a>
@@ -24,6 +30,8 @@ const Links: React.FC = () => {
 };
 
 const Nav = styled.nav`
+  position: relative;
+  z-index: 1;
   padding: 0.5rem 1rem;
   font-weight: 500;
   ul {

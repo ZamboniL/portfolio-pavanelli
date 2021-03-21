@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./GlobalTheme";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -15,11 +14,11 @@ export const GlobalStyle = createGlobalStyle`
   html, body, #__next {
     font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
     color: ${({ theme }) => theme.colors.light.main};
-    background: ${({ theme }) => theme.colors.dark.main}
-
+    background: ${({ theme }) => theme.colors.dark.main};
+    scroll-behavior: smooth
   }
 
-textarea, input {
+textarea, button, input {
   font-family: ${({ theme }) => theme.font};
   outline: none;
 }
@@ -31,10 +30,5 @@ textarea, input {
   }
 }
 
-@media (min-width: ${({ theme }) => theme.breakpoints.bg}) {
-  html, body, #__next {
-    font: ${({ theme }) => `400 ${theme.rootFont.bg} ${theme.font}`};
-  }
-}
 
 `;

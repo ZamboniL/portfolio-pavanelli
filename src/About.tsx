@@ -6,12 +6,10 @@ import { useContext } from "react";
 import { ModalContext } from "./Context/ModalContext";
 import { ContentContext } from "./Context/ContentContext";
 
-
 const About: React.FC = () => {
   const { aboutModal, changeAboutModal } = useContext(ModalContext);
-  const { firstTitle } = useContext(ContentContext);
   return (
-    <Modal open={aboutModal} setOpen={changeAboutModal} title={firstTitle}>
+    <Modal open={aboutModal} setOpen={changeAboutModal}>
       <p>Olá!</p>{" "}
       <p>
         Me chamo Lucas Pavanelli e sou um Designer que trabalha nos segmentos de

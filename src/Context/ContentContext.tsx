@@ -1,15 +1,9 @@
 import { createContext } from "react";
 import { HomeProps } from "../../pages/index";
 
-export const ContentContext = createContext<ContentProps>({} as ContentProps);
+export const ContentContext = createContext<HomeProps>({} as HomeProps);
 
-interface ContentProps extends HomeProps {
-  firstTitle?: string;
-  secondTitle?: string;
-}
-
-export const ContentProvider: React.FC<ContentProps> = ({
-  titlesText,
+export const ContentProvider: React.FC<HomeProps> = ({
   navText,
   projects,
   children,
@@ -17,9 +11,6 @@ export const ContentProvider: React.FC<ContentProps> = ({
   return (
     <ContentContext.Provider
       value={{
-        firstTitle: titlesText.primeiro,
-        secondTitle: titlesText.segundo,
-        titlesText,
         navText,
         projects,
       }}

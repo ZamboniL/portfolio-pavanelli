@@ -4,17 +4,15 @@ import { Close } from "@styled-icons/material/Close";
 export interface ModalProps {
   open: Boolean;
   setOpen: Function;
-  title?: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ title, setOpen, open, children }) => {
+const Modal: React.FC<ModalProps> = ({ setOpen, open, children }) => {
   if (!open) return <></>;
 
   return (
     <Obscure>
       <Container>
         <Header>
-          <Title>{title}</Title>
           <Close onClick={() => setOpen()} />
         </Header>
         <article>{children}</article>
@@ -46,6 +44,7 @@ const Header = styled.header`
   svg:first-of-type {
     width: 3rem;
     margin: 0 -0.5rem;
+    margin-left: auto;
     cursor: pointer;
   }
 `;
@@ -59,10 +58,7 @@ const Obscure = styled.div`
   left: 0;
   display: flex;
   place-items: center;
-`;
-
-const Title = styled.h1`
-  text-transform: uppercase;
+  z-index: 2;
 `;
 
 export default Modal;

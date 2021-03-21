@@ -1,10 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import styled from "styled-components";
 import { ModalContext } from "./Context/ModalContext";
 import Modal from "./Modal";
 import emailjs from "emailjs-com";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { ContentContext } from "./Context/ContentContext";
+import BeatLoader from "react-spinners/BeatLoader";
 
 type FormValues = {
   name: string;
@@ -14,12 +14,14 @@ type FormValues = {
 
 const ContactMe: React.FC = () => {
   const { contactModal, changeContactModal } = useContext(ModalContext);
-  const { secondTitle } = useContext(ContentContext);
 
   const { handleSubmit, register, errors, clearErrors } = useForm<FormValues>();
   const hasError = !!errors.name || !!errors.email || !!errors.message;
 
+  const [loading, setLoading] = useState(false);
+
   const onSubmit: SubmitHandler<FormValues> = (data) => {
+    setLoading(true);
     emailjs
       .send(
         "service_1qkj3gg",
@@ -28,12 +30,13 @@ const ContactMe: React.FC = () => {
         "user_DfRX9vjlbDchfEWzkAwUB"
       )
       .finally(() => {
+        setLoading(false);
         clearErrors();
         changeContactModal();
       });
   };
   return (
-    <Modal open={contactModal} setOpen={changeContactModal} title={secondTitle}>
+    <Modal open={contactModal} setOpen={changeContactModal}>
       <Form onSubmit={handleSubmit(onSubmit)}>
         {hasError && (
           <p style={{ color: "red" }}>Por favor preencha todos os campos.</p>
@@ -61,7 +64,7 @@ const ContactMe: React.FC = () => {
           rows={10}
           ref={register({ required: true })}
         />
-        <input type="submit" />
+        <button type="submit">{loading ? <BeatLoader /> : <>Enviar</>}</button>
       </Form>
     </Modal>
   );
@@ -70,14 +73,18 @@ const ContactMe: React.FC = () => {
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  input[type="submit"] {
+  button[type="submit"] {
+    padding: 1rem;
     -webkit-appearance: none;
     border: 2px solid black;
     background: white;
     margin-top: 1rem;
     cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   input,
+  button,
   textarea {
     width: 100%;
     font-size: 1rem;

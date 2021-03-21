@@ -19,10 +19,12 @@ export const ModalProvider: React.FC = ({ children }) => {
       value={{
         aboutModal: openAboutModal,
         changeAboutModal: () => {
+          setOpenContactModal(false);
           setOpenAboutModal((current) => !current);
         },
         contactModal: openContactModal,
         changeContactModal: () => {
+          setOpenAboutModal(false);
           setOpenContactModal((current) => !current);
         },
       }}

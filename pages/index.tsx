@@ -8,22 +8,16 @@ import Header from "../src/Header";
 import {
   IPortfolioCard,
   ITextFields,
-  ITitulosFields,
 } from "../src/schema/generated/contentful";
 
 export interface HomeProps {
   navText: ITextFields;
-  titlesText: ITitulosFields;
   projects: IPortfolioCard[];
 }
 
-const Home: React.FC<HomeProps> = ({ titlesText, navText, projects }) => {
+const Home: React.FC<HomeProps> = ({ navText, projects }) => {
   return (
-    <ContentProvider
-      titlesText={titlesText}
-      navText={navText}
-      projects={projects}
-    >
+    <ContentProvider navText={navText} projects={projects}>
       <ModalProvider>
         <Header />
         <CardList />
@@ -34,11 +28,11 @@ const Home: React.FC<HomeProps> = ({ titlesText, navText, projects }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const { navText, titlesText } = await getText();
+export const getServerSideProps = async () => {
+  const navText = await getText();
   const projects = await getProjects();
   return {
-    props: { navText, titlesText, projects },
+    props: { navText, projects },
   };
 };
 

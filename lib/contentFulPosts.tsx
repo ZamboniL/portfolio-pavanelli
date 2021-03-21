@@ -1,9 +1,5 @@
 import { createClient } from "contentful";
-import {
-  IPortfolioCard,
-  IText,
-  ITitulos,
-} from "../src/schema/generated/contentful";
+import { IPortfolioCard, IText } from "../src/schema/generated/contentful";
 
 const space = process.env.CONTENTFUL_SPACE_ID ?? "";
 const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN ?? "";
@@ -20,11 +16,9 @@ export async function fetchEntries() {
 
 export const getText = async () => {
   const navigation = await client.getEntry<IText>("2hpeWgMYHjiVRVIxpF5tpb");
-  const titles = await client.getEntry<ITitulos>("2nRO4uuQJOJPXw3xC9BACc");
 
-  const titlesText = titles.fields;
   const navText = navigation.fields;
-  return { navText, titlesText };
+  return navText;
 };
 
 export const getProjects = async () => {
