@@ -94,6 +94,7 @@ const Form = styled.form`
     border-radius: 5px;
     ::placeholder {
       color: ${({ theme }) => theme.colors.dark.medium};
+      font-size: ${({ theme }) => theme.rootFont.sm};
     }
   }
 

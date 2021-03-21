@@ -47,7 +47,6 @@ const Nav = styled.nav`
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 1.5rem 2rem;
-    max-width: ${({ theme }) => theme.maxWidth};
     margin: 0 auto;
 
     ul {

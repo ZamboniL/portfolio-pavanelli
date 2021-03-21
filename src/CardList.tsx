@@ -6,22 +6,31 @@ import { ContentContext } from "./Context/ContentContext";
 const CardList: React.FC = () => {
   const { projects } = useContext(ContentContext);
   return (
-    <List>
-      {projects.map((item) => (
-        <Card
-          src={item.fields.image?.fields.file.url}
-          href={item.fields.link}
-          key={item.sys.id}
-        />
-      ))}
-    </List>
+    <Container>
+      <List>
+        {projects.map((item) => (
+          <Card
+            src={item.fields.image?.fields.file.url}
+            href={item.fields.link}
+            key={item.sys.id}
+          />
+        ))}
+      </List>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  height: 100vh;
+  display: flex;
+`;
 
 const List = styled.section`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  align-items: top;
+  height: fit-content;
 
   > *:first-child {
     margin-top: 2rem;

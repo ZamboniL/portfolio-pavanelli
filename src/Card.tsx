@@ -7,14 +7,18 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ src, href }) => {
   return (
-    <a href={href} rel="noopener noreferrer" target="_blank">
+    <Container href={href} rel="noopener noreferrer" target="_blank">
       <CardItem src={src} />
-    </a>
+    </Container>
   );
 };
 
+const Container = styled.a`
+  height: fit-content;
+`;
+
 const CardItem = styled.div<CardProps>`
-  min-height: 175px;
+  height: 175px;
   cursor: pointer;
   background: ${({ src }) => `url(https:${src}) center no-repeat`};
   border-radius: 5px;
