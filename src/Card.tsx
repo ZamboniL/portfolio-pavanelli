@@ -22,8 +22,12 @@ const CardItem = styled.div<CardProps>`
   cursor: pointer;
   background: ${({ src }) => `url(https:${src}) center no-repeat`};
   border-radius: 5px;
+  transition: transform 0.2s;
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    min-width: 325px;
+    width: 325px;
+  }
+  :hover {
+    transform: scale(1.1);
   }
 `;
 
