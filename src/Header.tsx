@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <Logo src="/logo.svg" />
       <ArrowDown
         onClick={() => {
-          window.scrollTo(0, document.body.scrollHeight);
+          window.scrollTo(0, document.body.scrollHeight / 2);
         }}
       />
     </Hero>

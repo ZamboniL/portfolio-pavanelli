@@ -12,7 +12,7 @@ const Links: React.FC = () => {
         <li>
           <a
             onClick={() => {
-              window.scrollTo(0, document.body.scrollHeight);
+              window.scrollTo(0, document.body.scrollHeight / 2);
             }}
           >
             {navText.primeiro}
