@@ -15,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
     font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
     color: ${({ theme }) => theme.colors.light.main};
     background: ${({ theme }) => theme.colors.dark.main};
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    height: 100%
   }
 
 textarea, button, input {

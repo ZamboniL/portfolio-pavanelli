@@ -21,7 +21,7 @@ const CardList: React.FC = () => {
 };
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100%;
   display: flex;
 `;
 
@@ -31,6 +31,7 @@ const List = styled.section`
   padding: 1rem;
   align-items: top;
   height: fit-content;
+  width: 100%;
 
   > *:first-child {
     margin-top: 2rem;

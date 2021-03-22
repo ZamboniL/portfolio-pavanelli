@@ -20,7 +20,7 @@ const Hero = styled.header`
   background: url("portfolioBg.png") no-repeat center top;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 100%;
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     ::after {
       content: "";
