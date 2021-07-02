@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  a {
+    text-decoration: none;
+  color: inherit
+  }
   html, body, #__next {
     font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
     color: ${({ theme }) => theme.colors.light.main};

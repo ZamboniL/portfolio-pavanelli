@@ -10,13 +10,7 @@ const Links: React.FC = () => {
     <Nav>
       <ul>
         <li>
-          <a
-            onClick={() => {
-              window.scrollTo(0, document.body.scrollHeight / 2);
-            }}
-          >
-            {navText.primeiro}
-          </a>
+          <a href="#Projetos">{navText.primeiro}</a>
         </li>
         <li>
           <a onClick={() => changeContactModal()}>{navText.segundo}</a>

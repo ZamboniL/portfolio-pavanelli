@@ -7,11 +7,9 @@ const Header: React.FC = () => {
     <Hero>
       <Links />
       <Logo src="/logo.svg" />
-      <ArrowDown
-        onClick={() => {
-          window.scrollTo(0, document.body.scrollHeight / 2);
-        }}
-      />
+      <a href="#Projetos">
+        <ArrowDown />
+      </a>
     </Hero>
   );
 };
