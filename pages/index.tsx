@@ -15,7 +15,7 @@ export interface HomeProps {
   projects: IPortfolioCard[];
 }
 
-const Home: React.FC<HomeProps> = ({ navText, projects }) => {
+const Home = ({ navText, projects }: HomeProps) => {
   return (
     <ContentProvider navText={navText} projects={projects}>
       <ModalProvider>

@@ -24,6 +24,7 @@ export const getText = async () => {
 export const getProjects = async () => {
   const projects = await client.getEntries<IPortfolioCard>({
     content_type: "portfolioCard",
+    order: "fields.order",
   });
 
   return projects.items;
