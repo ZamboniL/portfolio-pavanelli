@@ -9,7 +9,7 @@ const theme = {
       main: "#FAFAFA",
     },
   },
-  font: "Montserrat, sans-serif",
+  font: "Poppins, sans-serif",
   rootFont: {
     sm: "14px",
     md: "16px",

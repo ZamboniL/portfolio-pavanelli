@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-  color: inherit
+    color: inherit
   }
   html, body, #__next {
     font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
