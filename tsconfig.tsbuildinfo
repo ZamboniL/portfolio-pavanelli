@@ -1,0 +1,3648 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "signature": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "signature": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.d.ts": {
+        "version": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "signature": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "signature": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "affectsGlobalScope": false
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "signature": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "signature": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "signature": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "signature": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "signature": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "810627a82ac06fb5166da5ada4159c4ec11978dfbb0805fe804c86406dab8357",
+        "signature": "810627a82ac06fb5166da5ada4159c4ec11978dfbb0805fe804c86406dab8357",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "62d80405c46c3f4c527ee657ae9d43fda65a0bf582292429aea1e69144a522a6",
+        "signature": "62d80405c46c3f4c527ee657ae9d43fda65a0bf582292429aea1e69144a522a6",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "signature": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "signature": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "signature": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.object.d.ts": {
+        "version": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "signature": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "signature": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "signature": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.promise.d.ts": {
+        "version": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "signature": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts": {
+        "version": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "signature": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.string.d.ts": {
+        "version": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "signature": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
+        "version": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "signature": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.intl.d.ts": {
+        "version": "e79ca55569f09a5dc3354be04dba4ae85865b1dce98bf46738ffe231c669621f",
+        "signature": "e79ca55569f09a5dc3354be04dba4ae85865b1dce98bf46738ffe231c669621f",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
+        "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.string.d.ts": {
+        "version": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "signature": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.promise.d.ts": {
+        "version": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "affectsGlobalScope": true
+      },
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.weakref.d.ts": {
+        "version": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/assert.d.ts": {
+        "version": "4c2c4f53e8eedd970f8afa369d7371544fb6231bf95e659f8602e09abe74d5a5",
+        "signature": "4c2c4f53e8eedd970f8afa369d7371544fb6231bf95e659f8602e09abe74d5a5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/globals.d.ts": {
+        "version": "2a84027260f2714138471ed88c6221956eae4ff08d931e9d0f910a1370049dce",
+        "signature": "2a84027260f2714138471ed88c6221956eae4ff08d931e9d0f910a1370049dce",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/async_hooks.d.ts": {
+        "version": "64e2803203b14d7f104f570f2152fde13abb6edc17b2ddb33d81ad86cf43d494",
+        "signature": "64e2803203b14d7f104f570f2152fde13abb6edc17b2ddb33d81ad86cf43d494",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/buffer.d.ts": {
+        "version": "3143a5add0467b83150961ecd33773b561a1207aec727002aa1d70333068eb1b",
+        "signature": "3143a5add0467b83150961ecd33773b561a1207aec727002aa1d70333068eb1b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/child_process.d.ts": {
+        "version": "9b2a8f604e7c0482a9061755f00b287cc99bd8718dc82d8207dd74c599b6dc43",
+        "signature": "9b2a8f604e7c0482a9061755f00b287cc99bd8718dc82d8207dd74c599b6dc43",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/cluster.d.ts": {
+        "version": "d0fc76a91c828fbe3f0be5d683273634b7b101068333ceed975a8a9ac464137b",
+        "signature": "d0fc76a91c828fbe3f0be5d683273634b7b101068333ceed975a8a9ac464137b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/console.d.ts": {
+        "version": "1a048ff164b8d9609f5de3139d4e37f6e8a82af82087ac414b9208f52ef8aac7",
+        "signature": "1a048ff164b8d9609f5de3139d4e37f6e8a82af82087ac414b9208f52ef8aac7",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/constants.d.ts": {
+        "version": "3111079f3cb5f2b9c812ca3f46161562bce5bfb355e915f46ed46c41714dc1c3",
+        "signature": "3111079f3cb5f2b9c812ca3f46161562bce5bfb355e915f46ed46c41714dc1c3",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/crypto.d.ts": {
+        "version": "64576aba4ff801004122056ccd049f0597aa471dcfd7670a6a0b877ee8dd97c0",
+        "signature": "64576aba4ff801004122056ccd049f0597aa471dcfd7670a6a0b877ee8dd97c0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/dgram.d.ts": {
+        "version": "b32b6b16cb0bda68199582ad6f22242d07ee75fac9b1f28a98cd838afc5eea45",
+        "signature": "b32b6b16cb0bda68199582ad6f22242d07ee75fac9b1f28a98cd838afc5eea45",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/dns.d.ts": {
+        "version": "4441ee4119824bfaebc49308559edd7545978f9cb41a40f115074e1031dde75f",
+        "signature": "4441ee4119824bfaebc49308559edd7545978f9cb41a40f115074e1031dde75f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/domain.d.ts": {
+        "version": "60693a88462d0e97900123b5bf7c73e146ce0cc94da46a61fe6775b430d2ff05",
+        "signature": "60693a88462d0e97900123b5bf7c73e146ce0cc94da46a61fe6775b430d2ff05",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/events.d.ts": {
+        "version": "588c69eda58b9202676ec7ca11a72c3762819b46a0ed72462c769846153c447c",
+        "signature": "588c69eda58b9202676ec7ca11a72c3762819b46a0ed72462c769846153c447c",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/fs.d.ts": {
+        "version": "cc829932ffaf5c49092f878bec18af1fa5d8591b45a45e2b7f757f793cb3b4ed",
+        "signature": "cc829932ffaf5c49092f878bec18af1fa5d8591b45a45e2b7f757f793cb3b4ed",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/fs/promises.d.ts": {
+        "version": "47db10fdc4e76c4f4598cf7c91ba6bfde6cf6d8082c51860fe751643bf359739",
+        "signature": "47db10fdc4e76c4f4598cf7c91ba6bfde6cf6d8082c51860fe751643bf359739",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/http.d.ts": {
+        "version": "53d2c24a3cbc00a88ebaf8ab8e1b6e206bc3a6647d544f877241684ea3d484e3",
+        "signature": "53d2c24a3cbc00a88ebaf8ab8e1b6e206bc3a6647d544f877241684ea3d484e3",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/http2.d.ts": {
+        "version": "3be5ff21956db30c674bf2a98eb348e4ce7b4635cd9673413d86fbce761b77d8",
+        "signature": "3be5ff21956db30c674bf2a98eb348e4ce7b4635cd9673413d86fbce761b77d8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/https.d.ts": {
+        "version": "0ce99c641ea20b0c0c09d093fc28f18f5ab31dc80033707a1ac3154399de2559",
+        "signature": "0ce99c641ea20b0c0c09d093fc28f18f5ab31dc80033707a1ac3154399de2559",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/inspector.d.ts": {
+        "version": "f0c33a0b325d3499cc9aded7d32886f998c9a27b465097c6cc136944d0aafdaa",
+        "signature": "f0c33a0b325d3499cc9aded7d32886f998c9a27b465097c6cc136944d0aafdaa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/module.d.ts": {
+        "version": "44e42ed6ec9c4451ebe89524e80ac8564e9dd0988c56e6c58f393c810730595d",
+        "signature": "44e42ed6ec9c4451ebe89524e80ac8564e9dd0988c56e6c58f393c810730595d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/net.d.ts": {
+        "version": "d4a0c39ece1e7c99d701e9c02a7dde8e3b75e03405f78d58d48dfea797ddbbac",
+        "signature": "d4a0c39ece1e7c99d701e9c02a7dde8e3b75e03405f78d58d48dfea797ddbbac",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/os.d.ts": {
+        "version": "1606ea615c0a5ea9f5c1376a33e34c0e1112e8dee31a5b3b8a74ce781893aa6f",
+        "signature": "1606ea615c0a5ea9f5c1376a33e34c0e1112e8dee31a5b3b8a74ce781893aa6f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/path.d.ts": {
+        "version": "9fef9de633d01cb7f01f68195626a890ededd25cf96a1e785617d08c8668230d",
+        "signature": "9fef9de633d01cb7f01f68195626a890ededd25cf96a1e785617d08c8668230d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "4455c78d226d061b1203c7614c6c6eb5f4f9db5f00d44ff47d0112de8766fbc4",
+        "signature": "4455c78d226d061b1203c7614c6c6eb5f4f9db5f00d44ff47d0112de8766fbc4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/process.d.ts": {
+        "version": "ec369bb9d97c4dc09dd2a4093b7ca3ba69ad284831fccac8a1977785e9e38ce5",
+        "signature": "ec369bb9d97c4dc09dd2a4093b7ca3ba69ad284831fccac8a1977785e9e38ce5",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/punycode.d.ts": {
+        "version": "4465a636f5f6e9665a90e30691862c9e0a3ac2edc0e66296704f10865e924f2a",
+        "signature": "4465a636f5f6e9665a90e30691862c9e0a3ac2edc0e66296704f10865e924f2a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/querystring.d.ts": {
+        "version": "9af781f03d44f5635ed7844be0ce370d9d595d4b4ec67cad88f0fac03255257e",
+        "signature": "9af781f03d44f5635ed7844be0ce370d9d595d4b4ec67cad88f0fac03255257e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/readline.d.ts": {
+        "version": "f9fd4c3ef6de27fa0e256f4e75b61711c4be05a3399f7714621d3edc832e36b0",
+        "signature": "f9fd4c3ef6de27fa0e256f4e75b61711c4be05a3399f7714621d3edc832e36b0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/repl.d.ts": {
+        "version": "e49290b7a927995c0d7e6b2b9c8296284b68a9036d9966531de65185269258d7",
+        "signature": "e49290b7a927995c0d7e6b2b9c8296284b68a9036d9966531de65185269258d7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/stream.d.ts": {
+        "version": "c3689f70ce7563c2299f2dcb3c72efdf6f87ae510e7456fa6223c767d0ca99fc",
+        "signature": "c3689f70ce7563c2299f2dcb3c72efdf6f87ae510e7456fa6223c767d0ca99fc",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/string_decoder.d.ts": {
+        "version": "874ca809b79276460011480a2829f4c8d4db29416dd411f71efbf8f497f0ac09",
+        "signature": "874ca809b79276460011480a2829f4c8d4db29416dd411f71efbf8f497f0ac09",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/timers.d.ts": {
+        "version": "82e1723b20fa0b15a7da0d1a03fec88348f82f640f7a2f308d6c0fac780cfc7c",
+        "signature": "82e1723b20fa0b15a7da0d1a03fec88348f82f640f7a2f308d6c0fac780cfc7c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/tls.d.ts": {
+        "version": "605c24042a348b033b30121cff64380eb5d6d82853c5608f1f94ef72385cf5c9",
+        "signature": "605c24042a348b033b30121cff64380eb5d6d82853c5608f1f94ef72385cf5c9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/trace_events.d.ts": {
+        "version": "23a28f834a078986bbf58f4e3705956983ff81c3c2493f3db3e5f0e8a9507779",
+        "signature": "23a28f834a078986bbf58f4e3705956983ff81c3c2493f3db3e5f0e8a9507779",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/tty.d.ts": {
+        "version": "4febdf7f3ec92706c58e0b4e8159cd6de718284ef384260b07c9641c13fc70ce",
+        "signature": "4febdf7f3ec92706c58e0b4e8159cd6de718284ef384260b07c9641c13fc70ce",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/querystring/decode.d.ts": {
+        "version": "ad7e61eca7f2f8bf47e72695f9f6663b75e41d87ef49abdb17c0cb843862f8aa",
+        "signature": "ad7e61eca7f2f8bf47e72695f9f6663b75e41d87ef49abdb17c0cb843862f8aa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/querystring/encode.d.ts": {
+        "version": "ecba2e44af95b0599c269a92628cec22e752868bce37396740deb51a5c547a26",
+        "signature": "ecba2e44af95b0599c269a92628cec22e752868bce37396740deb51a5c547a26",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/querystring/index.d.ts": {
+        "version": "46a9fb41a8f3bc7539eeebc15a6e04b9e55d7537a081615ad3614220d34c3e0f",
+        "signature": "46a9fb41a8f3bc7539eeebc15a6e04b9e55d7537a081615ad3614220d34c3e0f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/url.d.ts": {
+        "version": "a2666b43d889b4882ac6ede1c48128bac351886854e94f832b20d3730e5062c5",
+        "signature": "a2666b43d889b4882ac6ede1c48128bac351886854e94f832b20d3730e5062c5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/util.d.ts": {
+        "version": "7335933d9f30dcfd2c4b6080a8b78e81912a7fcefb1dafccb67ca4cb4b3ac23d",
+        "signature": "7335933d9f30dcfd2c4b6080a8b78e81912a7fcefb1dafccb67ca4cb4b3ac23d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/v8.d.ts": {
+        "version": "a6bfe9de9adef749010c118104b071d14943802ff0614732b47ce4f1c3e383cd",
+        "signature": "a6bfe9de9adef749010c118104b071d14943802ff0614732b47ce4f1c3e383cd",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/vm.d.ts": {
+        "version": "4c3d0e10396646db4a1e917fb852077ee77ae62e512913bef9cccc2bb0f8bd0e",
+        "signature": "4c3d0e10396646db4a1e917fb852077ee77ae62e512913bef9cccc2bb0f8bd0e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/wasi.d.ts": {
+        "version": "3b220849d58140dcc6718f5b52dcd29fdb79c45bc28f561cbd29eb1cac6cce13",
+        "signature": "3b220849d58140dcc6718f5b52dcd29fdb79c45bc28f561cbd29eb1cac6cce13",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/worker_threads.d.ts": {
+        "version": "0ee22fce41f7417a24c808d266e91b850629113c104713a35854393d55994beb",
+        "signature": "0ee22fce41f7417a24c808d266e91b850629113c104713a35854393d55994beb",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/zlib.d.ts": {
+        "version": "22d1b1d965baba05766613e2e6c753bb005d4386c448cafd72c309ba689e8c24",
+        "signature": "22d1b1d965baba05766613e2e6c753bb005d4386c448cafd72c309ba689e8c24",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/globals.global.d.ts": {
+        "version": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "signature": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/index.d.ts": {
+        "version": "79d679a1d56574cc5cef92be1f0e5e8fb4af62fb55933b236670a0e0a23c83f6",
+        "signature": "79d679a1d56574cc5cef92be1f0e5e8fb4af62fb55933b236670a0e0a23c83f6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/react/global.d.ts": {
+        "version": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
+        "signature": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/csstype/index.d.ts": {
+        "version": "381899b8d1d4c1be716f18cb5242ba39f66f4b1e31d45af62a32a99f8edcb39d",
+        "signature": "381899b8d1d4c1be716f18cb5242ba39f66f4b1e31d45af62a32a99f8edcb39d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/prop-types/index.d.ts": {
+        "version": "f7b46d22a307739c145e5fddf537818038fdfffd580d79ed717f4d4d37249380",
+        "signature": "f7b46d22a307739c145e5fddf537818038fdfffd580d79ed717f4d4d37249380",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/scheduler/tracing.d.ts": {
+        "version": "f5a8b384f182b3851cec3596ccc96cb7464f8d3469f48c74bf2befb782a19de5",
+        "signature": "f5a8b384f182b3851cec3596ccc96cb7464f8d3469f48c74bf2befb782a19de5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/react/index.d.ts": {
+        "version": "1bc82f5b3bb93df76d19730c84467b0b346187198537135d63a672956f323720",
+        "signature": "1bc82f5b3bb93df76d19730c84467b0b346187198537135d63a672956f323720",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/next/dist/next-server/server/get-page-files.d.ts": {
+        "version": "714bc11c4ece2d28d6b70207fcefce4651c138cc77ce0b8147a6bab25c66b67a",
+        "signature": "714bc11c4ece2d28d6b70207fcefce4651c138cc77ce0b8147a6bab25c66b67a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/server/load-components.d.ts": {
+        "version": "0e02cfb5ba166da0f788bc1d2703a935cc6a68b1fd044cadef8de743784748f6",
+        "signature": "0e02cfb5ba166da0f788bc1d2703a935cc6a68b1fd044cadef8de743784748f6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/client/page-loader.d.ts": {
+        "version": "2b3e8544c992f8d726fb877a5c4554a2abf291613028cb6210484a19445d525c",
+        "signature": "2b3e8544c992f8d726fb877a5c4554a2abf291613028cb6210484a19445d525c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/lib/mitt.d.ts": {
+        "version": "6e1b354578c8ed8a5432ac004e6a6bebb340ceed54e127c4f5e75696842bded1",
+        "signature": "6e1b354578c8ed8a5432ac004e6a6bebb340ceed54e127c4f5e75696842bded1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/lib/router/router.d.ts": {
+        "version": "4d9e4a43ccba6b903c9a8d7177084841fbd9fda7317ad4cf15690b3bdb1acbba",
+        "signature": "4d9e4a43ccba6b903c9a8d7177084841fbd9fda7317ad4cf15690b3bdb1acbba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@next/env/types/index.d.ts": {
+        "version": "764f5b39a73fd6371e5a118ee037b685cec4ff2fc3579225eb57d0f82a38ab18",
+        "signature": "764f5b39a73fd6371e5a118ee037b685cec4ff2fc3579225eb57d0f82a38ab18",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/lib/utils.d.ts": {
+        "version": "9c4a6063875f3cb0f4a1c4be82ba293f38e33887f18b4b9ea0eb70391d875120",
+        "signature": "9c4a6063875f3cb0f4a1c4be82ba293f38e33887f18b4b9ea0eb70391d875120",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/server/router.d.ts": {
+        "version": "64d9615b2dd4016da795b4519a4f138c9477cd6d6b3e6ddf420528f8a5d47a70",
+        "signature": "64d9615b2dd4016da795b4519a4f138c9477cd6d6b3e6ddf420528f8a5d47a70",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/server/api-utils.d.ts": {
+        "version": "5ca017b9ca9a62f86c5d293b5d5d25716b236f774961f4e40bce53803872bf1e",
+        "signature": "5ca017b9ca9a62f86c5d293b5d5d25716b236f774961f4e40bce53803872bf1e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/build/index.d.ts": {
+        "version": "af7682f5bb8cbc4954b3e9dc48f878ae7bc6853779681c467fa3aea37b399f67",
+        "signature": "af7682f5bb8cbc4954b3e9dc48f878ae7bc6853779681c467fa3aea37b399f67",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/lib/load-custom-routes.d.ts": {
+        "version": "4f5e0734b3c954ca57690f2ec9cdf12d49a10c05ae33826209b920167ae2ad85",
+        "signature": "4f5e0734b3c954ca57690f2ec9cdf12d49a10c05ae33826209b920167ae2ad85",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/build/webpack/plugins/pages-manifest-plugin.d.ts": {
+        "version": "83f475dbe94405f3720fb3b25c5e2465bb1fc8d6389ac7cea6d453360045f4e3",
+        "signature": "83f475dbe94405f3720fb3b25c5e2465bb1fc8d6389ac7cea6d453360045f4e3",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/server/font-utils.d.ts": {
+        "version": "dd1b2492877b4d5b42fc2724d18d9805248efc5648be6ebea3c70b8bbff0a804",
+        "signature": "dd1b2492877b4d5b42fc2724d18d9805248efc5648be6ebea3c70b8bbff0a804",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/server/next-server.d.ts": {
+        "version": "fd77df2b8f042a64c9c0e47b22e49d0b8e6567d38b3f10e97ed92184637d67cd",
+        "signature": "fd77df2b8f042a64c9c0e47b22e49d0b8e6567d38b3f10e97ed92184637d67cd",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/server/next.d.ts": {
+        "version": "5c9ea728d70fb206084479992cf49f3a54f23a58ff7b386d7e03341237f2ba71",
+        "signature": "5c9ea728d70fb206084479992cf49f3a54f23a58ff7b386d7e03341237f2ba71",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/types/index.d.ts": {
+        "version": "5c7f8bf8b4bee192852d91e6aff6e3c43c12fe2b9b9b5a49f406e894a176c336",
+        "signature": "5c7f8bf8b4bee192852d91e6aff6e3c43c12fe2b9b9b5a49f406e894a176c336",
+        "affectsGlobalScope": false
+      },
+      "./next-env.d.ts": {
+        "version": "9269d492817e359123ac64c8205e5d05dab63d71a3a7a229e68b5d9a0e8150bf",
+        "signature": "9269d492817e359123ac64c8205e5d05dab63d71a3a7a229e68b5d9a0e8150bf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/hoist-non-react-statics/index.d.ts": {
+        "version": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4",
+        "signature": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/styled-components/index.d.ts": {
+        "version": "28516cfe1c2292a16f2246160111c96c6704218ce664af8760accc1892fe4ece",
+        "signature": "28516cfe1c2292a16f2246160111c96c6704218ce664af8760accc1892fe4ece",
+        "affectsGlobalScope": true
+      },
+      "./theme/GlobalTheme.tsx": {
+        "version": "6a0e9fd54c295e5190d95abd41670597dffefa56d70782f4e63ed541471c12b9",
+        "signature": "c3fc8a2ad983003be4d756c20eff79a4875377682efe255ac1c700c51194c409",
+        "affectsGlobalScope": false
+      },
+      "./theme/theme.d.ts": {
+        "version": "e917a933d9a540d6d75c9982a8217a709151ddef44a9b71b5d601264a42cd378",
+        "signature": "e917a933d9a540d6d75c9982a8217a709151ddef44a9b71b5d601264a42cd378",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/client/with-router.d.ts": {
+        "version": "b40b28dd06ed7a612b4125e4dfde7f60aef46f132c19f6d514a572cefd637fb1",
+        "signature": "b40b28dd06ed7a612b4125e4dfde7f60aef46f132c19f6d514a572cefd637fb1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/client/router.d.ts": {
+        "version": "e87947a0dc30994516e89047dd18586d4a306de132f50dde57298aac76a840e7",
+        "signature": "e87947a0dc30994516e89047dd18586d4a306de132f50dde57298aac76a840e7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/pages/_app.d.ts": {
+        "version": "1488fcdc296e7f8f83be3654283797ef1d2c8c5b90e34823207426e25e0f3351",
+        "signature": "1488fcdc296e7f8f83be3654283797ef1d2c8c5b90e34823207426e25e0f3351",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/app.d.ts": {
+        "version": "40060cbf37ae99b1ae16d83ef6eba94907a5ff369da0d9c544e22bffe4707ed0",
+        "signature": "40060cbf37ae99b1ae16d83ef6eba94907a5ff369da0d9c544e22bffe4707ed0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/lib/head.d.ts": {
+        "version": "290ec1a014c3c8b26a8b789a61426c41035574efac7e96562f5d7388747c5f32",
+        "signature": "290ec1a014c3c8b26a8b789a61426c41035574efac7e96562f5d7388747c5f32",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/head.d.ts": {
+        "version": "d37d571aa706edfc60f426239c6973414ab78c194f851d43f036b0d935125687",
+        "signature": "d37d571aa706edfc60f426239c6973414ab78c194f851d43f036b0d935125687",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/router.d.ts": {
+        "version": "2d7d2d542a30602ad869c89e497ffc1d45ebee0352f3806833bb1a73f88a26a7",
+        "signature": "2d7d2d542a30602ad869c89e497ffc1d45ebee0352f3806833bb1a73f88a26a7",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Container/index.tsx": {
+        "version": "fd212caf4205000b5a7452a5bbf4f710fa6fa6ce253ea91cc37691cde06ab250",
+        "signature": "01da231aa338e13b6237a78aafa342965ce0f72ee573e4e84c84ab5c26638d16",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/Behance.tsx": {
+        "version": "feef37cb24a3d883875787e955a5c2c7e15923d800bb7d7f6debccaec13993c1",
+        "signature": "bdc13e3a88ef9d3c5848dce283fe811a85d302eab20fb7bfd8b699b6c6abba54",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/Close.tsx": {
+        "version": "1e0353d2c538c757f9a6a873dbff41daaae1990d28f864e891a030898f829c50",
+        "signature": "6afaf6895d6f9f13df14e859a0eb4d36d38665fe87077abec414d4e6c6d777af",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/Linkedin.tsx": {
+        "version": "7388e1f3aa33b2cf69a7d035acf55494baa6244a3c24cb09d1a6e52cfdb26e8b",
+        "signature": "e15c24405894babe06662c0ff383973a05f736bc982c4f5f94552159b0b791c2",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/Logo.tsx": {
+        "version": "0b63b86594dbc0c46fcc1766237bc98968786ce4d824326b33b5efe833318c2f",
+        "signature": "84e258db4daa0028c7dbe5eb7855aec8421a8d623de66adce083c9b61847f5a6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/client/link.d.ts": {
+        "version": "74587d651c85f1cc2690e5ddca3458c34d7674bea2e0ef43e2c0cd5cc354cabe",
+        "signature": "74587d651c85f1cc2690e5ddca3458c34d7674bea2e0ef43e2c0cd5cc354cabe",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/link.d.ts": {
+        "version": "25488ec0923fa0fd699444ad2456ce5e8b8ae66f4681f3c27da4d15dc26e28b9",
+        "signature": "25488ec0923fa0fd699444ad2456ce5e8b8ae66f4681f3c27da4d15dc26e28b9",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/MobileMenu.tsx": {
+        "version": "309a085877d7612abe8890b5fc99565d9ca7fb4a87a6b70e8c1cfa131eeaa024",
+        "signature": "118ba059992884f728495f9c1036ffbdfcf4819c2670fd4de52773aec12c7436",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Header/index.tsx": {
+        "version": "5e86f70c9b4c8c2d9fea8a749350f78b7980676fea19e005d24f577acc0cacc0",
+        "signature": "8d745965317f0a33e15f578ea24b976c625d25bc8cf4a8a1bc91b268da054a2a",
+        "affectsGlobalScope": false
+      },
+      "./theme/GlobalStyle.tsx": {
+        "version": "aaf8edd1a70a1225ff773a4042a3e46e475a436761568e7981f1d12b7a68282f",
+        "signature": "ce72a854a85ae0b4db793ce8a9b4eb2c040b30984c43bd3f339e5ec5c40ef29e",
+        "affectsGlobalScope": false
+      },
+      "./pages/_app.tsx": {
+        "version": "304f307f7dc9f18fc97c598beb6e5376a6b1eb1bde239f51fd3ae0567535c6f5",
+        "signature": "588d6e1f58616c75f12b82a40acabd3a17a7eb090e54c6331c0dac85419dcd2c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/next-server/lib/document-context.d.ts": {
+        "version": "901a38dd5d7f77abe03c3de75eab9b33e6587397dda5b59c0e8e6a65938c4581",
+        "signature": "901a38dd5d7f77abe03c3de75eab9b33e6587397dda5b59c0e8e6a65938c4581",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/dist/pages/_document.d.ts": {
+        "version": "7623db9ae7f08f2f1adc80c0bd885c99ed6bce1e66d95e603e51c4e211b47af1",
+        "signature": "7623db9ae7f08f2f1adc80c0bd885c99ed6bce1e66d95e603e51c4e211b47af1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/next/document.d.ts": {
+        "version": "c0b6beb59440f644d26cafdcbda0b4819cf3196ee81d49d08ac18ca4661596a6",
+        "signature": "c0b6beb59440f644d26cafdcbda0b4819cf3196ee81d49d08ac18ca4661596a6",
+        "affectsGlobalScope": false
+      },
+      "./pages/_document.tsx": {
+        "version": "621c83dfa84c41c3e59880a0d18d2c419c0b428a8de18247ab7acab970e2acc9",
+        "signature": "1ce102408fc57be7de00879c1adf60ba0389a2fe6d4e65adddc0f73b6cd880ab",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.d.ts": {
+        "version": "807d2a476f108073b01436cfeb1e4efdc66e2fc35d21a7ee1d7c46c27ab9de2a",
+        "signature": "807d2a476f108073b01436cfeb1e4efdc66e2fc35d21a7ee1d7c46c27ab9de2a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/emailjs-com/source/index.d.ts": {
+        "version": "6dbd3ab1c31a154627b626b69bc5a1cbddcfd0803cc0bbe83d0db504a545eb7b",
+        "signature": "6dbd3ab1c31a154627b626b69bc5a1cbddcfd0803cc0bbe83d0db504a545eb7b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/utils/createSubject.d.ts": {
+        "version": "b2ff87efe58cd85760edc37c5a96d410044123af9dd535c3442375695da07e4e",
+        "signature": "b2ff87efe58cd85760edc37c5a96d410044123af9dd535c3442375695da07e4e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/events.d.ts": {
+        "version": "2542659269597fd082031b720814cbe370d90a0d5215075dfd3097147f4178c6",
+        "signature": "2542659269597fd082031b720814cbe370d90a0d5215075dfd3097147f4178c6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/path/common.d.ts": {
+        "version": "bddbf2a38232c0dc38db711728667377bd8ace99ee8de913f48b8c76f4e6582a",
+        "signature": "bddbf2a38232c0dc38db711728667377bd8ace99ee8de913f48b8c76f4e6582a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/path/eager.d.ts": {
+        "version": "81617371131a67185ce70a289a000b47c93417ea4d6b3728edd68107ae4a38ae",
+        "signature": "81617371131a67185ce70a289a000b47c93417ea4d6b3728edd68107ae4a38ae",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/path/index.d.ts": {
+        "version": "e9af9b7d465235043cbef30cd4df9eefbbb40d066582f8c23dfaac8893a98a34",
+        "signature": "e9af9b7d465235043cbef30cd4df9eefbbb40d066582f8c23dfaac8893a98a34",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/fieldArray.d.ts": {
+        "version": "614512412dbaf10d2f38edcdbeaaec118a0afdf51b0f7d16dd9e8ff029c2eb99",
+        "signature": "614512412dbaf10d2f38edcdbeaaec118a0afdf51b0f7d16dd9e8ff029c2eb99",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/resolvers.d.ts": {
+        "version": "89caea6ed23e8c68824e9b909ac1f8542e298cf0f47fb070d99f8f85e6be15b9",
+        "signature": "89caea6ed23e8c68824e9b909ac1f8542e298cf0f47fb070d99f8f85e6be15b9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/form.d.ts": {
+        "version": "9634c7ad73afbf81891fea5e531aec1a796f55854816c76bb109121d2dda17f2",
+        "signature": "9634c7ad73afbf81891fea5e531aec1a796f55854816c76bb109121d2dda17f2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/utils.d.ts": {
+        "version": "b539338b17dd2f40dcd8063f813fe04fccb7163707df3ba49d8a7fbf4fdf99ce",
+        "signature": "b539338b17dd2f40dcd8063f813fe04fccb7163707df3ba49d8a7fbf4fdf99ce",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/fields.d.ts": {
+        "version": "8348dafd297ee36132f47673b28a0829e0d0db9ddffbef953a8fc3f4d36e9607",
+        "signature": "8348dafd297ee36132f47673b28a0829e0d0db9ddffbef953a8fc3f4d36e9607",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/errors.d.ts": {
+        "version": "94ba56e44e02755b538843916b8304f72fd83d9db6eed4896851b66117e290c0",
+        "signature": "94ba56e44e02755b538843916b8304f72fd83d9db6eed4896851b66117e290c0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/validator.d.ts": {
+        "version": "b90bd5b2ff3bde7ab8eee8187bab30aa35661d250b9455615f009b1646103c9d",
+        "signature": "b90bd5b2ff3bde7ab8eee8187bab30aa35661d250b9455615f009b1646103c9d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/controller.d.ts": {
+        "version": "fd6090ae38a79f6f8f3e5dc1a682b4e029821fda4cf0737cb393da51ffa316f4",
+        "signature": "fd6090ae38a79f6f8f3e5dc1a682b4e029821fda4cf0737cb393da51ffa316f4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/types/index.d.ts": {
+        "version": "beec3f4d12c6c506bfb90873f386782a5e5078948835777995e57d48996054b0",
+        "signature": "beec3f4d12c6c506bfb90873f386782a5e5078948835777995e57d48996054b0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/controller.d.ts": {
+        "version": "28e06c32608675266634314868769a31284c36e9e9473f65c7119143eb056a23",
+        "signature": "28e06c32608675266634314868769a31284c36e9e9473f65c7119143eb056a23",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts": {
+        "version": "4fe62bffb80f4361b489d9884b43b526d973091ad6a00760c077bfa411ab91d4",
+        "signature": "4fe62bffb80f4361b489d9884b43b526d973091ad6a00760c077bfa411ab91d4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/logic/index.d.ts": {
+        "version": "37dcc577aa6b0cc6ec75df58bef94137217de1f64ab66bdd5854fc4cfdc7e413",
+        "signature": "37dcc577aa6b0cc6ec75df58bef94137217de1f64ab66bdd5854fc4cfdc7e413",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useController.d.ts": {
+        "version": "5fdea6af0d01b9ff53909e0ea95ad384637616b4964b226200ccb2dda0939089",
+        "signature": "5fdea6af0d01b9ff53909e0ea95ad384637616b4964b226200ccb2dda0939089",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useFieldArray.d.ts": {
+        "version": "2fa6455453416351a1fa895fc1fad69ec8bf7de7afaea140c2fbc3d3e9b50971",
+        "signature": "2fa6455453416351a1fa895fc1fad69ec8bf7de7afaea140c2fbc3d3e9b50971",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useForm.d.ts": {
+        "version": "6af9134a27f6747acb54336e4d01ce8575873957a7d9ffda4a5f57d774c09a62",
+        "signature": "6af9134a27f6747acb54336e4d01ce8575873957a7d9ffda4a5f57d774c09a62",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useFormContext.d.ts": {
+        "version": "5d6a8cc9859da65de6c0415edc64622afc5f2bf006873e117330d91bffd6b011",
+        "signature": "5d6a8cc9859da65de6c0415edc64622afc5f2bf006873e117330d91bffd6b011",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useFormState.d.ts": {
+        "version": "9ecda569a5210759d8c36b7fc2081dea22a3e2e0eb74e87eacb396d79da5e051",
+        "signature": "9ecda569a5210759d8c36b7fc2081dea22a3e2e0eb74e87eacb396d79da5e051",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/useWatch.d.ts": {
+        "version": "938d630a785adf0dee7b46cb145dfc3097aa7c8fa92cbeb211a1131f31ccf9cf",
+        "signature": "938d630a785adf0dee7b46cb145dfc3097aa7c8fa92cbeb211a1131f31ccf9cf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/utils/get.d.ts": {
+        "version": "3472a10362e6157776696458721ce1b013eb0d85dad3ba0cbe2f1153c70f4e9e",
+        "signature": "3472a10362e6157776696458721ce1b013eb0d85dad3ba0cbe2f1153c70f4e9e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/utils/set.d.ts": {
+        "version": "ffa6dcc75c16a83140031988f4b8c89405d8663d755e82097dc5413469ef7156",
+        "signature": "ffa6dcc75c16a83140031988f4b8c89405d8663d755e82097dc5413469ef7156",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/utils/index.d.ts": {
+        "version": "c9fda03ba205b0fa95509a6b258fb1b83ed130f769de46004774110729038df7",
+        "signature": "c9fda03ba205b0fa95509a6b258fb1b83ed130f769de46004774110729038df7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-hook-form/dist/index.d.ts": {
+        "version": "5806d3c9477932b6922a2677675dcc587e34e7b734e5e2a92a74d710f024b095",
+        "signature": "5806d3c9477932b6922a2677675dcc587e34e7b734e5e2a92a74d710f024b095",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/stylis/types/index.d.ts": {
+        "version": "a6cb30cc0a1fd9dc0b6be4bfa919a35eda7d92be1835bc65a72e3d64a100203c",
+        "signature": "a6cb30cc0a1fd9dc0b6be4bfa919a35eda7d92be1835bc65a72e3d64a100203c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/utils/types/index.d.ts": {
+        "version": "b950589996caafaa1638f139de73257f6b47a3dc965c8c2a7e5b56138f427dfa",
+        "signature": "b950589996caafaa1638f139de73257f6b47a3dc965c8c2a7e5b56138f427dfa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/cache/types/index.d.ts": {
+        "version": "8b7e809ffc5c19880be3af18897d2bcda0c65028c0f36e2ca98b5b4c083f96bb",
+        "signature": "8b7e809ffc5c19880be3af18897d2bcda0c65028c0f36e2ca98b5b4c083f96bb",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/serialize/node_modules/csstype/index.d.ts": {
+        "version": "070e7b8102575a21c0b9aabae8cf65d4d9891d8a7a8706896593ad0353c36e7a",
+        "signature": "070e7b8102575a21c0b9aabae8cf65d4d9891d8a7a8706896593ad0353c36e7a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/serialize/types/helper.d.ts": {
+        "version": "b36255d645e094a9c8c1cb954c5becdf04b7423edb7f49539ac123a4e2932613",
+        "signature": "b36255d645e094a9c8c1cb954c5becdf04b7423edb7f49539ac123a4e2932613",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/serialize/types/index.d.ts": {
+        "version": "bba67c6ad655bea5737646b2cd68e760ac46e64cbe660c64f12529b6459ee7a3",
+        "signature": "bba67c6ad655bea5737646b2cd68e760ac46e64cbe660c64f12529b6459ee7a3",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/css/types/index.d.ts": {
+        "version": "96d85b3e22d9510ca311ae970b805b09aafc119edab321b1d821697db24a8824",
+        "signature": "96d85b3e22d9510ca311ae970b805b09aafc119edab321b1d821697db24a8824",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@emotion/core/types/index.d.ts": {
+        "version": "14cb75f5fbac488e22c9a4961daf4eb406c5550daad98dd6e152af3772986f7e",
+        "signature": "14cb75f5fbac488e22c9a4961daf4eb406c5550daad98dd6e152af3772986f7e",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/react-spinners/interfaces.d.ts": {
+        "version": "1d345baa93e27f0c05527d3a091c3c860fe0ea0869d88e0e0deae378b5b377b6",
+        "signature": "1d345baa93e27f0c05527d3a091c3c860fe0ea0869d88e0e0deae378b5b377b6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/BarLoader.d.ts": {
+        "version": "d625019f08974e694cac88904308e6cb0d476f55a210c934c0e8eb71fb97233c",
+        "signature": "d625019f08974e694cac88904308e6cb0d476f55a210c934c0e8eb71fb97233c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/BeatLoader.d.ts": {
+        "version": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "signature": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/BounceLoader.d.ts": {
+        "version": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "signature": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/CircleLoader.d.ts": {
+        "version": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "signature": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/ClimbingBoxLoader.d.ts": {
+        "version": "0ecd533653191eb1173fc187708939ce9b4589bf287677e81825b9ec83596b93",
+        "signature": "0ecd533653191eb1173fc187708939ce9b4589bf287677e81825b9ec83596b93",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/ClipLoader.d.ts": {
+        "version": "9d873a96d023bdf5905b7d44a2035501c267cd21c3ef952240fb05182cf4e9c1",
+        "signature": "9d873a96d023bdf5905b7d44a2035501c267cd21c3ef952240fb05182cf4e9c1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/ClockLoader.d.ts": {
+        "version": "04f58cbe4848c0f2fcae2c0b2c763e74b8e254c7a7024feddfe9e531bb6228a4",
+        "signature": "04f58cbe4848c0f2fcae2c0b2c763e74b8e254c7a7024feddfe9e531bb6228a4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/DotLoader.d.ts": {
+        "version": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "signature": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/FadeLoader.d.ts": {
+        "version": "acf10c992eef22c1fb29bd37e793973855901f250b70e5d097112fbe6ee2e62e",
+        "signature": "acf10c992eef22c1fb29bd37e793973855901f250b70e5d097112fbe6ee2e62e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/GridLoader.d.ts": {
+        "version": "c570aef7fcae155f5f665f533223e26b885ded3f897b2ba742462dd83348fc16",
+        "signature": "c570aef7fcae155f5f665f533223e26b885ded3f897b2ba742462dd83348fc16",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/HashLoader.d.ts": {
+        "version": "21d44c8eaae60a5d8ab4104c444250946b9216d3988672a14fbc842d912f80bf",
+        "signature": "21d44c8eaae60a5d8ab4104c444250946b9216d3988672a14fbc842d912f80bf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/MoonLoader.d.ts": {
+        "version": "a22db07400d8357fa3f30875f1b946e69ec72efed27b750de60e09cf0ffd9bd1",
+        "signature": "a22db07400d8357fa3f30875f1b946e69ec72efed27b750de60e09cf0ffd9bd1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/PacmanLoader.d.ts": {
+        "version": "f4ee73355bf3602e4c38f5cba0eebc5d3780b45b56a6da07e9394af4eff1cea8",
+        "signature": "f4ee73355bf3602e4c38f5cba0eebc5d3780b45b56a6da07e9394af4eff1cea8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/PropagateLoader.d.ts": {
+        "version": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "signature": "d7fdacd01e34e543e49434e8f37c97156064a1ba248dfbf1f2cc9a9e3f1f5884",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/PulseLoader.d.ts": {
+        "version": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "signature": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/PuffLoader.d.ts": {
+        "version": "26b6669007001828763a1bf6824f36ef70e870df4eb4b2f02ace3c10268f0ba4",
+        "signature": "26b6669007001828763a1bf6824f36ef70e870df4eb4b2f02ace3c10268f0ba4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/RingLoader.d.ts": {
+        "version": "26b6669007001828763a1bf6824f36ef70e870df4eb4b2f02ace3c10268f0ba4",
+        "signature": "26b6669007001828763a1bf6824f36ef70e870df4eb4b2f02ace3c10268f0ba4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/RiseLoader.d.ts": {
+        "version": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "signature": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/RotateLoader.d.ts": {
+        "version": "dc5d29a436a789b10ac033896d24b3dcde4914733de92511e8e460b6e5792c82",
+        "signature": "dc5d29a436a789b10ac033896d24b3dcde4914733de92511e8e460b6e5792c82",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/ScaleLoader.d.ts": {
+        "version": "cd05f660bcbf11f8c50d6d3d76ca1cc28685d58d2780deeb9bc7e61f91626c64",
+        "signature": "cd05f660bcbf11f8c50d6d3d76ca1cc28685d58d2780deeb9bc7e61f91626c64",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/SkewLoader.d.ts": {
+        "version": "0a49dbc7ab7184c3d8744f318cd9634498befe2f2e478c88f7e16aa863353281",
+        "signature": "0a49dbc7ab7184c3d8744f318cd9634498befe2f2e478c88f7e16aa863353281",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/SquareLoader.d.ts": {
+        "version": "9d873a96d023bdf5905b7d44a2035501c267cd21c3ef952240fb05182cf4e9c1",
+        "signature": "9d873a96d023bdf5905b7d44a2035501c267cd21c3ef952240fb05182cf4e9c1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/SyncLoader.d.ts": {
+        "version": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "signature": "7394044ae00901daa51544870306cb68b744fe6881ed291a4d1d8422a63f22ba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/react-spinners/index.d.ts": {
+        "version": "8f6949940b7d54c4a6badc8ef689f58024a230b6f383e7b3d8075c43a134b15a",
+        "signature": "8f6949940b7d54c4a6badc8ef689f58024a230b6f383e7b3d8075c43a134b15a",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ContactForm/SuccessModal.tsx": {
+        "version": "a8e7843f92a8af444f72effa25e0d5a724b4217ad6cfca1be381d2c781fe6221",
+        "signature": "4a1abeef15c351635c7d0edd6db1925ecd276b36e7b8c49264b68ffa1bc30313",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ContactForm/index.tsx": {
+        "version": "1b41f5d6888ea5bd6259f9ab2c9a731a9b56965794048218bd06af0b916f31f1",
+        "signature": "c48fa3853b427356729a935deb07275794f7180003aa1fb1153e10c0e8db9f73",
+        "affectsGlobalScope": false
+      },
+      "./pages/contato.tsx": {
+        "version": "2d3f42234519c934b7cfc472645a8ab200afd7954fd9f0e0e96561f6eedf2cc7",
+        "signature": "79f4ec6ce8e9bd2e9eced80780a893414d477d73b3299999a3043c12021b7997",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/axios/index.d.ts": {
+        "version": "2808645b990069e5f8b5ff14c9f1e6077eb642583c3f7854012d60757f23c70e",
+        "signature": "2808645b990069e5f8b5ff14c9f1e6077eb642583c3f7854012d60757f23c70e",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Alphabet.tsx": {
+        "version": "9700d6a6da79d1c55d3a712ed8fd28ee73653efac745d6ce4e5972d3479703ad",
+        "signature": "3551c618aad17fa6085558f9a25b0c22163917ab9c1e5b105e958dc022cc4a3f",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/AlphabetSquare.tsx": {
+        "version": "8101c429e4631b42a59b502a89b020bdd06320906792ca230132194b294eec16",
+        "signature": "9ff843e8b27ca3102aa3c9bc51bb7111b5d5b0bf25fa767241fbb97edef7da3f",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Figma.tsx": {
+        "version": "6be153121e9d82635575f2014341b294acc368695801c2d7d3c39f200a809207",
+        "signature": "97222117e498a067799b000bbd47a906a11ec04d931e6839d017957194f55747",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/FigmaSquare.tsx": {
+        "version": "d7a1129b896d34b1c63106d54c6d8b043186fad310bc7e059b4a08381c927c9a",
+        "signature": "df702617ddbbcec35dd78258607c019998a3e9ebb7877b72c0986cba3d5cfe77",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Play.tsx": {
+        "version": "1dea7452c620266aea30f5363ae8ad2a5ccc29bbb26d2432f4df8ef7ce74c38d",
+        "signature": "b64cbb5bc157f30bcd912947e61b7c75a6ef0b086f3f7283a9abbcd619864c22",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/PlaySquare.tsx": {
+        "version": "ee19db24c570e03337a5474bc79d9db1aea26be818b5dcbc3b8d1caadeea8946",
+        "signature": "be189fa032efcb854ac0c10e9bea6a79537e74f4db1f3bae8a72303b40f9dd23",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Redo.tsx": {
+        "version": "37a26a71cb07153927b6768cb340b8a6f562786f9fe84674814b7109f75126c5",
+        "signature": "9ffdb6c2a009f69b4d52a4c99b2b64f3018309efe5cdc3ba97d0008ffc6eb573",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/RedoSquare.tsx": {
+        "version": "1bbe0e1c7ae3c74728b850cf7bdc126d2f15fa9484c144e50b2d2e048e593156",
+        "signature": "a4b78373a10291e691b91c2a1da46c463eee364eaf5fbdd42fc769533a115e03",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Volume.tsx": {
+        "version": "f315f069acffedf067190b2608a799141231135ea81767147b027d03fdad3406",
+        "signature": "d87dc04b48d7b0415e377d93d9e528b6ad03e2bdca75257a4732c04cf001c8f5",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/VolumeSquare.tsx": {
+        "version": "5e5ecadc2bf234134eb47c99be00f4a426d26a56c36d445e84ee9740bd6e82f7",
+        "signature": "e375ec03cd7e6d013c5c9d2cbf9b4b115c1e4e20632cde58590996cb8fe1c8ba",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/SpeechBubble.tsx": {
+        "version": "ae11125b5b112f45e3c06a45f35c2747774d061d19bfe230842dc11325e67576",
+        "signature": "d88ab6d728fe7f7d0d910a80ebaf6de542d6956457ae7b7d149108018b698cde",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Star.tsx": {
+        "version": "19c15eebff951f9e06e529bdb131afc4be8c7099ac0e6d338f77fcba8849c9c1",
+        "signature": "515df92d8664d648af0602d533c34bf23581fe91858b4c944302f14ece401e40",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/Icons/Stars.tsx": {
+        "version": "62b45c21476b4989b4853c413bdcde03822bc429cb0e86d72decd844f699312f",
+        "signature": "b2848045e563b7e44908f0004e5a2f99723e773a9001f5c256de78c1d2eb9dc5",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/WelcomeSquare.tsx": {
+        "version": "62ce9e2b19b951922831e0f213c838479438abc8878f6633e69efd8eeb7aee66",
+        "signature": "fb893cdbc524195596a128534c832c126685104995ee1186b5318bc1695d6fb2",
+        "affectsGlobalScope": false
+      },
+      "./src/features/ArtGrid/index.tsx": {
+        "version": "29ef352d315b42fdc7d124c7ecb0406aef9e7a00d10e8917cbb6d4e09c182ab7",
+        "signature": "0b6ba85e33fe8fc99ee6cfdd0c88de0de0d9ac30d1fbfed8150c9dfeeb3ea765",
+        "affectsGlobalScope": false
+      },
+      "./src/components/Project/index.tsx": {
+        "version": "c12bbd9bb552a1e1e9b6633085d13612632c7289885a0e66f574c338c999de28",
+        "signature": "7e91546e96b51b8e5e0753f6574a6c9ba0b13978a54c84ff83e0d289c9b2ac95",
+        "affectsGlobalScope": false
+      },
+      "./src/components/ProjectGrid/index.tsx": {
+        "version": "3f0705cacb570a2a64211af6b03a1b97c328499884372929da99670453ce2925",
+        "signature": "427bf93c868c919a2469fe1bed1619ad3cdfd4fefa495995951544d955bb5efd",
+        "affectsGlobalScope": false
+      },
+      "./pages/index.tsx": {
+        "version": "9da574d54dbbf4ec290aa7f7c7af64676691a05dc5894142d1d2d5f4eff56be7",
+        "signature": "58c4cd33f7d00da6e7d7d4148c2413f86a16f9446ba1a200b23373c91c540917",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/json-patch/index.d.ts": {
+        "version": "5080b298b769b68aa0cab3187fb42b968d25df564803dcf444cbf77615def96e",
+        "signature": "5080b298b769b68aa0cab3187fb42b968d25df564803dcf444cbf77615def96e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/json-schema/index.d.ts": {
+        "version": "0359682c54e487c4cab2b53b2b4d35cc8dea4d9914bc6abcdb5701f8b8e745a4",
+        "signature": "0359682c54e487c4cab2b53b2b4d35cc8dea4d9914bc6abcdb5701f8b8e745a4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/minimist/index.d.ts": {
+        "version": "209e814e8e71aec74f69686a9506dd7610b97ab59dcee9446266446f72a76d05",
+        "signature": "209e814e8e71aec74f69686a9506dd7610b97ab59dcee9446266446f72a76d05",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/normalize-package-data/index.d.ts": {
+        "version": "6fa0008bf91a4cc9c8963bace4bba0bd6865cbfa29c3e3ccc461155660fb113a",
+        "signature": "6fa0008bf91a4cc9c8963bace4bba0bd6865cbfa29c3e3ccc461155660fb113a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/parse-json/index.d.ts": {
+        "version": "2b8264b2fefd7367e0f20e2c04eed5d3038831fe00f5efbc110ff0131aab899b",
+        "signature": "2b8264b2fefd7367e0f20e2c04eed5d3038831fe00f5efbc110ff0131aab899b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/scheduler/index.d.ts": {
+        "version": "74b0245c42990ed8a849df955db3f4362c81b13f799ebc981b7bec2d5b414a57",
+        "signature": "74b0245c42990ed8a849df955db3f4362c81b13f799ebc981b7bec2d5b414a57",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "target": 2,
+      "lib": [
+        "lib.dom.d.ts",
+        "lib.dom.iterable.d.ts",
+        "lib.esnext.d.ts"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": 99,
+      "moduleResolution": 2,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": 1,
+      "incremental": true,
+      "pretty": false,
+      "watch": true,
+      "listFiles": true,
+      "project": "./tsconfig.json",
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "./next-env.d.ts": [
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/cache/types/index.d.ts": [
+        "./node_modules/@emotion/stylis/types/index.d.ts",
+        "./node_modules/@emotion/utils/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/core/types/index.d.ts": [
+        "./node_modules/@emotion/cache/types/index.d.ts",
+        "./node_modules/@emotion/css/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/css/types/index.d.ts": [
+        "./node_modules/@emotion/serialize/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/serialize/types/index.d.ts": [
+        "./node_modules/@emotion/serialize/node_modules/csstype/index.d.ts",
+        "./node_modules/@emotion/serialize/types/helper.d.ts",
+        "./node_modules/@emotion/utils/types/index.d.ts"
+      ],
+      "./node_modules/@types/hoist-non-react-statics/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/@types/node/assert.d.ts": [
+        "./node_modules/@types/node/assert.d.ts"
+      ],
+      "./node_modules/@types/node/async_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "./node_modules/@types/node/buffer.d.ts": [
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/crypto.d.ts"
+      ],
+      "./node_modules/@types/node/child_process.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/cluster.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts"
+      ],
+      "./node_modules/@types/node/console.d.ts": [
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/constants.d.ts": [
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/os.d.ts"
+      ],
+      "./node_modules/@types/node/crypto.d.ts": [
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/dgram.d.ts": [
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts"
+      ],
+      "./node_modules/@types/node/dns.d.ts": [
+        "./node_modules/@types/node/dns.d.ts"
+      ],
+      "./node_modules/@types/node/domain.d.ts": [
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts"
+      ],
+      "./node_modules/@types/node/events.d.ts": [
+        "./node_modules/@types/node/events.d.ts"
+      ],
+      "./node_modules/@types/node/fs.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/fs/promises.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts"
+      ],
+      "./node_modules/@types/node/http.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/http2.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/https.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/index.d.ts": [
+        "./node_modules/@types/node/assert.d.ts",
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/globals.global.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/inspector.d.ts",
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/os.d.ts",
+        "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/punycode.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/string_decoder.d.ts",
+        "./node_modules/@types/node/timers.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/trace_events.d.ts",
+        "./node_modules/@types/node/tty.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/v8.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/wasi.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/node/inspector.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/inspector.d.ts"
+      ],
+      "./node_modules/@types/node/module.d.ts": [
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/net.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/os.d.ts": [
+        "./node_modules/@types/node/os.d.ts"
+      ],
+      "./node_modules/@types/node/path.d.ts": [
+        "./node_modules/@types/node/path.d.ts"
+      ],
+      "./node_modules/@types/node/perf_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts"
+      ],
+      "./node_modules/@types/node/process.d.ts": [
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/tty.d.ts"
+      ],
+      "./node_modules/@types/node/punycode.d.ts": [
+        "./node_modules/@types/node/punycode.d.ts"
+      ],
+      "./node_modules/@types/node/querystring.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts"
+      ],
+      "./node_modules/@types/node/readline.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/readline.d.ts"
+      ],
+      "./node_modules/@types/node/repl.d.ts": [
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/stream.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/string_decoder.d.ts": [
+        "./node_modules/@types/node/string_decoder.d.ts"
+      ],
+      "./node_modules/@types/node/timers.d.ts": [
+        "./node_modules/@types/node/timers.d.ts"
+      ],
+      "./node_modules/@types/node/tls.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts"
+      ],
+      "./node_modules/@types/node/trace_events.d.ts": [
+        "./node_modules/@types/node/trace_events.d.ts"
+      ],
+      "./node_modules/@types/node/tty.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/tty.d.ts"
+      ],
+      "./node_modules/@types/node/url.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/util.d.ts": [
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/v8.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/v8.d.ts"
+      ],
+      "./node_modules/@types/node/vm.d.ts": [
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/wasi.d.ts": [
+        "./node_modules/@types/node/wasi.d.ts"
+      ],
+      "./node_modules/@types/node/worker_threads.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts"
+      ],
+      "./node_modules/@types/node/zlib.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/react/index.d.ts": [
+        "./node_modules/@types/prop-types/index.d.ts",
+        "./node_modules/@types/react/global.d.ts",
+        "./node_modules/@types/scheduler/tracing.d.ts",
+        "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/@types/styled-components/index.d.ts": [
+        "./node_modules/@types/hoist-non-react-statics/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/emailjs-com/source/index.d.ts": [
+        "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.d.ts"
+      ],
+      "./node_modules/next/app.d.ts": [
+        "./node_modules/next/dist/pages/_app.d.ts"
+      ],
+      "./node_modules/next/dist/build/index.d.ts": [
+        "./node_modules/next/dist/next-server/server/api-utils.d.ts"
+      ],
+      "./node_modules/next/dist/client/link.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/client/page-loader.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/client/router.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/page-loader.d.ts",
+        "./node_modules/next/dist/client/with-router.d.ts",
+        "./node_modules/next/dist/next-server/lib/router/router.d.ts"
+      ],
+      "./node_modules/next/dist/client/with-router.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/router.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/document-context.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/head.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/router/router.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/page-loader.d.ts",
+        "./node_modules/next/dist/next-server/lib/mitt.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/utils.d.ts": [
+        "./node_modules/@next/env/types/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/router/router.d.ts",
+        "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+        "./node_modules/next/dist/next-server/server/load-components.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/api-utils.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/next-server/server/router.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/load-components.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/next-server.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/next/dist/build/index.d.ts",
+        "./node_modules/next/dist/build/webpack/plugins/pages-manifest-plugin.d.ts",
+        "./node_modules/next/dist/lib/load-custom-routes.d.ts",
+        "./node_modules/next/dist/next-server/server/api-utils.d.ts",
+        "./node_modules/next/dist/next-server/server/font-utils.d.ts",
+        "./node_modules/next/dist/next-server/server/router.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/router.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/next/dist/pages/_app.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/router.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/pages/_document.d.ts": [
+        "./node_modules/@types/prop-types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/document-context.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/server/next.d.ts": [
+        "./node_modules/next/dist/next-server/server/next-server.d.ts"
+      ],
+      "./node_modules/next/document.d.ts": [
+        "./node_modules/next/dist/pages/_document.d.ts"
+      ],
+      "./node_modules/next/head.d.ts": [
+        "./node_modules/next/dist/next-server/lib/head.d.ts"
+      ],
+      "./node_modules/next/link.d.ts": [
+        "./node_modules/next/dist/client/link.d.ts"
+      ],
+      "./node_modules/next/router.d.ts": [
+        "./node_modules/next/dist/client/router.d.ts"
+      ],
+      "./node_modules/next/types/index.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/server/next.d.ts"
+      ],
+      "./node_modules/querystring/index.d.ts": [
+        "./node_modules/querystring/decode.d.ts",
+        "./node_modules/querystring/encode.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/controller.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/index.d.ts": [
+        "./node_modules/react-hook-form/dist/controller.d.ts",
+        "./node_modules/react-hook-form/dist/logic/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts",
+        "./node_modules/react-hook-form/dist/useController.d.ts",
+        "./node_modules/react-hook-form/dist/useFieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/useForm.d.ts",
+        "./node_modules/react-hook-form/dist/useFormContext.d.ts",
+        "./node_modules/react-hook-form/dist/useFormState.d.ts",
+        "./node_modules/react-hook-form/dist/useWatch.d.ts",
+        "./node_modules/react-hook-form/dist/utils/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/logic/index.d.ts": [
+        "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/controller.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/errors.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/fieldArray.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/fields.d.ts": [
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/form.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/events.d.ts",
+        "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts",
+        "./node_modules/react-hook-form/dist/utils/createSubject.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/index.d.ts": [
+        "./node_modules/react-hook-form/dist/types/controller.d.ts",
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/events.d.ts",
+        "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/common.d.ts": [
+        "./node_modules/react-hook-form/dist/types/utils.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/eager.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/index.d.ts": [
+        "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/eager.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/resolvers.d.ts": [
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/utils.d.ts": [
+        "./node_modules/react-hook-form/dist/types/form.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/validator.d.ts": [
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useController.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFieldArray.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useForm.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFormContext.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFormState.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useWatch.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/createSubject.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/index.d.ts": [
+        "./node_modules/react-hook-form/dist/utils/get.d.ts",
+        "./node_modules/react-hook-form/dist/utils/set.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/set.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-spinners/BarLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/BeatLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/BounceLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/CircleLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClimbingBoxLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClipLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClockLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/DotLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/FadeLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/GridLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/HashLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/MoonLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PacmanLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PropagateLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PuffLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PulseLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RingLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RiseLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RotateLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ScaleLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SkewLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SquareLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SyncLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/index.d.ts": [
+        "./node_modules/react-spinners/BarLoader.d.ts",
+        "./node_modules/react-spinners/BeatLoader.d.ts",
+        "./node_modules/react-spinners/BounceLoader.d.ts",
+        "./node_modules/react-spinners/CircleLoader.d.ts",
+        "./node_modules/react-spinners/ClimbingBoxLoader.d.ts",
+        "./node_modules/react-spinners/ClipLoader.d.ts",
+        "./node_modules/react-spinners/ClockLoader.d.ts",
+        "./node_modules/react-spinners/DotLoader.d.ts",
+        "./node_modules/react-spinners/FadeLoader.d.ts",
+        "./node_modules/react-spinners/GridLoader.d.ts",
+        "./node_modules/react-spinners/HashLoader.d.ts",
+        "./node_modules/react-spinners/MoonLoader.d.ts",
+        "./node_modules/react-spinners/PacmanLoader.d.ts",
+        "./node_modules/react-spinners/PropagateLoader.d.ts",
+        "./node_modules/react-spinners/PuffLoader.d.ts",
+        "./node_modules/react-spinners/PulseLoader.d.ts",
+        "./node_modules/react-spinners/RingLoader.d.ts",
+        "./node_modules/react-spinners/RiseLoader.d.ts",
+        "./node_modules/react-spinners/RotateLoader.d.ts",
+        "./node_modules/react-spinners/ScaleLoader.d.ts",
+        "./node_modules/react-spinners/SkewLoader.d.ts",
+        "./node_modules/react-spinners/SquareLoader.d.ts",
+        "./node_modules/react-spinners/SyncLoader.d.ts"
+      ],
+      "./node_modules/react-spinners/interfaces.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts"
+      ],
+      "./pages/_app.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/next/app.d.ts",
+        "./node_modules/next/head.d.ts",
+        "./src/components/Header/index.tsx",
+        "./theme/GlobalStyle.tsx",
+        "./theme/GlobalTheme.tsx"
+      ],
+      "./pages/_document.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/next/document.d.ts"
+      ],
+      "./pages/contato.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/components/Container/index.tsx",
+        "./src/features/ContactForm/index.tsx"
+      ],
+      "./pages/index.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/axios/index.d.ts",
+        "./node_modules/next/types/index.d.ts",
+        "./src/components/Container/index.tsx",
+        "./src/components/Header/index.tsx",
+        "./src/components/ProjectGrid/index.tsx",
+        "./src/features/ArtGrid/index.tsx"
+      ],
+      "./src/components/Container/index.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./src/components/Header/Close.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/Header/Logo.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/Header/MobileMenu.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/next/link.d.ts",
+        "./src/components/Header/Behance.tsx",
+        "./src/components/Header/Close.tsx",
+        "./src/components/Header/Linkedin.tsx"
+      ],
+      "./src/components/Header/index.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/next/router.d.ts",
+        "./src/components/Container/index.tsx",
+        "./src/components/Header/Behance.tsx",
+        "./src/components/Header/Close.tsx",
+        "./src/components/Header/Linkedin.tsx",
+        "./src/components/Header/Logo.tsx",
+        "./src/components/Header/MobileMenu.tsx"
+      ],
+      "./src/components/Project/index.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./src/components/ProjectGrid/index.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./pages/index.tsx",
+        "./src/components/Project/index.tsx"
+      ],
+      "./src/features/ArtGrid/AlphabetSquare.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/Alphabet.tsx"
+      ],
+      "./src/features/ArtGrid/FigmaSquare.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/Figma.tsx"
+      ],
+      "./src/features/ArtGrid/PlaySquare.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/Play.tsx"
+      ],
+      "./src/features/ArtGrid/RedoSquare.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/Redo.tsx"
+      ],
+      "./src/features/ArtGrid/VolumeSquare.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/Volume.tsx"
+      ],
+      "./src/features/ArtGrid/WelcomeSquare.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/Icons/SpeechBubble.tsx",
+        "./src/features/ArtGrid/Icons/Star.tsx",
+        "./src/features/ArtGrid/Icons/Stars.tsx"
+      ],
+      "./src/features/ArtGrid/index.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./src/features/ArtGrid/AlphabetSquare.tsx",
+        "./src/features/ArtGrid/FigmaSquare.tsx",
+        "./src/features/ArtGrid/PlaySquare.tsx",
+        "./src/features/ArtGrid/RedoSquare.tsx",
+        "./src/features/ArtGrid/VolumeSquare.tsx",
+        "./src/features/ArtGrid/WelcomeSquare.tsx"
+      ],
+      "./src/features/ContactForm/SuccessModal.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./src/features/ContactForm/index.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/emailjs-com/source/index.d.ts",
+        "./node_modules/react-hook-form/dist/index.d.ts",
+        "./node_modules/react-spinners/index.d.ts",
+        "./src/features/ContactForm/SuccessModal.tsx"
+      ],
+      "./theme/GlobalStyle.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./theme/theme.d.ts": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./theme/GlobalTheme.tsx"
+      ]
+    },
+    "exportedModulesMap": {
+      "./next-env.d.ts": [
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/cache/types/index.d.ts": [
+        "./node_modules/@emotion/stylis/types/index.d.ts",
+        "./node_modules/@emotion/utils/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/core/types/index.d.ts": [
+        "./node_modules/@emotion/cache/types/index.d.ts",
+        "./node_modules/@emotion/css/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/css/types/index.d.ts": [
+        "./node_modules/@emotion/serialize/types/index.d.ts"
+      ],
+      "./node_modules/@emotion/serialize/types/index.d.ts": [
+        "./node_modules/@emotion/serialize/node_modules/csstype/index.d.ts",
+        "./node_modules/@emotion/serialize/types/helper.d.ts",
+        "./node_modules/@emotion/utils/types/index.d.ts"
+      ],
+      "./node_modules/@types/hoist-non-react-statics/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/@types/node/assert.d.ts": [
+        "./node_modules/@types/node/assert.d.ts"
+      ],
+      "./node_modules/@types/node/async_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "./node_modules/@types/node/buffer.d.ts": [
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/crypto.d.ts"
+      ],
+      "./node_modules/@types/node/child_process.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/cluster.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts"
+      ],
+      "./node_modules/@types/node/console.d.ts": [
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/constants.d.ts": [
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/os.d.ts"
+      ],
+      "./node_modules/@types/node/crypto.d.ts": [
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/dgram.d.ts": [
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts"
+      ],
+      "./node_modules/@types/node/dns.d.ts": [
+        "./node_modules/@types/node/dns.d.ts"
+      ],
+      "./node_modules/@types/node/domain.d.ts": [
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts"
+      ],
+      "./node_modules/@types/node/events.d.ts": [
+        "./node_modules/@types/node/events.d.ts"
+      ],
+      "./node_modules/@types/node/fs.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/fs/promises.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts"
+      ],
+      "./node_modules/@types/node/http.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/http2.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/https.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/index.d.ts": [
+        "./node_modules/@types/node/assert.d.ts",
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/globals.global.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/inspector.d.ts",
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/os.d.ts",
+        "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/punycode.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/string_decoder.d.ts",
+        "./node_modules/@types/node/timers.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/trace_events.d.ts",
+        "./node_modules/@types/node/tty.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/v8.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/wasi.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/node/inspector.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/inspector.d.ts"
+      ],
+      "./node_modules/@types/node/module.d.ts": [
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/net.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/os.d.ts": [
+        "./node_modules/@types/node/os.d.ts"
+      ],
+      "./node_modules/@types/node/path.d.ts": [
+        "./node_modules/@types/node/path.d.ts"
+      ],
+      "./node_modules/@types/node/perf_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts"
+      ],
+      "./node_modules/@types/node/process.d.ts": [
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/tty.d.ts"
+      ],
+      "./node_modules/@types/node/punycode.d.ts": [
+        "./node_modules/@types/node/punycode.d.ts"
+      ],
+      "./node_modules/@types/node/querystring.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts"
+      ],
+      "./node_modules/@types/node/readline.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/readline.d.ts"
+      ],
+      "./node_modules/@types/node/repl.d.ts": [
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/stream.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
+      "./node_modules/@types/node/string_decoder.d.ts": [
+        "./node_modules/@types/node/string_decoder.d.ts"
+      ],
+      "./node_modules/@types/node/timers.d.ts": [
+        "./node_modules/@types/node/timers.d.ts"
+      ],
+      "./node_modules/@types/node/tls.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts"
+      ],
+      "./node_modules/@types/node/trace_events.d.ts": [
+        "./node_modules/@types/node/trace_events.d.ts"
+      ],
+      "./node_modules/@types/node/tty.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/tty.d.ts"
+      ],
+      "./node_modules/@types/node/url.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/@types/node/util.d.ts": [
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/v8.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/v8.d.ts"
+      ],
+      "./node_modules/@types/node/vm.d.ts": [
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/wasi.d.ts": [
+        "./node_modules/@types/node/wasi.d.ts"
+      ],
+      "./node_modules/@types/node/worker_threads.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs/promises.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts"
+      ],
+      "./node_modules/@types/node/zlib.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/react/index.d.ts": [
+        "./node_modules/@types/prop-types/index.d.ts",
+        "./node_modules/@types/react/global.d.ts",
+        "./node_modules/@types/scheduler/tracing.d.ts",
+        "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/@types/styled-components/index.d.ts": [
+        "./node_modules/@types/hoist-non-react-statics/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/emailjs-com/source/index.d.ts": [
+        "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.d.ts"
+      ],
+      "./node_modules/next/app.d.ts": [
+        "./node_modules/next/dist/pages/_app.d.ts"
+      ],
+      "./node_modules/next/dist/build/index.d.ts": [
+        "./node_modules/next/dist/next-server/server/api-utils.d.ts"
+      ],
+      "./node_modules/next/dist/client/link.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/client/page-loader.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/client/router.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/page-loader.d.ts",
+        "./node_modules/next/dist/client/with-router.d.ts",
+        "./node_modules/next/dist/next-server/lib/router/router.d.ts"
+      ],
+      "./node_modules/next/dist/client/with-router.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/router.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/document-context.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/head.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/router/router.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/page-loader.d.ts",
+        "./node_modules/next/dist/next-server/lib/mitt.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/lib/utils.d.ts": [
+        "./node_modules/@next/env/types/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/router/router.d.ts",
+        "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+        "./node_modules/next/dist/next-server/server/load-components.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/api-utils.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/next-server/server/router.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/load-components.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/next-server.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/next/dist/build/index.d.ts",
+        "./node_modules/next/dist/build/webpack/plugins/pages-manifest-plugin.d.ts",
+        "./node_modules/next/dist/lib/load-custom-routes.d.ts",
+        "./node_modules/next/dist/next-server/server/api-utils.d.ts",
+        "./node_modules/next/dist/next-server/server/font-utils.d.ts",
+        "./node_modules/next/dist/next-server/server/router.d.ts"
+      ],
+      "./node_modules/next/dist/next-server/server/router.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/url.d.ts"
+      ],
+      "./node_modules/next/dist/pages/_app.d.ts": [
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/client/router.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/pages/_document.d.ts": [
+        "./node_modules/@types/prop-types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/document-context.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts"
+      ],
+      "./node_modules/next/dist/server/next.d.ts": [
+        "./node_modules/next/dist/next-server/server/next-server.d.ts"
+      ],
+      "./node_modules/next/document.d.ts": [
+        "./node_modules/next/dist/pages/_document.d.ts"
+      ],
+      "./node_modules/next/head.d.ts": [
+        "./node_modules/next/dist/next-server/lib/head.d.ts"
+      ],
+      "./node_modules/next/link.d.ts": [
+        "./node_modules/next/dist/client/link.d.ts"
+      ],
+      "./node_modules/next/router.d.ts": [
+        "./node_modules/next/dist/client/router.d.ts"
+      ],
+      "./node_modules/next/types/index.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        "./node_modules/next/dist/server/next.d.ts"
+      ],
+      "./node_modules/querystring/index.d.ts": [
+        "./node_modules/querystring/decode.d.ts",
+        "./node_modules/querystring/encode.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/controller.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/index.d.ts": [
+        "./node_modules/react-hook-form/dist/controller.d.ts",
+        "./node_modules/react-hook-form/dist/logic/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts",
+        "./node_modules/react-hook-form/dist/useController.d.ts",
+        "./node_modules/react-hook-form/dist/useFieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/useForm.d.ts",
+        "./node_modules/react-hook-form/dist/useFormContext.d.ts",
+        "./node_modules/react-hook-form/dist/useFormState.d.ts",
+        "./node_modules/react-hook-form/dist/useWatch.d.ts",
+        "./node_modules/react-hook-form/dist/utils/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/logic/index.d.ts": [
+        "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/controller.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/errors.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/fieldArray.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/fields.d.ts": [
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/form.d.ts": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/events.d.ts",
+        "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts",
+        "./node_modules/react-hook-form/dist/utils/createSubject.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/index.d.ts": [
+        "./node_modules/react-hook-form/dist/types/controller.d.ts",
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/events.d.ts",
+        "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+        "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        "./node_modules/react-hook-form/dist/types/validator.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/common.d.ts": [
+        "./node_modules/react-hook-form/dist/types/utils.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/eager.d.ts": [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+        "./node_modules/react-hook-form/dist/types/utils.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/path/index.d.ts": [
+        "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/eager.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/resolvers.d.ts": [
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/form.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/utils.d.ts": [
+        "./node_modules/react-hook-form/dist/types/form.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/types/validator.d.ts": [
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useController.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFieldArray.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useForm.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFormContext.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useFormState.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/useWatch.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/createSubject.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/index.d.ts": [
+        "./node_modules/react-hook-form/dist/utils/get.d.ts",
+        "./node_modules/react-hook-form/dist/utils/set.d.ts"
+      ],
+      "./node_modules/react-hook-form/dist/utils/set.d.ts": [
+        "./node_modules/react-hook-form/dist/types/index.d.ts"
+      ],
+      "./node_modules/react-spinners/BarLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/BeatLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/BounceLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/CircleLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClimbingBoxLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClipLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ClockLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/DotLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/FadeLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/GridLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/HashLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/MoonLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PacmanLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PropagateLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PuffLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/PulseLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RingLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RiseLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/RotateLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/ScaleLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SkewLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SquareLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/SyncLoader.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/react-spinners/interfaces.d.ts"
+      ],
+      "./node_modules/react-spinners/index.d.ts": [
+        "./node_modules/react-spinners/BarLoader.d.ts",
+        "./node_modules/react-spinners/BeatLoader.d.ts",
+        "./node_modules/react-spinners/BounceLoader.d.ts",
+        "./node_modules/react-spinners/CircleLoader.d.ts",
+        "./node_modules/react-spinners/ClimbingBoxLoader.d.ts",
+        "./node_modules/react-spinners/ClipLoader.d.ts",
+        "./node_modules/react-spinners/ClockLoader.d.ts",
+        "./node_modules/react-spinners/DotLoader.d.ts",
+        "./node_modules/react-spinners/FadeLoader.d.ts",
+        "./node_modules/react-spinners/GridLoader.d.ts",
+        "./node_modules/react-spinners/HashLoader.d.ts",
+        "./node_modules/react-spinners/MoonLoader.d.ts",
+        "./node_modules/react-spinners/PacmanLoader.d.ts",
+        "./node_modules/react-spinners/PropagateLoader.d.ts",
+        "./node_modules/react-spinners/PuffLoader.d.ts",
+        "./node_modules/react-spinners/PulseLoader.d.ts",
+        "./node_modules/react-spinners/RingLoader.d.ts",
+        "./node_modules/react-spinners/RiseLoader.d.ts",
+        "./node_modules/react-spinners/RotateLoader.d.ts",
+        "./node_modules/react-spinners/ScaleLoader.d.ts",
+        "./node_modules/react-spinners/SkewLoader.d.ts",
+        "./node_modules/react-spinners/SquareLoader.d.ts",
+        "./node_modules/react-spinners/SyncLoader.d.ts"
+      ],
+      "./node_modules/react-spinners/interfaces.d.ts": [
+        "./node_modules/@emotion/core/types/index.d.ts"
+      ],
+      "./pages/_app.tsx": [
+        "./node_modules/next/app.d.ts"
+      ],
+      "./pages/_document.tsx": [
+        "./node_modules/next/document.d.ts"
+      ],
+      "./pages/index.tsx": [
+        "./node_modules/next/types/index.d.ts"
+      ],
+      "./src/components/Container/index.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./src/components/Header/Close.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/Header/Logo.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/ProjectGrid/index.tsx": [
+        "./pages/index.tsx"
+      ],
+      "./theme/GlobalStyle.tsx": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
+      "./theme/theme.d.ts": [
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./theme/GlobalTheme.tsx"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.dom.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.array.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.object.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.string.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.intl.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.promise.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.string.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.promise.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.string.d.ts",
+      "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.weakref.d.ts",
+      "./next-env.d.ts",
+      "./node_modules/@emotion/cache/types/index.d.ts",
+      "./node_modules/@emotion/core/types/index.d.ts",
+      "./node_modules/@emotion/css/types/index.d.ts",
+      "./node_modules/@emotion/serialize/node_modules/csstype/index.d.ts",
+      "./node_modules/@emotion/serialize/types/helper.d.ts",
+      "./node_modules/@emotion/serialize/types/index.d.ts",
+      "./node_modules/@emotion/stylis/types/index.d.ts",
+      "./node_modules/@emotion/utils/types/index.d.ts",
+      "./node_modules/@next/env/types/index.d.ts",
+      "./node_modules/@types/hoist-non-react-statics/index.d.ts",
+      "./node_modules/@types/json-patch/index.d.ts",
+      "./node_modules/@types/json-schema/index.d.ts",
+      "./node_modules/@types/minimist/index.d.ts",
+      "./node_modules/@types/node/assert.d.ts",
+      "./node_modules/@types/node/async_hooks.d.ts",
+      "./node_modules/@types/node/buffer.d.ts",
+      "./node_modules/@types/node/child_process.d.ts",
+      "./node_modules/@types/node/cluster.d.ts",
+      "./node_modules/@types/node/console.d.ts",
+      "./node_modules/@types/node/constants.d.ts",
+      "./node_modules/@types/node/crypto.d.ts",
+      "./node_modules/@types/node/dgram.d.ts",
+      "./node_modules/@types/node/dns.d.ts",
+      "./node_modules/@types/node/domain.d.ts",
+      "./node_modules/@types/node/events.d.ts",
+      "./node_modules/@types/node/fs.d.ts",
+      "./node_modules/@types/node/fs/promises.d.ts",
+      "./node_modules/@types/node/globals.d.ts",
+      "./node_modules/@types/node/globals.global.d.ts",
+      "./node_modules/@types/node/http.d.ts",
+      "./node_modules/@types/node/http2.d.ts",
+      "./node_modules/@types/node/https.d.ts",
+      "./node_modules/@types/node/index.d.ts",
+      "./node_modules/@types/node/inspector.d.ts",
+      "./node_modules/@types/node/module.d.ts",
+      "./node_modules/@types/node/net.d.ts",
+      "./node_modules/@types/node/os.d.ts",
+      "./node_modules/@types/node/path.d.ts",
+      "./node_modules/@types/node/perf_hooks.d.ts",
+      "./node_modules/@types/node/process.d.ts",
+      "./node_modules/@types/node/punycode.d.ts",
+      "./node_modules/@types/node/querystring.d.ts",
+      "./node_modules/@types/node/readline.d.ts",
+      "./node_modules/@types/node/repl.d.ts",
+      "./node_modules/@types/node/stream.d.ts",
+      "./node_modules/@types/node/string_decoder.d.ts",
+      "./node_modules/@types/node/timers.d.ts",
+      "./node_modules/@types/node/tls.d.ts",
+      "./node_modules/@types/node/trace_events.d.ts",
+      "./node_modules/@types/node/tty.d.ts",
+      "./node_modules/@types/node/url.d.ts",
+      "./node_modules/@types/node/util.d.ts",
+      "./node_modules/@types/node/v8.d.ts",
+      "./node_modules/@types/node/vm.d.ts",
+      "./node_modules/@types/node/wasi.d.ts",
+      "./node_modules/@types/node/worker_threads.d.ts",
+      "./node_modules/@types/node/zlib.d.ts",
+      "./node_modules/@types/normalize-package-data/index.d.ts",
+      "./node_modules/@types/parse-json/index.d.ts",
+      "./node_modules/@types/prop-types/index.d.ts",
+      "./node_modules/@types/react/global.d.ts",
+      "./node_modules/@types/react/index.d.ts",
+      "./node_modules/@types/scheduler/index.d.ts",
+      "./node_modules/@types/scheduler/tracing.d.ts",
+      "./node_modules/@types/styled-components/index.d.ts",
+      "./node_modules/axios/index.d.ts",
+      "./node_modules/csstype/index.d.ts",
+      "./node_modules/emailjs-com/source/index.d.ts",
+      "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.d.ts",
+      "./node_modules/next/app.d.ts",
+      "./node_modules/next/dist/build/index.d.ts",
+      "./node_modules/next/dist/build/webpack/plugins/pages-manifest-plugin.d.ts",
+      "./node_modules/next/dist/client/link.d.ts",
+      "./node_modules/next/dist/client/page-loader.d.ts",
+      "./node_modules/next/dist/client/router.d.ts",
+      "./node_modules/next/dist/client/with-router.d.ts",
+      "./node_modules/next/dist/lib/load-custom-routes.d.ts",
+      "./node_modules/next/dist/next-server/lib/document-context.d.ts",
+      "./node_modules/next/dist/next-server/lib/head.d.ts",
+      "./node_modules/next/dist/next-server/lib/mitt.d.ts",
+      "./node_modules/next/dist/next-server/lib/router/router.d.ts",
+      "./node_modules/next/dist/next-server/lib/utils.d.ts",
+      "./node_modules/next/dist/next-server/server/api-utils.d.ts",
+      "./node_modules/next/dist/next-server/server/font-utils.d.ts",
+      "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+      "./node_modules/next/dist/next-server/server/load-components.d.ts",
+      "./node_modules/next/dist/next-server/server/next-server.d.ts",
+      "./node_modules/next/dist/next-server/server/router.d.ts",
+      "./node_modules/next/dist/pages/_app.d.ts",
+      "./node_modules/next/dist/pages/_document.d.ts",
+      "./node_modules/next/dist/server/next.d.ts",
+      "./node_modules/next/document.d.ts",
+      "./node_modules/next/head.d.ts",
+      "./node_modules/next/link.d.ts",
+      "./node_modules/next/router.d.ts",
+      "./node_modules/next/types/index.d.ts",
+      "./node_modules/querystring/decode.d.ts",
+      "./node_modules/querystring/encode.d.ts",
+      "./node_modules/querystring/index.d.ts",
+      "./node_modules/react-hook-form/dist/controller.d.ts",
+      "./node_modules/react-hook-form/dist/index.d.ts",
+      "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts",
+      "./node_modules/react-hook-form/dist/logic/index.d.ts",
+      "./node_modules/react-hook-form/dist/types/controller.d.ts",
+      "./node_modules/react-hook-form/dist/types/errors.d.ts",
+      "./node_modules/react-hook-form/dist/types/events.d.ts",
+      "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+      "./node_modules/react-hook-form/dist/types/fields.d.ts",
+      "./node_modules/react-hook-form/dist/types/form.d.ts",
+      "./node_modules/react-hook-form/dist/types/index.d.ts",
+      "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+      "./node_modules/react-hook-form/dist/types/path/eager.d.ts",
+      "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+      "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+      "./node_modules/react-hook-form/dist/types/utils.d.ts",
+      "./node_modules/react-hook-form/dist/types/validator.d.ts",
+      "./node_modules/react-hook-form/dist/useController.d.ts",
+      "./node_modules/react-hook-form/dist/useFieldArray.d.ts",
+      "./node_modules/react-hook-form/dist/useForm.d.ts",
+      "./node_modules/react-hook-form/dist/useFormContext.d.ts",
+      "./node_modules/react-hook-form/dist/useFormState.d.ts",
+      "./node_modules/react-hook-form/dist/useWatch.d.ts",
+      "./node_modules/react-hook-form/dist/utils/createSubject.d.ts",
+      "./node_modules/react-hook-form/dist/utils/get.d.ts",
+      "./node_modules/react-hook-form/dist/utils/index.d.ts",
+      "./node_modules/react-hook-form/dist/utils/set.d.ts",
+      "./node_modules/react-spinners/BarLoader.d.ts",
+      "./node_modules/react-spinners/BeatLoader.d.ts",
+      "./node_modules/react-spinners/BounceLoader.d.ts",
+      "./node_modules/react-spinners/CircleLoader.d.ts",
+      "./node_modules/react-spinners/ClimbingBoxLoader.d.ts",
+      "./node_modules/react-spinners/ClipLoader.d.ts",
+      "./node_modules/react-spinners/ClockLoader.d.ts",
+      "./node_modules/react-spinners/DotLoader.d.ts",
+      "./node_modules/react-spinners/FadeLoader.d.ts",
+      "./node_modules/react-spinners/GridLoader.d.ts",
+      "./node_modules/react-spinners/HashLoader.d.ts",
+      "./node_modules/react-spinners/MoonLoader.d.ts",
+      "./node_modules/react-spinners/PacmanLoader.d.ts",
+      "./node_modules/react-spinners/PropagateLoader.d.ts",
+      "./node_modules/react-spinners/PuffLoader.d.ts",
+      "./node_modules/react-spinners/PulseLoader.d.ts",
+      "./node_modules/react-spinners/RingLoader.d.ts",
+      "./node_modules/react-spinners/RiseLoader.d.ts",
+      "./node_modules/react-spinners/RotateLoader.d.ts",
+      "./node_modules/react-spinners/ScaleLoader.d.ts",
+      "./node_modules/react-spinners/SkewLoader.d.ts",
+      "./node_modules/react-spinners/SquareLoader.d.ts",
+      "./node_modules/react-spinners/SyncLoader.d.ts",
+      "./node_modules/react-spinners/index.d.ts",
+      "./node_modules/react-spinners/interfaces.d.ts",
+      "./pages/_app.tsx",
+      "./pages/_document.tsx",
+      "./pages/contato.tsx",
+      "./pages/index.tsx",
+      "./src/components/Container/index.tsx",
+      "./src/components/Header/Behance.tsx",
+      "./src/components/Header/Close.tsx",
+      "./src/components/Header/Linkedin.tsx",
+      "./src/components/Header/Logo.tsx",
+      "./src/components/Header/MobileMenu.tsx",
+      "./src/components/Header/index.tsx",
+      "./src/components/Project/index.tsx",
+      "./src/components/ProjectGrid/index.tsx",
+      "./src/features/ArtGrid/AlphabetSquare.tsx",
+      "./src/features/ArtGrid/FigmaSquare.tsx",
+      "./src/features/ArtGrid/Icons/Alphabet.tsx",
+      "./src/features/ArtGrid/Icons/Figma.tsx",
+      "./src/features/ArtGrid/Icons/Play.tsx",
+      "./src/features/ArtGrid/Icons/Redo.tsx",
+      "./src/features/ArtGrid/Icons/SpeechBubble.tsx",
+      "./src/features/ArtGrid/Icons/Star.tsx",
+      "./src/features/ArtGrid/Icons/Stars.tsx",
+      "./src/features/ArtGrid/Icons/Volume.tsx",
+      "./src/features/ArtGrid/PlaySquare.tsx",
+      "./src/features/ArtGrid/RedoSquare.tsx",
+      "./src/features/ArtGrid/VolumeSquare.tsx",
+      "./src/features/ArtGrid/WelcomeSquare.tsx",
+      "./src/features/ArtGrid/index.tsx",
+      "./src/features/ContactForm/SuccessModal.tsx",
+      "./src/features/ContactForm/index.tsx",
+      "./theme/GlobalStyle.tsx",
+      "./theme/GlobalTheme.tsx",
+      "./theme/theme.d.ts"
+    ],
+    "affectedFilesPendingEmit": [
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2015.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2016.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2017.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2018.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2019.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.es2020.d.ts",
+        1
+      ],
+      [
+        "../../.vscode/extensions/basarat.god-0.0.104/node_modules/typescript/lib/lib.esnext.d.ts",
+        1
+      ],
+      [
+        "./next-env.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/cache/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/core/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/css/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/serialize/node_modules/csstype/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/serialize/types/helper.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/serialize/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/stylis/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@emotion/utils/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@next/env/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/hoist-non-react-statics/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/json-patch/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/json-schema/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/minimist/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/assert.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/async_hooks.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/buffer.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/child_process.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/cluster.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/console.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/constants.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/crypto.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/dgram.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/dns.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/domain.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/events.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/fs.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/fs/promises.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/globals.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/globals.global.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/http.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/http2.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/https.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/inspector.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/module.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/net.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/os.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/path.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/perf_hooks.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/process.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/punycode.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/querystring.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/readline.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/repl.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/stream.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/string_decoder.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/timers.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/tls.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/trace_events.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/tty.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/url.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/util.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/v8.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/vm.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/wasi.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/worker_threads.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/node/zlib.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/normalize-package-data/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/parse-json/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/prop-types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/react/global.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/react/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/scheduler/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/scheduler/tracing.d.ts",
+        1
+      ],
+      [
+        "./node_modules/@types/styled-components/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/axios/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/contentful/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/csstype/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/emailjs-com/source/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/app.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/build/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/build/webpack/plugins/pages-manifest-plugin.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/client/link.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/client/page-loader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/client/router.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/client/with-router.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/lib/load-custom-routes.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/lib/document-context.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/lib/head.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/lib/mitt.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/lib/router/router.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/lib/utils.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/api-utils.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/font-utils.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/get-page-files.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/load-components.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/next-server.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/next-server/server/router.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/pages/_app.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/pages/_document.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/dist/server/next.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/document.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/head.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/link.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/router.d.ts",
+        1
+      ],
+      [
+        "./node_modules/next/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/querystring/decode.d.ts",
+        1
+      ],
+      [
+        "./node_modules/querystring/encode.d.ts",
+        1
+      ],
+      [
+        "./node_modules/querystring/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/controller.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/logic/appendErrors.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/logic/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/controller.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/errors.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/events.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/fieldArray.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/fields.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/form.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/path/common.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/path/eager.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/path/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/resolvers.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/utils.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/types/validator.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useController.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useFieldArray.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useForm.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useFormContext.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useFormState.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/useWatch.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/utils/createSubject.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/utils/get.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/utils/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-hook-form/dist/utils/set.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/BarLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/BeatLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/BounceLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/CircleLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/ClimbingBoxLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/ClipLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/ClockLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/DotLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/FadeLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/GridLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/HashLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/MoonLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/PacmanLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/PropagateLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/PuffLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/PulseLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/RingLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/RiseLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/RotateLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/ScaleLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/SkewLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/SquareLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/SyncLoader.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/index.d.ts",
+        1
+      ],
+      [
+        "./node_modules/react-spinners/interfaces.d.ts",
+        1
+      ],
+      [
+        "./pages/_app.tsx",
+        1
+      ],
+      [
+        "./pages/_document.tsx",
+        1
+      ],
+      [
+        "./pages/contato.tsx",
+        1
+      ],
+      [
+        "./pages/index.tsx",
+        1
+      ],
+      [
+        "./src/Context/ContentContext.tsx",
+        1
+      ],
+      [
+        "./src/Context/ModalContext.tsx",
+        1
+      ],
+      [
+        "./src/components/Container/index.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/Behance.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/Close.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/Linkedin.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/Logo.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/MobileMenu.tsx",
+        1
+      ],
+      [
+        "./src/components/Header/index.tsx",
+        1
+      ],
+      [
+        "./src/components/Project/index.tsx",
+        1
+      ],
+      [
+        "./src/components/ProjectGrid/index.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/AlphabetSquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/FigmaSquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Alphabet.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Figma.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Play.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Redo.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/SpeechBubble.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Star.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Stars.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/Icons/Volume.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/PlaySquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/RedoSquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/VolumeSquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/WelcomeSquare.tsx",
+        1
+      ],
+      [
+        "./src/features/ArtGrid/index.tsx",
+        1
+      ],
+      [
+        "./src/features/ContactForm/SuccessModal.tsx",
+        1
+      ],
+      [
+        "./src/features/ContactForm/index.tsx",
+        1
+      ],
+      [
+        "./src/schema/generated/contentful.d.ts",
+        1
+      ],
+      [
+        "./theme/GlobalStyle.tsx",
+        1
+      ],
+      [
+        "./theme/GlobalTheme.tsx",
+        1
+      ],
+      [
+        "./theme/theme.d.ts",
+        1
+      ]
+    ]
+  },
+  "version": "4.2.4"
+}
