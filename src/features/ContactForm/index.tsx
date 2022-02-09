@@ -12,7 +12,7 @@ type FormValues = {
 };
 
 const ContactForm = () => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const {
     register,
@@ -121,7 +121,7 @@ const Button = styled.button`
   justify-content: center;
   padding: 14px 64px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   align-self: flex-end;
 `;

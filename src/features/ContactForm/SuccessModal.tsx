@@ -42,8 +42,8 @@ const Success = styled.div`
   h3 {
     padding: 16px;
     border-radius: 8px 8px 0 0;
-    color: #3b3b3b;
-    background-color: ${({ theme }) => theme.colors.secondary.main};
+    color: #fff;
+    background-color: ${({ theme }) => theme.colors.principal.main};
   }
   p {
     padding: 16px;
@@ -52,9 +52,11 @@ const Success = styled.div`
   button {
     width: 80%;
     padding: 8px 0px;
-    background: ${({ theme }) => theme.colors.secondary.main};
+    background: ${({ theme }) => theme.colors.principal.main};
     margin: 16px 32px;
+    color: #fff;
     cursor: pointer;
+    font-weight: 700;
   }
 `;
 

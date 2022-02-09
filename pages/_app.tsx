@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Head>
-          <title>Reis Design</title>
+          <title>Pavanelli Design</title>
         </Head>
         <Header />
         <Component {...pageProps} />
