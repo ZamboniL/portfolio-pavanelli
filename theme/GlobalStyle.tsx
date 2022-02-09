@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body, #__next {
     font: ${({ theme }) => `400 ${theme.rootFont.sm} ${theme.font}`};
     color: ${({ theme }) => theme.colors.light.main};
-    background: ${({ theme }) => theme.colors.dark.main};
+    background: ${({ theme }) => theme.colors.principal.main};
     scroll-behavior: smooth;
     height: 100%
   }
