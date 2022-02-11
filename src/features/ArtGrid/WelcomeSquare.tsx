@@ -13,18 +13,17 @@ const welcomeTexts = [
   "velkommen",
 ];
 
-interface WelcomeSquareProps {
-  animate?: boolean;
-}
-
-const WelcomeSquare = ({ animate }: WelcomeSquareProps) => {
+const WelcomeSquare = () => {
   const [text, setText] = useState(welcomeTexts[0]);
 
   useEffect(() => {
-    if (animate) {
+    const interval = setInterval(() => {
       setText(welcomeTexts[Math.floor(Math.random() * welcomeTexts.length)]);
-    }
-  }, [animate]);
+    }, 2000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <Square>

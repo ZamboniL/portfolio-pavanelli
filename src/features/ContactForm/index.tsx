@@ -112,8 +112,10 @@ const Error = styled.span`
 `;
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.secondary.main};
-  color: #000;
+  /* background-color: ${({ theme }) => theme.colors.secondary.main}; */
+  background: unset;
+  color: ${({ theme }) => theme.colors.secondary.main};
+  border: 2px solid ${({ theme }) => theme.colors.secondary.main};
   width: 200px;
   height: 48px;
   display: flex;
@@ -124,6 +126,11 @@ const Button = styled.button`
   font-weight: 700;
   cursor: pointer;
   align-self: flex-end;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.secondary.main};
+    color: #fff;
+  }
 `;
 
 export default ContactForm;

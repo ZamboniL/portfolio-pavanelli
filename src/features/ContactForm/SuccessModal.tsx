@@ -51,7 +51,8 @@ const Success = styled.div`
   }
   button {
     width: 80%;
-    padding: 8px 0px;
+    padding: 12px 0px;
+    border-radius: 4px;
     background: ${({ theme }) => theme.colors.principal.main};
     margin: 16px 32px;
     color: #fff;

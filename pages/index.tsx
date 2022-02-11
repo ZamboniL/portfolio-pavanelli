@@ -3,8 +3,8 @@ import { GetServerSideProps } from "next";
 import styled from "styled-components";
 import ArtGrid from "../src/features/ArtGrid";
 import Container from "../src/components/Container";
-import Header from "../src/components/Header";
 import ProjectGrid from "../src/components/ProjectGrid";
+import { ChevronDown } from "@styled-icons/bootstrap";
 
 export interface ProjectList {
   includes: {
@@ -40,7 +40,7 @@ export interface ProjectList {
 
 const Home = ({ projectList }: { projectList: ProjectList }) => {
   return (
-    <main>
+    <main style={{ height: "calc(100% - 61px)" }}>
       <Container>
         <Hero>
           <HeroText>
@@ -55,6 +55,7 @@ const Home = ({ projectList }: { projectList: ProjectList }) => {
             </Introduction>
           </HeroText>
           <ArtGrid />
+          <Arrow />
         </Hero>
       </Container>
       <ProjectGrid list={projectList} />
@@ -78,17 +79,24 @@ export const getServerSideProps: GetServerSideProps = async () => {
   }
 };
 
+const Arrow = styled(ChevronDown)`
+  position: absolute;
+  bottom: 16px;
+  width: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
 const Hero = styled.div`
-  margin: 72px 0px;
+  height: 100%;
+  align-items: center;
   padding: 0px 16px;
+  display: flex;
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: grid;
     gap: 104px;
     padding: unset;
     grid-template-columns: 45% 55%;
-    margin-left: 80px;
-    margin-top: 80px;
-    margin-bottom: 80px;
   }
 `;
 

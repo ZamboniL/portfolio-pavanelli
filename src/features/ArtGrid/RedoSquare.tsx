@@ -1,11 +1,17 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Redo from "./Icons/Redo";
 
-interface RedoSquareProps {
-  animate?: boolean;
-}
+const RedoSquare = () => {
+  const [animate, setAnimate] = useState(false);
 
-const RedoSquare = ({ animate }: RedoSquareProps) => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate((state) => !state);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Square>
       <RedoIcon className={animate ? "animated" : ""} />
@@ -23,7 +29,7 @@ const Square = styled.div`
 
 const RedoIcon = styled(Redo)`
   &.animated {
-    animation: rotate 3s ease-in-out 1;
+    animation: 3s rotate ease-in-out 1;
   }
 
   @keyframes rotate {

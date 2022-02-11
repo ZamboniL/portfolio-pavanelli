@@ -12,14 +12,14 @@ const Close = (rest: SVGProps<SVGSVGElement>) => (
     <path
       d="M15.9999 15.9999L2 2"
       stroke="#222222"
-      stroke-width="2.33333"
+      strokeWidth="2.33333"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M16 2L2 16"
       stroke="#222222"
-      stroke-width="2.33333"
+      strokeWidth="2.33333"
       stroke-linecap="round"
       stroke-linejoin="round"
     />

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import AlphabetSquare from "./AlphabetSquare";
 import FigmaSquare from "./FigmaSquare";
@@ -7,26 +6,15 @@ import RedoSquare from "./RedoSquare";
 import VolumeSquare from "./VolumeSquare";
 import WelcomeSquare from "./WelcomeSquare";
 
-const animations = ["volume", "redo", "welcome"];
-
 const ArtGrid = () => {
-  const [animation, setAnimation] = useState("");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimation(animations[Math.floor(Math.random() * animations.length)]);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <Root>
       <PlaySquare />
       <AlphabetSquare />
       <FigmaSquare />
-      <RedoSquare animate={animation === "redo"} />
-      <VolumeSquare animate={animation === "volume"} />
-      <WelcomeSquare animate={animation === "welcome"} />
+      <RedoSquare />
+      <VolumeSquare />
+      <WelcomeSquare />
     </Root>
   );
 };

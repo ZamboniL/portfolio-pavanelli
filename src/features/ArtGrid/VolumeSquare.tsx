@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Volume from "./Icons/Volume";
 
-interface VolumeSquareProps {
-  animate?: boolean;
-}
+const VolumeSquare = () => {
+  const [animate, setAnimate] = useState(false);
 
-const VolumeSquare = ({ animate }: VolumeSquareProps) => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate((state) => !state);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <Square>
       <Volume className={animate ? "animated" : ""} />
@@ -20,10 +29,10 @@ const Square = styled.div`
   align-items: center;
   & .animated {
     & #left {
-      animation: left ease-in 4s 1;
+      animation: 3s left ease-in 1;
     }
     & #right {
-      animation: right ease-in 3s 1;
+      animation: 3s right ease-in 1;
     }
   }
 
