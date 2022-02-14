@@ -1,9 +1,9 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Container from "../Container";
 import Behance from "./Behance";
-import Close from "./Close";
 import Linkedin from "./Linkedin";
 import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
@@ -28,10 +28,14 @@ const Header = () => {
         <Nav>
           <List>
             <li className={current === "/" ? "current" : ""}>
-              <a href="/">HOME</a>
+              <Link href="/">
+                <a>HOME</a>
+              </Link>
             </li>
             <li className={current === "/contato" ? "current" : ""}>
-              <a href="/contato">CONTATO</a>
+              <Link href="/contato">
+                <a>CONTATO</a>
+              </Link>
             </li>
           </List>
           <Hamburger src="/nav.svg" alt="" onClick={() => setIsOpen(!isOpen)} />
@@ -40,14 +44,18 @@ const Header = () => {
           </LogoContainer>
           <List>
             <li>
-              <a href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
-                <Linkedin />
-              </a>
+              <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
+                <a>
+                  <Linkedin />
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.behance.net/lucaspavanelli">
-                <Behance />
-              </a>
+              <Link href="https://www.behance.net/lucaspavanelli">
+                <a>
+                  <Behance />
+                </a>
+              </Link>
             </li>
           </List>
         </Nav>
@@ -105,6 +113,7 @@ const List = styled.ul`
   & > li {
     display: flex;
     color: ${({ theme }) => theme.colors.dark.bright};
+    transition: color 0.3s ease-in-out;
     &:hover {
       color: ${({ theme }) => theme.colors.dark.main};
     }
@@ -112,6 +121,7 @@ const List = styled.ul`
       display: flex;
     }
     & svg {
+      transition: fill 0.3s ease-in-out;
       fill: ${({ theme }) => theme.colors.dark.bright};
       &:hover {
         fill: ${({ theme }) => theme.colors.dark.main};

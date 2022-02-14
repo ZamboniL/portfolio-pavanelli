@@ -55,7 +55,9 @@ const Home = ({ projectList }: { projectList: ProjectList }) => {
             </Introduction>
           </HeroText>
           <ArtGrid />
-          <Arrow />
+          <Arrow href="#projetos">
+            <ChevronDown />
+          </Arrow>
         </Hero>
       </Container>
       <ProjectGrid list={projectList} />
@@ -79,12 +81,17 @@ export const getServerSideProps: GetServerSideProps = async () => {
   }
 };
 
-const Arrow = styled(ChevronDown)`
+const Arrow = styled.a`
   position: absolute;
   bottom: 16px;
   width: 64px;
   left: 50%;
   transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: translateX(-50%) scale(0.8);
+  }
 `;
 
 const Hero = styled.div`

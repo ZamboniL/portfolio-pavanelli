@@ -8,7 +8,7 @@ interface ProjectGridProps {
 
 const ProjectGrid = ({ list }: ProjectGridProps) => {
   return (
-    <Grid>
+    <Grid id="projetos">
       {list.items.map((item) => (
         <Project
           key={item.sys.id}
