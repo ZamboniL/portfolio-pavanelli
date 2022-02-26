@@ -67,6 +67,8 @@ const Header = () => {
 
 const Root = styled.header`
   padding: 18px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
   background: #fff;
   color: ${({ theme }) => theme.colors.dark.main};
   font-weight: 800;

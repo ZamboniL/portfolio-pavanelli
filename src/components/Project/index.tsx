@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 interface ProjectProps {
   title: string;
@@ -8,14 +9,27 @@ interface ProjectProps {
 }
 
 const Project = ({ title, subtitle, href, src }: ProjectProps) => {
+  if (href.includes("http")) {
+    return (
+      <Root href={href} target="_blank" rel="noopener noreferrer">
+        <Image src={src} height="100%" width="100%" />
+        <Title>
+          {title}
+          <Subtitle> - {subtitle}</Subtitle>
+        </Title>
+      </Root>
+    );
+  }
   return (
-    <Root href={href} target="_blank" rel="noopener noreferrer">
-      <Image src={src} height="100%" width="100%" />
-      <Title>
-        {title}
-        <Subtitle> - {subtitle}</Subtitle>
-      </Title>
-    </Root>
+    <Link href={href}>
+      <Root href={href}>
+        <Image src={src} height="100%" width="100%" />
+        <Title>
+          {title}
+          <Subtitle> - {subtitle}</Subtitle>
+        </Title>
+      </Root>
+    </Link>
   );
 };
 
@@ -27,15 +41,14 @@ const Root = styled.a`
     display: block;
     width: 100%;
     height: 100%;
-    max-height: 0%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
   }
 
   &:hover::after {
-    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   &:hover > h2 {

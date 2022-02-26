@@ -9,6 +9,8 @@
     "codegen": "contentful-typescript-codegen --output src/schema/generated/contentful.d.ts"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.11.1",
+    "@contentful/rich-text-types": "^15.11.1",
     "axios": "^0.25.0",
     "contentful": "^8.2.0",
     "emailjs-com": "^2.6.4",

@@ -1,42 +1,11 @@
-import axios from "axios";
 import { GetServerSideProps } from "next";
 import styled from "styled-components";
 import ArtGrid from "../src/features/ArtGrid";
 import Container from "../src/components/Container";
 import ProjectGrid from "../src/components/ProjectGrid";
 import { ChevronDown } from "@styled-icons/bootstrap";
-
-export interface ProjectList {
-  includes: {
-    Asset: {
-      sys: {
-        id: string;
-      };
-      fields: {
-        title: string;
-        file: {
-          url: string;
-        };
-      };
-    }[];
-  };
-  items: {
-    sys: {
-      id: string;
-    };
-    fields: {
-      title: string;
-      subtitle: string;
-      link: string;
-      image: {
-        sys: {
-          id: string;
-        };
-      };
-      order: number;
-    };
-  }[];
-}
+import { getEntries } from "../src/api";
+import { ProjectList } from "../src/types/project";
 
 const Home = ({ projectList }: { projectList: ProjectList }) => {
   return (
@@ -67,9 +36,7 @@ const Home = ({ projectList }: { projectList: ProjectList }) => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
-    const { data: projectList } = await axios.get<ProjectList>(
-      `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/${process.env.CONTENTFUL_ENVIROMENT}/entries?access_token=${process.env.CONTENTFUL_ACCESS_TOKEN}`
-    );
+    const { data: projectList } = await getEntries();
 
     return { props: { projectList } };
   } catch (e) {

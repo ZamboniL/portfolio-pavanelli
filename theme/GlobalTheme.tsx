@@ -2,11 +2,11 @@ const theme = {
   colors: {
     principal: {
       main: "#6250FF",
+      light: "#E0F7FF",
     },
     secondary: {
       main: "#78FF69",
       dark: "#15d300",
-
     },
     dark: {
       bright: "#C4C4C4",
