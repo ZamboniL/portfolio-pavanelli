@@ -126,6 +126,7 @@ const Button = styled.button`
   font-weight: 700;
   cursor: pointer;
   align-self: flex-end;
+  transition: all 0.3s ease-in;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary.main};

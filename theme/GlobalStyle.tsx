@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: none;
+    user-select: none;
   }
 
   a {
@@ -23,16 +24,17 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%
   }
 
-textarea, button, input {
-  font-family: ${({ theme }) => theme.font};
-  outline: none;
-}
 
-@media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-
-  html, body, #__next {
-    font: ${({ theme }) => `400 ${theme.rootFont.md} ${theme.font}`};
+  textarea, button, input {
+    font-family: ${({ theme }) => theme.font};
+    outline: none;
   }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+
+    html, body, #__next {
+      font: ${({ theme }) => `400 ${theme.rootFont.md} ${theme.font}`};
+    }
 }
 
 
