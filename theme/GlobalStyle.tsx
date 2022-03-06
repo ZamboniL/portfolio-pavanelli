@@ -21,9 +21,12 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.light.main};
     background: ${({ theme }) => theme.colors.principal.main};
     scroll-behavior: smooth;
-    height: 100%
+    height: 100%;
   }
 
+  #__next {
+    overflow-y: overlay;
+  }
 
   textarea, button, input {
     font-family: ${({ theme }) => theme.font};
