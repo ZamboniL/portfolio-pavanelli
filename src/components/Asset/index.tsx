@@ -31,7 +31,6 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   margin: 40px 0;
-  padding: 16px 0;
   display: flex;
   justify-content: center;
 `;
