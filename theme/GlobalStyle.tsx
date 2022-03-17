@@ -22,10 +22,21 @@ export const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.colors.principal.main};
     scroll-behavior: smooth;
     height: 100%;
+    ::-webkit-scrollbar {
+      width: 14px;
+      height: 2em;
+      background: #fffffffc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0000003c;
+      border-radius: 1px;
+      :hover {
+        background: #0000004c;
+      }
+    }
   }
-
+  
   #__next {
-    overflow-y: overlay;
   }
 
   textarea, button, input {
