@@ -12,7 +12,6 @@ const Header = () => {
   const router = useRouter();
   const current = router.route;
   const [isOpen, setIsOpen] = useState(false);
-  const [hasScroll, setHasScroll] = useState(true);
 
   useEffect(() => {
     const handleRouteChange = () => setIsOpen(false);
@@ -23,14 +22,8 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    setHasScroll(document.body.scrollHeight > window.innerHeight);
-  }, [current]);
-
   return (
-    <Root hasScroll={hasScroll}>
+    <Root hasScroll={current !== "/contato"}>
       <Container>
         <Nav>
           <List>
@@ -80,7 +73,9 @@ const Root = styled.header<{ hasScroll: boolean }>`
   color: ${({ theme }) => theme.colors.dark.main};
   font-weight: 800;
   font-size: 16px;
-  padding-right: ${({ hasScroll }) => (hasScroll ? "18px" : "32px")};
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding-right: ${({ hasScroll }) => (hasScroll ? "18px" : "30px")};
+  }
 `;
 
 const Nav = styled.nav`
