@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/logo.svg" sizes="any" type="image/svg+xml" />
-
+          <meta name="theme-color" content="#fff" />
           <link rel="canonical" href={process.env.SITE_URL} />
         </Head>
         <body>
