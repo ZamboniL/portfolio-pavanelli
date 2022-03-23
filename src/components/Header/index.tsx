@@ -27,36 +27,36 @@ const Header = () => {
       <Container>
         <Nav>
           <List>
-            <li className={current === "/" ? "current" : ""}>
+            <ListItem className={current === "/" ? "current" : ""}>
               <Link href="/">
-                <a>HOME</a>
+                <span>HOME</span>
               </Link>
-            </li>
-            <li className={current === "/contato" ? "current" : ""}>
+            </ListItem>
+            <ListItem className={current === "/contato" ? "current" : ""}>
               <Link href="/contato">
-                <a>CONTATO</a>
+              <span>CONTATO</span>
               </Link>
-            </li>
+            </ListItem>
           </List>
           <Hamburger src="/nav.svg" alt="" onClick={() => setIsOpen(!isOpen)} />
           <LogoContainer href="/">
             <Logo />
           </LogoContainer>
           <List>
-            <li>
+            <ListItem>
               <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
                 <a>
                   <Linkedin />
                 </a>
               </Link>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               <Link href="https://www.behance.net/lucaspavanelli">
                 <a>
                   <Behance />
                 </a>
               </Link>
-            </li>
+            </ListItem>
           </List>
         </Nav>
       </Container>
@@ -111,35 +111,35 @@ const List = styled.ul`
   width: min-content;
   gap: 32px;
 
-  & > a {
-    display: flex;
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: grid;
   }
+`;
 
-  & > li {
-    display: flex;
-    color: ${({ theme }) => theme.colors.dark.bright};
-    transition: color 0.3s ease-in-out;
-    &:hover {
-      color: ${({ theme }) => theme.colors.dark.main};
-    }
-    & > * {
-      display: flex;
-    }
-    & svg {
-      transition: fill 0.3s ease-in-out;
-      fill: ${({ theme }) => theme.colors.dark.bright};
-      &:hover {
-        fill: ${({ theme }) => theme.colors.dark.main};
-      }
-    }
-  }
+const ListItem = styled.li`
+  display: flex;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.dark.bright};
+  transition: color 0.3s ease-in-out;
 
-  & .current {
+  &:hover {
     color: ${({ theme }) => theme.colors.dark.main};
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    display: grid;
+  &.current {
+    color: ${({ theme }) => theme.colors.dark.main};
+  }
+
+  & > * {
+    display: flex;
+  }
+
+  & svg {
+    transition: fill 0.3s ease-in-out;
+    fill: ${({ theme }) => theme.colors.dark.bright};
+    &:hover {
+      fill: ${({ theme }) => theme.colors.dark.main};
+    }
   }
 `;
 
