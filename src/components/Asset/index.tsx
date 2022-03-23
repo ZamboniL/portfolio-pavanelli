@@ -10,11 +10,20 @@ interface AssetProps {
 const Asset = ({ id, list }: AssetProps) => {
   const asset = list.find((item) => item.sys.id === id);
   const url = asset?.fields.file.url.replace("//", "https://") || "";
+  const type = asset?.fields.file.contentType;
   const height = asset?.fields.file.details.image?.height || 0;
   const width = asset?.fields.file.details.image?.width || 0;
 
+  if (type === "video/mp4") {
+    return (
+      <Container>
+        <Banner style={{ background: asset?.fields.description }} />
+        <video style={{ width: "100%" }} controls src={url} />
+      </Container>
+    );
+  }
   return (
-    <Container style={{}}>
+    <Container>
       <Banner style={{ background: asset?.fields.description }} />
       <Image
         quality={90}
