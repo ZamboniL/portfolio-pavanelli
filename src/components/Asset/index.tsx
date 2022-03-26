@@ -22,23 +22,26 @@ const Asset = ({ id, list }: AssetProps) => {
       </Container>
     );
   }
+
   return (
     <Container>
       <Banner style={{ background: asset?.fields.description }} />
-      <Image
-        quality={90}
-        width={width}
-        height={height}
-        src={url}
-        alt={asset?.fields.title}
-      />
+      <ImageContainer>
+        <Image
+          quality={90}
+          width={width}
+          height={height}
+          src={url}
+          alt={asset?.fields.title}
+        />
+      </ImageContainer>
     </Container>
   );
 };
 
 const Container = styled.div`
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   margin: 40px 0;
   display: flex;
   justify-content: center;
@@ -51,6 +54,21 @@ const Banner = styled.span`
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100vw;
+`;
+
+const ImageContainer = styled.div`
+  position: relative;
+  max-width: 100vw;
+  margin: 0 -100vw;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin: unset;
+    max-width: unset;
+  }
+
+  & > div {
+    height: 100%;
+  }
 `;
 
 export default Asset;
