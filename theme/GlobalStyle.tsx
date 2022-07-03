@@ -36,9 +36,6 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
   
-  #__next {
-  }
-
   textarea, button, input {
     font-family: ${({ theme }) => theme.font};
     outline: none;

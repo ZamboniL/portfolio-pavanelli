@@ -117,10 +117,9 @@ const Blockquote = styled.blockquote`
 
 const Page = styled.div`
   width: 100%;
-  min-height: 100%;
   background: white;
   padding: 40px 0px;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 const TextContainer = styled.main`

@@ -26,11 +26,18 @@ const Asset = ({ id, list }: AssetProps) => {
   const height = asset.fields.file.details.image?.height || 0;
   const width = asset.fields.file.details.image?.width || 0;
   const tags = asset.metadata.tags;
-  const isMobile = tags.some(({ sys }) => sys.id === "desktop");
-  const isDesktop = tags.some(({ sys }) => sys.id === "mobile");
+  const tagArray = tags.map(({ sys }) => sys.id);
+
+  const isMobile = tagArray.includes("desktop");
+  const isDesktop = tagArray.includes("mobile");
+  const isFootnote = tagArray.includes("footnote");
 
   return (
-    <Container isMobile={isMobile} isDesktop={isDesktop}>
+    <Container
+      isMobile={isMobile}
+      isDesktop={isDesktop}
+      isFootnote={isFootnote}
+    >
       <Banner style={{ background: asset?.fields.description }} />
       <ImageContainer>
         <Image
@@ -45,9 +52,12 @@ const Asset = ({ id, list }: AssetProps) => {
   );
 };
 
-const Container = styled.div<{ isMobile?: boolean; isDesktop?: boolean }>`
+const Container = styled.div<{
+  isMobile?: boolean;
+  isDesktop?: boolean;
+  isFootnote?: boolean;
+}>`
   position: relative;
-  /* width: 100%; */
   margin: 40px 0;
   display: flex;
   justify-content: center;
@@ -56,6 +66,8 @@ const Container = styled.div<{ isMobile?: boolean; isDesktop?: boolean }>`
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: ${({ isMobile }) => (isMobile ? "none" : "flex")};
   }
+
+  margin-bottom: ${({isFootnote}) => isFootnote ? '-60px' : ''}
 `;
 
 const Banner = styled.span`
@@ -69,13 +81,8 @@ const Banner = styled.span`
 
 const ImageContainer = styled.div`
   position: relative;
-  max-width: 100vw;
   margin: 0 -100vw;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin: unset;
-    max-width: unset;
-  }
+  max-width: 100vw;
 
   & > div {
     height: 100%;
