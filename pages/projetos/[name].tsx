@@ -1,11 +1,5 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import {
-  BLOCKS,
-  Document,
-  INLINES,
-  MARKS,
-  TEXT_CONTAINERS,
-} from "@contentful/rich-text-types";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { GetServerSideProps } from "next";
 import React from "react";
 import styled from "styled-components";

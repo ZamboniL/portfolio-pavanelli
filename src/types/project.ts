@@ -55,7 +55,7 @@ export interface ProjectList {
 
 export interface AssetDetails {
   metadata: {
-    tags: [];
+    tags: Tag[];
   };
   sys: Sys;
   fields: {
@@ -73,5 +73,13 @@ export interface AssetDetails {
       fileName: string;
       contentType: string;
     };
+  };
+}
+
+interface Tag {
+  sys: {
+    type: string;
+    linkType: string;
+    id: string;
   };
 }
