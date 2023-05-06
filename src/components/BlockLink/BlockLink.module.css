@@ -1,0 +1,33 @@
+.link {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  height: var(--block-link-height);
+  overflow: hidden;
+  display: inline-block;
+}
+
+.link span {
+  display: block;
+}
+
+.link:hover .linkA {
+  top: calc(var(--block-link-height) * -1);
+}
+
+.link:hover .linkB {
+  bottom: var(--block-link-height);
+}
+
+.linkA {
+  position: relative;
+  top: 0px;
+  transition: top 200ms;
+}
+
+.linkB {
+  position: relative;
+  transition: bottom 200ms;
+  bottom: 0px;
+  opacity: 0.6;
+}

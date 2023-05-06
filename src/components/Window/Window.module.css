@@ -1,0 +1,21 @@
+.root {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.img {
+  height: 140%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: inherit;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-direction: row;
+  gap: 80px 150px;
+}
+
+.description {
+  font-size: 24px;
+  padding-bottom: 32px;
+  line-height: 1.2;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  padding-bottom: 32px;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 10px 0px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 212px 212px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #808080;
+}
