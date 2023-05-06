@@ -1,12 +1,76 @@
+import { useState } from "react";
 import BlockLink from "../BlockLink";
 import Button from "../Button";
 import Container from "../Container";
 import HamburgerIcon from "./HamburgerIcon";
 import styles from "./Header.module.css";
+import { AnimatePresence, motion } from "framer-motion";
+import CloseIcon from "./CloseIcon";
+import useMediaQuery from "src/hooks/useMediaQuery";
+
+const ulVariants = {
+  open: {
+    opacity: 1,
+    // display: "flex",
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
+  closed: {
+    // display: "none",
+    opacity: 0,
+    transition: {
+      staggerChildren: 0.1,
+      staggerDirection: 1,
+    },
+  },
+};
+
+const headerVariants = {
+  open: {
+    height: "auto",
+    background: "rgba(18, 18, 18, 0.8)",
+    transition: {
+      type: "spring",
+      stiffness: 500,
+      damping: 60,
+      mass: 1,
+      height: {
+        type: "easeInOut",
+      },
+    },
+  },
+  closed: {
+    background: "rgba(0, 0, 0, 0.8)",
+    height: "80px",
+    transition: {
+      type: "spring",
+      stiffness: 500,
+      damping: 60,
+      mass: 1,
+      height: {
+        delay: 0.2,
+        type: "easeInOut",
+      },
+    },
+  },
+};
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const matches = useMediaQuery("(max-width: 700px)");
   return (
-    <header className={styles.header}>
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
+      viewport={{ once: true }}
+      className={styles.header}
+      animate={isOpen ? "open" : "closed"}
+      variants={headerVariants}
+    >
       <Container className={styles.container}>
         <BlockLink height="32px" href="/">
           <svg
@@ -38,22 +102,43 @@ const Header = () => {
             />
           </svg>
         </BlockLink>
-        <HamburgerIcon className={styles.hamburger} />
-        <ul className={styles.list}>
-          <li>
-            <BlockLink href="#">Projetos</BlockLink>
-          </li>
-          <li>
-            <BlockLink href="#">Processos</BlockLink>
-          </li>
-          <li>
-            <Button href="#" size="small">
-              Contato
-            </Button>
-          </li>
-        </ul>
+        {isOpen ? (
+          <CloseIcon
+            className={styles.hamburger}
+            onClick={() => setIsOpen((io) => !io)}
+          />
+        ) : (
+          <HamburgerIcon
+            className={styles.hamburger}
+            onClick={() => setIsOpen((io) => !io)}
+          />
+        )}
+        <AnimatePresence>
+          {isOpen || !matches ? (
+            <motion.ul
+              key="list"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              className={styles.list}
+              variants={ulVariants}
+            >
+              <li>
+                <BlockLink href="#">Projetos</BlockLink>
+              </li>
+              <li>
+                <BlockLink href="#">Processos</BlockLink>
+              </li>
+              <li>
+                <Button href="#" size="small">
+                  Contato
+                </Button>
+              </li>
+            </motion.ul>
+          ) : null}
+        </AnimatePresence>
       </Container>
-    </header>
+    </motion.header>
   );
 };
 

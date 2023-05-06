@@ -40,8 +40,16 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
   .list {
-    display: none;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .hamburger {
