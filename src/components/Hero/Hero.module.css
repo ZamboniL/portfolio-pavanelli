@@ -34,3 +34,27 @@
   float: right;
   margin-bottom: 16px;
 }
+
+@media (max-width: 600px) {
+  .root {
+    height: 60vh;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+  }
+
+  .description {
+    font-size: 22px;
+  }
+
+  .scroll {
+    float: unset;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}

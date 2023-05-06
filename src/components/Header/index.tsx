@@ -1,6 +1,7 @@
 import BlockLink from "../BlockLink";
 import Button from "../Button";
 import Container from "../Container";
+import HamburgerIcon from "./HamburgerIcon";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -37,6 +38,7 @@ const Header = () => {
             />
           </svg>
         </BlockLink>
+        <HamburgerIcon className={styles.hamburger} />
         <ul className={styles.list}>
           <li>
             <BlockLink href="#">Projetos</BlockLink>

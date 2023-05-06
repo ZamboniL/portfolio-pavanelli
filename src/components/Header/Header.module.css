@@ -34,3 +34,17 @@
   align-items: center;
   gap: 24px;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
