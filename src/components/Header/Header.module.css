@@ -39,6 +39,10 @@
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .container {
     flex-wrap: wrap;
@@ -54,5 +58,13 @@
 
   .hamburger {
     display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
   }
 }

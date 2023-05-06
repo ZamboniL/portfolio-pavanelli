@@ -36,9 +36,10 @@ interface CardProps {
   src: string;
   title: string;
   description: string;
+  className?: string;
 }
 
-const Card = ({ href, src, title, description }: CardProps) => {
+const Card = ({ href, src, title, description, className }: CardProps) => {
   return (
     <motion.div
       variants={containerVariants}
@@ -47,6 +48,7 @@ const Card = ({ href, src, title, description }: CardProps) => {
       whileHover="hover"
       transition={{ duration: 1, ease: [0.19, 0, 0.5, 1], delay: 0.2 }}
       viewport={{ once: true }}
+      className={className}
     >
       <Link href={href} className={`${styles.card} `}>
         <div className={styles.imgContainer}>

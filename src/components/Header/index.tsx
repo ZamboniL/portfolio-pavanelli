@@ -6,12 +6,10 @@ import HamburgerIcon from "./HamburgerIcon";
 import styles from "./Header.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import CloseIcon from "./CloseIcon";
-import useMediaQuery from "src/hooks/useMediaQuery";
 
 const ulVariants = {
   open: {
     opacity: 1,
-    // display: "flex",
     transition: {
       staggerChildren: 0.1,
       delayChildren: 0.2,
@@ -19,7 +17,6 @@ const ulVariants = {
     },
   },
   closed: {
-    // display: "none",
     opacity: 0,
     transition: {
       staggerChildren: 0.1,
@@ -60,7 +57,7 @@ const headerVariants = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const matches = useMediaQuery("(max-width: 700px)");
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -114,17 +111,17 @@ const Header = () => {
           />
         )}
         <AnimatePresence>
-          {isOpen || !matches ? (
+          {isOpen ? (
             <motion.ul
               key="list"
               initial="closed"
               animate="open"
               exit="closed"
-              className={styles.list}
+              className={`${styles.list} ${styles.mobile}`}
               variants={ulVariants}
             >
               <li>
-                <BlockLink href="#">Projetos</BlockLink>
+                <BlockLink href="/projetos">Projetos</BlockLink>
               </li>
               <li>
                 <BlockLink href="#">Processos</BlockLink>
@@ -137,6 +134,19 @@ const Header = () => {
             </motion.ul>
           ) : null}
         </AnimatePresence>
+        <ul className={`${styles.list} ${styles.desktop}`}>
+          <li>
+            <BlockLink href="/projetos">Projetos</BlockLink>
+          </li>
+          <li>
+            <BlockLink href="#">Processos</BlockLink>
+          </li>
+          <li>
+            <Button href="#" size="small">
+              Contato
+            </Button>
+          </li>
+        </ul>
       </Container>
     </motion.header>
   );

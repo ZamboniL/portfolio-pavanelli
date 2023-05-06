@@ -16,7 +16,7 @@ const Footer = () => {
         <span className={styles.tag}>EXPLORAR</span>
         <ul className={styles.list}>
           <li>
-            <BlockLink href="#">Projetos</BlockLink>
+            <BlockLink href="/projetos">Projetos</BlockLink>
           </li>
           <li>
             <BlockLink href="#">Processos</BlockLink>

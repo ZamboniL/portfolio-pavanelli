@@ -1,13 +1,12 @@
 import Head from "next/head";
-import styles from "src/styles/Home.module.css";
+import styles from "src/styles/Projects.module.css";
 import Footer from "src/components/Footer";
 import Container from "src/components/Container";
 import Header from "src/components/Header";
 import Card from "src/components/Card";
 import Hero from "src/components/Hero";
-import Window from "src/components/Window";
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <Head>
@@ -19,10 +18,9 @@ export default function Home() {
       <Header />
       <Container>
         <Hero
-          title="UX/UI Designer"
-          description="Especialista em criar experiências digitais excepcionais para ajudar
-          meus clientes a atingir seus objetivos."
-          hasLink
+          title="Projetos"
+          description="Não criamos apenas marcas, criamos experiências inesquecíveis que deixam uma impressão duradoura."
+          invert
         />
         <div className={styles.cardGrid}>
           {[...Array(10)].map((_, i) => (
@@ -32,10 +30,10 @@ export default function Home() {
               title="Suitcase App"
               description="Travel Smart & Safely"
               src="https://framerusercontent.com/images/20Q4dD9CnRYkEPZFRBWrWEWIAc.webp"
+              className={i === 2 ? styles.bigCard : ""}
             />
           ))}
         </div>
-        <Window />
         <Footer />
       </Container>
     </>
