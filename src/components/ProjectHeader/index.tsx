@@ -43,10 +43,12 @@ const ProjectHeader = ({
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <span>Cliente</span>
-          {clientList.map((client) => (
-            <span key={client}>{client}</span>
-          ))}
+          <span className={styles.listTitle}>Cliente</span>
+          <div>
+            {clientList.map((client) => (
+              <span key={client}>{client}</span>
+            ))}
+          </div>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, y: 50 }}
@@ -54,10 +56,12 @@ const ProjectHeader = ({
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <span>Serviços</span>
-          {serviceList.map((service) => (
-            <span key={service}>{service}</span>
-          ))}
+          <span className={styles.listTitle}>Serviços</span>
+          <div>
+            {serviceList.map((service) => (
+              <span key={service}>{service}</span>
+            ))}
+          </div>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, y: 50 }}
@@ -65,10 +69,12 @@ const ProjectHeader = ({
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <span>Indústrias</span>
-          {industriesList.map((industry) => (
-            <span key={industry}>{industry}</span>
-          ))}
+          <span className={styles.listTitle}>Indústrias</span>
+          <div>
+            {industriesList.map((industry) => (
+              <span key={industry}>{industry}</span>
+            ))}
+          </div>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, y: 50 }}
@@ -76,7 +82,7 @@ const ProjectHeader = ({
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <span>Data</span>
+          <span className={styles.listTitle}>Data</span>
           <span className={styles.date}>
             {format(new Date(date), "MMMM yyyy", { locale: ptBR })}
           </span>

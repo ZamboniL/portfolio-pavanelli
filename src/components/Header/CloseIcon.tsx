@@ -12,9 +12,9 @@ const CloseIcon = (props: SVGProps<SVGSVGElement>) => {
     >
       <path
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         d="M12 12 7 7m5 5 5 5m-5-5 5-5m-5 5-5 5"
       />
     </svg>

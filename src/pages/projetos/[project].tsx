@@ -4,7 +4,6 @@ import Footer from "src/components/Footer";
 import Container from "src/components/Container";
 import Header from "src/components/Header";
 import ProjectHeader from "src/components/ProjectHeader";
-import ProjectImage from "src/components/ProjectImage";
 import { GetServerSideProps } from "next";
 import { getEntries } from "src/api";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";

@@ -42,7 +42,13 @@
   color: rgb(128, 128, 128);
 }
 
-.list li *:first-child {
+.list li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.listTitle {
   color: rgb(255, 255, 255);
 }
 
