@@ -1,3 +1,7 @@
+.container {
+  padding-top: 140px;
+}
+
 .cardGrid {
   display: grid;
   width: 100%;

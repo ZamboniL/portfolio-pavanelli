@@ -1,0 +1,30 @@
+.container {
+  padding-top: 80px !important;
+}
+
+.contact {
+  align-self: start;
+}
+
+.email {
+  font-size: 56px;
+}
+
+.emailLink {
+  --block-link-height: 73px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .email {
+    font-size: 18px;
+  }
+
+  .emailLink {
+    --block-link-height: 24px;
+  }
+}

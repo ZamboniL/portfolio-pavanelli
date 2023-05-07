@@ -16,7 +16,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Container>
+      <Container className={styles.container}>
         <Hero
           title="Projetos"
           description="Não criamos apenas marcas, criamos experiências inesquecíveis que deixam uma impressão duradoura."

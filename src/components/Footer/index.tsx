@@ -10,7 +10,7 @@ const Footer = () => {
           Design não é apenas fazer as coisas parecerem boas, é criar
           experiências significativas que inspiram e conectam as pessoas.
         </div>
-        <Button href="#b">Entrar em contato</Button>
+        <Button href="/contato">Entrar em contato</Button>
       </div>
       <div>
         <span className={styles.tag}>EXPLORAR</span>
@@ -22,7 +22,7 @@ const Footer = () => {
             <BlockLink href="#">Processos</BlockLink>
           </li>
           <li>
-            <BlockLink href="#">Contato</BlockLink>
+            <BlockLink href="/contato">Contato</BlockLink>
           </li>
           <li>
             <BlockLink href="#">LinkedIn</BlockLink>

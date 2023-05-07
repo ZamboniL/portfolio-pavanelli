@@ -14,7 +14,6 @@
   justify-content: flex-start;
   height: auto;
   min-height: unset;
-  padding-top: 140px;
 }
 
 .description {
@@ -35,6 +34,8 @@
   font-size: 96px;
   font-weight: 500;
   letter-spacing: -2px;
+  max-width: 700px;
+  line-height: 1;
 }
 
 .scroll {

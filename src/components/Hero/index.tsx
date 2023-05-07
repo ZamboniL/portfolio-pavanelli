@@ -7,13 +7,20 @@ interface HeroProps {
   description: string;
   invert?: boolean;
   hasLink?: boolean;
+  disableDescriptionAnimation?: boolean;
 }
 
-const Hero = ({ title, description, invert, hasLink }: HeroProps) => {
+const Hero = ({
+  title,
+  description,
+  invert,
+  hasLink,
+  disableDescriptionAnimation,
+}: HeroProps) => {
   return (
     <div className={`${styles.root} ${invert ? styles.invert : ""}`}>
       <motion.div
-        initial={{ opacity: 0, y: 80 }}
+        initial={disableDescriptionAnimation ? false : { opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
         viewport={{ once: true }}

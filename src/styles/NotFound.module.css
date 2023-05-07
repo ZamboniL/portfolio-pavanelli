@@ -1,0 +1,25 @@
+.title {
+  font-size: 56px;
+  text-align: center;
+  font-weight: 500px;
+}
+
+.container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 80px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-height: 400px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
