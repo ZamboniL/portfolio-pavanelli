@@ -20,10 +20,12 @@
 
 @media (max-width: 700px) {
   .container {
+    padding-top: 40px !important;
     max-height: 400px;
   }
 
-  .title, .endNote {
+  .title,
+  .endNote {
     font-size: 32px;
   }
 }
