@@ -25,7 +25,9 @@ const Footer = () => {
             <BlockLink href="/contato">Contato</BlockLink>
           </li>
           <li>
-            <BlockLink href="#">LinkedIn</BlockLink>
+            <BlockLink href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
+              LinkedIn
+            </BlockLink>
           </li>
           <li>
             <BlockLink href="#">Instagram</BlockLink>

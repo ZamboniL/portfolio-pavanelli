@@ -39,6 +39,10 @@ export interface ProjectList {
     fields: {
       title: string;
       subtitle: string;
+      description: string;
+      client?: string;
+      service?: string;
+      industrie?: string;
       slug: string;
       image: {
         sys: SysType;
