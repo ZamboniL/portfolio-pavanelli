@@ -42,9 +42,15 @@ export default function Projects({
                 {children}
               </a>
             ),
-            [BLOCKS.HEADING_1]: (_, children) => <h1>{children}</h1>,
-            [BLOCKS.HEADING_2]: (_, children) => <h2>{children}</h2>,
-            [BLOCKS.HEADING_3]: (_, children) => <h3>{children}</h3>,
+            [BLOCKS.HEADING_1]: (_, children) => (
+              <h1 className={styles.text}>{children}</h1>
+            ),
+            [BLOCKS.HEADING_2]: (_, children) => (
+              <h2 className={styles.text}>{children}</h2>
+            ),
+            [BLOCKS.HEADING_3]: (_, children) => (
+              <h3 className={styles.text}>{children}</h3>
+            ),
             [BLOCKS.PARAGRAPH]: (_, children) => {
               if (Array.isArray(children) && children[0] === "") {
                 return <></>;
@@ -52,7 +58,7 @@ export default function Projects({
               return <p className={styles.paragraph}>{children}</p>;
             },
             [BLOCKS.HR]: () => (
-              <hr style={{ width: "100%", borderColor: "rgb(23, 23, 23)" }} />
+              <hr style={{ width: "100%", borderColor: "rgb(23, 23, 23)", margin: '24px 0' }} />
             ),
             [BLOCKS.UL_LIST]: (_, children) => <ul>{children}</ul>,
             [BLOCKS.QUOTE]: (_, children) => (

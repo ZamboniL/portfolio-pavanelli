@@ -38,32 +38,26 @@ export default function Processes() {
           viewport={{ once: true }}
           className={styles.description}
         >
-          Our portfolio speaks for itself, with over 70 awards in design and
-          digital innovation, we have a proven track record of delivering
-          recognition and success for our partners. Our team of experts is
-          dedicated to understanding your business needs and creating designs
-          that align with your goals. Let us help you elevate your brand and
-          stand out in your industry.
+          Com mais de 20 projetos em empresas diferentes, vemos um histórico
+          comprovado de reconhecimento e sucesso para nossos parceiros. Onde
+          desempenho toda a minha dedicação para entender suas necessidades de
+          negócios e criar projetos que se alinhem com seus objetivos.
         </motion.p>
         <BulletList
-          title="Research & Brand Strategy"
+          title="Pesquisa & Estratégia de marca"
           list={[
             "Brand Strategy",
             "Research & Insights",
-            "Content Marketing",
             "User Experience Research",
           ]}
         />
         <BulletList
-          title="Creative Direction & Design"
+          title="Direção Criativa & Design"
           list={[
             "Web Design",
             "UX & UI Design",
             "Brand Identity",
             "Interaction Design",
-            "Video Production",
-            "Animation",
-            "Illustration",
           ]}
         />
         <LogoGrid />

@@ -31,8 +31,8 @@ export default function Home({ projectList }: { projectList: ProjectList }) {
           {orderedList.map((item) => (
             <Card
               key={item.sys.id}
-              title={item.fields.title}
-              description={item.fields.subtitle}
+              title={item.fields.subtitle}
+              description={item.fields.title}
               href={item.fields.link ?? `/projetos/${item.fields.slug}`}
               src={
                 projectList.includes.Asset.find(

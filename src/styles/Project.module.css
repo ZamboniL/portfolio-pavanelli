@@ -1,9 +1,32 @@
 .container {
   padding-top: 80px !important;
+  gap: 8px !important;
 }
 
 .paragraph {
   font-size: 24px;
+}
+
+.text,
+.paragraph {
+  width: 100%;
+}
+
+h1.text {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 24px 0px;
+}
+
+h2.text {
+  font-size: 32px;
+  font-weight: 500;
+  padding: 24px 0px;
+}
+
+h3.text {
+  font-size: 28px;
+  padding: 24px 0px;
 }
 
 @media (max-width: 700px) {

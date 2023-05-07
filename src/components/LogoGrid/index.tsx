@@ -1,5 +1,5 @@
-import StarSvg from "./StarSvg";
-import ZiggoSvg from "./ZiggoSvg";
+import LogoSvg from "./LogoSvg";
+import PavanelliSvg from "./PavanelliSvg";
 import styles from "./LogoGrid.module.css";
 import { motion } from "framer-motion";
 
@@ -14,7 +14,7 @@ const LogoGrid = () => {
     >
       {[...Array(8)].map((_, i) => (
         <div key={i} className={styles.card}>
-          {((i + 1) % 5) % 2 === 0 ? <ZiggoSvg /> : <StarSvg />}
+          {((i + 1) % 5) % 2 === 0 ? <PavanelliSvg /> : <LogoSvg />}
         </div>
       ))}
     </motion.div>

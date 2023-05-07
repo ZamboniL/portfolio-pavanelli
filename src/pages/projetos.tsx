@@ -29,15 +29,15 @@ export default function Projects({
       <Container className={styles.container}>
         <Hero
           title="Projetos"
-          description="Não criamos apenas marcas, criamos experiências inesquecíveis que deixam uma impressão duradoura."
+          description="Não crio apenas marcas, crio experiências inesquecíveis que deixam uma impressão duradoura."
           invert
         />
         <div className={styles.cardGrid}>
           {orderedList.map((item, i) => (
             <Card
               key={item.sys.id}
-              title={item.fields.title}
-              description={item.fields.subtitle}
+              title={item.fields.subtitle}
+              description={item.fields.title}
               href={item.fields.link ?? `/projetos/${item.fields.slug}`}
               src={
                 projectList.includes.Asset.find(
