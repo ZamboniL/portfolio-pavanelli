@@ -33,7 +33,7 @@ const containerVariants = {
 
 interface CardProps {
   href: string;
-  src: string;
+  src?: string;
   title: string;
   description: string;
   className?: string;

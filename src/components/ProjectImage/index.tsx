@@ -1,7 +1,7 @@
 import styles from "./ProjectImage.module.css";
-import { motion } from "framer-motion";
+import { HTMLMotionProps, motion } from "framer-motion";
 
-const ProjectImage = () => {
+const ProjectImage = (props: HTMLMotionProps<"img">) => {
   return (
     <motion.img
       initial={{ opacity: 0, scale: 1.1 }}
@@ -9,6 +9,7 @@ const ProjectImage = () => {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       src="https://framerusercontent.com/images/lirZEuMgn3dZcLiBP3A2pI48Bs.webp"
       className={styles.root}
+      {...props}
     />
   );
 };
