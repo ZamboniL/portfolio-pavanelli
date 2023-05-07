@@ -124,7 +124,7 @@ const Header = () => {
                 <BlockLink href="/projetos">Projetos</BlockLink>
               </li>
               <li>
-                <BlockLink href="#">Processos</BlockLink>
+                <BlockLink href="/processos">Processos</BlockLink>
               </li>
               <li>
                 <Button href="/contato" size="small">
@@ -139,7 +139,7 @@ const Header = () => {
             <BlockLink href="/projetos">Projetos</BlockLink>
           </li>
           <li>
-            <BlockLink href="#">Processos</BlockLink>
+            <BlockLink href="/processos">Processos</BlockLink>
           </li>
           <li>
             <Button href="/contato" size="small">

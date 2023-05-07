@@ -19,7 +19,7 @@ const Footer = () => {
             <BlockLink href="/projetos">Projetos</BlockLink>
           </li>
           <li>
-            <BlockLink href="#">Processos</BlockLink>
+            <BlockLink href="/processos">Processos</BlockLink>
           </li>
           <li>
             <BlockLink href="/contato">Contato</BlockLink>

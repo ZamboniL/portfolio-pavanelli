@@ -1,0 +1,29 @@
+.title {
+  font-size: 56px;
+  text-align: center;
+  font-weight: 500px;
+}
+
+.container {
+  padding-top: 80px !important;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.endNote {
+  font-size: 56px;
+  font-weight: 500px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-height: 400px;
+  }
+
+  .title, .endNote {
+    font-size: 32px;
+  }
+}

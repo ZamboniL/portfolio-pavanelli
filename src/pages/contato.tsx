@@ -30,7 +30,7 @@ export default function Projects() {
             <motion.h2
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               viewport={{ once: true }}
               className={styles.email}
             >
