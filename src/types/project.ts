@@ -40,6 +40,7 @@ export interface ProjectList {
       title: string;
       subtitle: string;
       description: string;
+      highlight?: boolean;
       client?: string;
       service?: string;
       industrie?: string;

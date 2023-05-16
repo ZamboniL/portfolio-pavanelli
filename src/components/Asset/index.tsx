@@ -18,10 +18,6 @@ const Asset = ({ id, list }: AssetProps) => {
   if (type === "video/mp4") {
     return (
       <div className={styles.container}>
-        <span
-          className={styles.banner}
-          style={{ background: asset?.fields.description }}
-        />
         <video style={{ width: "100%" }} controls src={url} />
       </div>
     );
@@ -41,10 +37,6 @@ const Asset = ({ id, list }: AssetProps) => {
 
   return (
     <div className={containerClasses}>
-      <span
-        className={styles.banner}
-        style={{ background: asset?.fields.description }}
-      />
       <ProjectImage
         width={width}
         height={height}

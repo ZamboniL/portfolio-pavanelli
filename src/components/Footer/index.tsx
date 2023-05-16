@@ -19,7 +19,9 @@ const Footer = () => {
             <BlockLink href="/projetos">Projetos</BlockLink>
           </li>
           <li>
-            <BlockLink href="/processos">Processos</BlockLink>
+            <BlockLink href="https://www.instagram.com/lucaspavanelli/">
+              Instagram
+            </BlockLink>
           </li>
           <li>
             <BlockLink href="/contato">Contato</BlockLink>
@@ -30,7 +32,7 @@ const Footer = () => {
             </BlockLink>
           </li>
           <li>
-            <BlockLink href="#">Instagram</BlockLink>
+            <BlockLink href="/processos">Processos</BlockLink>
           </li>
         </ul>
       </div>

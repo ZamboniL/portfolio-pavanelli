@@ -11,9 +11,6 @@ import { getEntries } from "src/api";
 import { ProjectList } from "src/types/project";
 
 export default function Home({ projectList }: { projectList: ProjectList }) {
-  const orderedList = projectList.items.sort(
-    (a, b) => a.fields.order - b.fields.order
-  );
   return (
     <>
       <Head>
@@ -28,19 +25,21 @@ export default function Home({ projectList }: { projectList: ProjectList }) {
           hasLink
         />
         <div className={styles.cardGrid}>
-          {orderedList.map((item) => (
-            <Card
-              key={item.sys.id}
-              title={item.fields.subtitle}
-              description={item.fields.title}
-              href={item.fields.link ?? `/projetos/${item.fields.slug}`}
-              src={
-                projectList.includes.Asset.find(
-                  (asset) => asset.sys.id === item.fields.image?.sys.id
-                )?.fields.file.url
-              }
-            />
-          ))}
+          {projectList.items
+            ? projectList.items.map((item) => (
+                <Card
+                  key={item.sys.id}
+                  title={item.fields.subtitle}
+                  description={item.fields.title}
+                  href={item.fields.link ?? `/projetos/${item.fields.slug}`}
+                  src={
+                    projectList.includes.Asset.find(
+                      (asset) => asset.sys.id === item.fields.image?.sys.id
+                    )?.fields.file.url
+                  }
+                />
+              ))
+            : null}
         </div>
         <Window />
         <Footer />
@@ -51,8 +50,9 @@ export default function Home({ projectList }: { projectList: ProjectList }) {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
-    const { data: projectList } = await getEntries();
-
+    const { data: projectList } = await getEntries(
+      `fields.highlight=true&order=fields.order`
+    );
     return { props: { projectList } };
   } catch (e) {
     return {

@@ -14,11 +14,7 @@ export default function Projects({
 }: {
   projectList: ProjectList;
 }) {
-  const orderedList = projectList.items.sort(
-    (a, b) => a.fields.order - b.fields.order
-  );
-
-  const hasEvenProjects = orderedList.length % 2 === 0;
+  const hasEvenProjects = projectList.items.length % 2 === 0;
 
   return (
     <>
@@ -33,7 +29,7 @@ export default function Projects({
           invert
         />
         <div className={styles.cardGrid}>
-          {orderedList.map((item, i) => (
+          {projectList.items.map((item, i) => (
             <Card
               key={item.sys.id}
               title={item.fields.subtitle}
@@ -45,7 +41,8 @@ export default function Projects({
                 )?.fields.file.url
               }
               className={
-                i === 2 || (i + 1 === orderedList.length && hasEvenProjects)
+                i === 2 ||
+                (i + 1 === projectList.items.length && hasEvenProjects)
                   ? styles.bigCard
                   : ""
               }
@@ -60,7 +57,7 @@ export default function Projects({
 
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
-    const { data: projectList } = await getEntries();
+    const { data: projectList } = await getEntries(`order=fields.order`);
 
     return { props: { projectList } };
   } catch (e) {

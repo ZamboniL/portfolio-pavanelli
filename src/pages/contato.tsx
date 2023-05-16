@@ -57,7 +57,7 @@ export default function Projects() {
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <BlockLink href="#">
+              <BlockLink href="https://www.instagram.com/lucaspavanelli/">
                 Instagram <ArrowIcon />
               </BlockLink>
             </motion.div>
