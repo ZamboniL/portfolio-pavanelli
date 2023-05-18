@@ -27,14 +27,15 @@ const Asset = ({ id, list }: AssetProps) => {
   const tags = asset.metadata.tags;
   const tagArray = tags.map(({ sys }) => sys.id);
 
-  const isMobile = tagArray.includes("desktop");
-  const isDesktop = tagArray.includes("mobile");
+  const isMobile = tagArray.includes("mobile");
+  const isDesktop = tagArray.includes("desktop");
   const isFootnote = tagArray.includes("footnote");
 
   const containerClasses = `${styles.container} ${
     isMobile ? styles.mobile : ""
   } ${isDesktop ? styles.desktop : ""} ${isFootnote ? styles.footnote : ""}`;
 
+  console.log(asset.fields.title, containerClasses)
   return (
     <div className={containerClasses}>
       <ProjectImage
