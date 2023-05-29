@@ -35,7 +35,6 @@ const Asset = ({ id, list }: AssetProps) => {
     isMobile ? styles.mobile : ""
   } ${isDesktop ? styles.desktop : ""} ${isFootnote ? styles.footnote : ""}`;
 
-  console.log(asset.fields.title, containerClasses)
   return (
     <div className={containerClasses}>
       <ProjectImage
