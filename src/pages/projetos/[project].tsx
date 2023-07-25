@@ -57,18 +57,34 @@ export default function Projects({
               return <p className={styles.paragraph}>{children}</p>;
             },
             [BLOCKS.HR]: () => (
-              <hr style={{ width: "100%", borderColor: "rgb(23, 23, 23)", margin: '24px 0' }} />
+              <hr
+                style={{
+                  width: "100%",
+                  borderColor: "rgb(23, 23, 23)",
+                  margin: "24px 0",
+                }}
+              />
             ),
             [BLOCKS.UL_LIST]: (_, children) => <ul>{children}</ul>,
             [BLOCKS.QUOTE]: (_, children) => (
               <blockquote>{children}</blockquote>
             ),
-            [BLOCKS.EMBEDDED_ASSET]: (node) => (
-              <Asset
-                id={node.data.target.sys.id}
-                list={projectList.includes.Asset}
-              />
-            ),
+            [BLOCKS.EMBEDDED_ASSET]: (node) => {
+              const id = node.data.target.sys.id;
+              const currentIndex = project.fields.page.content.findIndex(
+                (item) => item.data?.target?.sys?.id === id
+              );
+
+              const nextItem = project.fields.page.content[currentIndex + 2];
+              console.log(node, "NODE");
+              return (
+                <Asset
+                  id={id}
+                  list={projectList.includes.Asset}
+                  isNextAsset={nextItem?.nodeType === "embedded-asset-block"}
+                />
+              );
+            },
           },
         })}
         <Footer />

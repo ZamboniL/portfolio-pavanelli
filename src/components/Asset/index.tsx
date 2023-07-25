@@ -5,9 +5,10 @@ import ProjectImage from "../ProjectImage";
 interface AssetProps {
   id: string;
   list: AssetDetails[];
+  isNextAsset?: boolean;
 }
 
-const Asset = ({ id, list }: AssetProps) => {
+const Asset = ({ id, list, isNextAsset }: AssetProps) => {
   const asset = list.find((item) => item.sys.id === id);
 
   if (!asset) return <></>;
@@ -32,8 +33,10 @@ const Asset = ({ id, list }: AssetProps) => {
   const isFootnote = tagArray.includes("footnote");
 
   const containerClasses = `${styles.container} ${
-    isMobile ? styles.mobile : ""
-  } ${isDesktop ? styles.desktop : ""} ${isFootnote ? styles.footnote : ""}`;
+    isNextAsset ? styles.small : styles.big
+  } ${isMobile ? styles.mobile : ""} ${isDesktop ? styles.desktop : ""} ${
+    isFootnote ? styles.footnote : ""
+  }`;
 
   return (
     <div className={containerClasses}>
