@@ -75,13 +75,53 @@ export default function Projects({
                 (item) => item.data?.target?.sys?.id === id
               );
 
-              const nextItem = project.fields.page.content[currentIndex + 2];
-              console.log(node, "NODE");
+              const currentItem = projectList.includes.Asset.find(
+                (item) => item.sys.id === id
+              );
+
+              const tagArray = currentItem?.metadata?.tags.map(
+                ({ sys }) => sys.id
+              );
+
+              const isMobile = tagArray?.includes?.("mobile");
+
+              let hasNextAsset = false;
+
+              for (
+                let i = currentIndex + 1;
+                i < project.fields.page.content.length;
+                i++
+              ) {
+                const item = project.fields.page.content[i];
+                if (item.nodeType === "embedded-asset-block") {
+                  const asset = projectList.includes.Asset.find(
+                    (a) => a.sys.id === item?.data?.target?.sys?.id
+                  );
+
+                  const tagArray = asset?.metadata?.tags.map(
+                    ({ sys }) => sys.id
+                  );
+
+                  const isNextMobile = tagArray?.includes?.("mobile");
+
+                  if (
+                    (isMobile && isNextMobile) ||
+                    (!isMobile && !isNextMobile)
+                  ) {
+                    hasNextAsset = true;
+                    break;
+                  }
+
+                  continue;
+                }
+                break;
+              }
+
               return (
                 <Asset
                   id={id}
                   list={projectList.includes.Asset}
-                  isNextAsset={nextItem?.nodeType === "embedded-asset-block"}
+                  isNextAsset={hasNextAsset}
                 />
               );
             },
