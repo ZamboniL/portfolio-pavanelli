@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black tracking-tight`}>
+      <body className={`${inter.className} bg-black tracking-tight flex items-center flex-col`}>
         <Header />
         {children}
         <Footer />

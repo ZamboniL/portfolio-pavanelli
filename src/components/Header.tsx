@@ -9,7 +9,7 @@ export default function Header() {
 
   if (open) {
     return (
-      <header className="p-2 fixed w-full z-10">
+      <header className="p-2 fixed w-full z-20 max-w-8xl">
         <div className="p-8 justify-between items-center border rounded-[36px] border-white/15 backdrop-blur-md">
           <div className="flex justify-between items-center">
             <div className="flex gap-2">
@@ -96,39 +96,69 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed w-full z-10">
-      <div className="px-5 py-2 border-b border-b-white/15 backdrop-blur-md bg-black/60">
+    <header className="fixed w-full z-20 max-w-8xl md:top-5">
+      <div
+        className="px-5 py-2 border-b border-white/15 md:px-2.5 md:border md:rounded-[20px] backdrop-blur-md bg-black/60 
+      md:flex md:justify-between md:items-center"
+      >
         <div className="flex justify-between items-center">
           <div className="flex gap-2">
-            <div className="h-8 w-8 rounded-md bg-white" />
+            <div className="h-8 w-8 md:h-10 md:w-10 rounded-md bg-white" />
             <div className="flex flex-col ">
-              <span className="text-white text-xs font-bold">
+              <span className="text-white text-xs font-bold md:text-sm">
                 Lucas Pavanelli.
               </span>{" "}
-              <span className="text-xs text-white/50">Designer</span>
+              <span className="text-xs text-white/50 md:text-sm">Designer</span>
             </div>
           </div>
           <button
-            className="flex flex-col gap-2 h-10 w-10 justify-center items-center"
+            className="flex flex-col gap-2 h-10 w-10 justify-center items-center md:hidden"
             onClick={() => setOpen(true)}
           >
             <div className="h-[2px] w-5 bg-white"></div>
             <div className="h-[2px] w-5 bg-white"></div>
           </button>
         </div>
-        <nav className="hidden">
-          <ul>
+        <nav className="hidden md:block">
+          <ul
+            className="text-2xl text-white font-medium flex flex-col 
+        md:flex-row md:gap-12 md:border-none md:py-0 md:text-base md:my-0 md:items-center
+        gap-6 py-8 border-t border-b border-white/15 my-8"
+          >
             <li>
-              <a href="">Home</a>
+              <a
+                href="/"
+                className={twMerge(
+                  pathname === "/" ? "text-white" : "text-white/50"
+                )}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <a
+                href="/portfolio"
+                className={twMerge(
+                  pathname === "/portfolio" ? "text-white" : "text-white/50"
+                )}
+              >
+                Portfolio
+              </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a
+                href="/about"
+                className={twMerge(
+                  pathname === "/about" ? "text-white" : "text-white/50"
+                )}
+              >
+                About
+              </a>
             </li>
             <li>
-              <button>Say Hello</button>
+              <button className="py-2 px-4 border border-white/15 rounded-xl text-white/50">
+                Say Hello
+              </button>
             </li>
           </ul>
         </nav>
