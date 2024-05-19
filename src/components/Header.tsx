@@ -1,0 +1,160 @@
+"use client";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
+
+export default function Header() {
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (open) {
+    return (
+      <header className="p-2 fixed w-full z-10">
+        <div className="p-8 justify-between items-center border rounded-[36px] border-white/15 backdrop-blur-md">
+          <div className="flex justify-between items-center">
+            <div className="flex gap-2">
+              <div className="h-10 w-10 rounded-md bg-white" />
+              <div className="flex flex-col ">
+                <span className="text-white text-sm font-bold">
+                  Lucas Pavanelli.
+                </span>
+                <span className="text-sm text-white/50">Designer</span>
+              </div>
+            </div>
+            <button
+              className="relative flex flex-col gap-2 h-10 w-10 justify-center items-center rounded-xl bg-white"
+              onClick={() => setOpen(false)}
+            >
+              <div className="absolute top-1/2 h-[2px] w-5 bg-black rotate-45 origin-center"></div>
+              <div className="absolute top-1/2 h-[2px] w-5 bg-black -rotate-45 origin-center"></div>
+            </button>
+          </div>
+          <nav>
+            <ul className="text-2xl text-white font-medium flex flex-col gap-6 py-8 border-t border-b border-white/15 my-8">
+              <li>
+                <a
+                  href="/"
+                  className={twMerge(
+                    pathname === "/" ? "text-white" : "text-white/50"
+                  )}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portfolio"
+                  className={twMerge(
+                    pathname === "/portfolio" ? "text-white" : "text-white/50"
+                  )}
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className={twMerge(
+                    pathname === "/about" ? "text-white" : "text-white/50"
+                  )}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <button className="bg-violet-700 w-full rounded-full h-10 text-base">
+                  Say Hello
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <ul className="flex justify-center gap-8 opacity-50">
+            <li>
+              <a href="">
+                <img src="icon/x.png" alt="x" width={20} height={20} />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icon/linkedin.png" alt="x" width={20} height={20} />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icon/instagram.png" alt="x" width={20} height={20} />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="icon/behance.png" alt="x" width={20} height={20} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    );
+  }
+
+  return (
+    <header className="fixed w-full z-10">
+      <div className="px-5 py-2 border-b border-b-white/15 backdrop-blur-md bg-black/60">
+        <div className="flex justify-between items-center">
+          <div className="flex gap-2">
+            <div className="h-8 w-8 rounded-md bg-white" />
+            <div className="flex flex-col ">
+              <span className="text-white text-xs font-bold">
+                Lucas Pavanelli.
+              </span>{" "}
+              <span className="text-xs text-white/50">Designer</span>
+            </div>
+          </div>
+          <button
+            className="flex flex-col gap-2 h-10 w-10 justify-center items-center"
+            onClick={() => setOpen(true)}
+          >
+            <div className="h-[2px] w-5 bg-white"></div>
+            <div className="h-[2px] w-5 bg-white"></div>
+          </button>
+        </div>
+        <nav className="hidden">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Portfolio</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <button>Say Hello</button>
+            </li>
+          </ul>
+        </nav>
+        <ul className="hidden">
+          <li>
+            <a href="">
+              <img src="icon/x.png" alt="x" width={20} height={20} />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="icon/linkedin.png" alt="x" width={20} height={20} />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="icon/instagram.png" alt="x" width={20} height={20} />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="icon/behance.png" alt="x" width={20} height={20} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  );
+}
