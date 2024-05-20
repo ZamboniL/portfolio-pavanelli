@@ -53,9 +53,9 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="/sobre"
                   className={twMerge(
-                    pathname === "/about" ? "text-white" : "text-white/50"
+                    pathname === "/sobre" ? "text-white" : "text-white/50"
                   )}
                 >
                   About
@@ -147,9 +147,9 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="/about"
+                href="/sobre"
                 className={twMerge(
-                  pathname === "/about" ? "text-white" : "text-white/50"
+                  pathname === "/sobre" ? "text-white" : "text-white/50"
                 )}
               >
                 About
