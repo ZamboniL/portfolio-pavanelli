@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-5 text-white/50 items-center pb-8 pt-8 md:pt-24 md:flex-row md:justify-between md:w-full max-w-8xl">
+    <footer className="flex max-w-8xl flex-col items-center gap-5 py-8 text-white/50 md:w-full md:flex-row md:justify-between md:pt-24">
       <p>Lucas Pavanelli © 2024.</p>
       <ul className="flex justify-center gap-8 opacity-50">
         <li>

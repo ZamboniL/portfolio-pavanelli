@@ -1,5 +1,5 @@
-import React from "react";
-import { twMerge } from "tailwind-merge";
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
 interface ButtonProps {
   children?: React.ReactNode;
@@ -10,11 +10,11 @@ export default function Button({ className, children }: ButtonProps) {
   return (
     <button
       className={twMerge(
-        "flex items-center justify-center w-full bg-white rounded-full font-bold h-10 md:w-fit md:px-5 md:py-3 md:bg-white/5",
+        'flex h-10 w-full items-center justify-center rounded-full bg-white font-bold md:w-fit md:bg-white/5 md:px-5 md:py-3',
         className
       )}
     >
-      <p className="bg-clip-text text-primary-600 font-semibold md:text-transparent md:bg-gradient-to-r from-primary-500 from-[-40%] to-white">
+      <p className="from-primary-500 from-[-40%] to-white bg-clip-text font-semibold text-primary-600 md:bg-gradient-to-r md:text-transparent">
         {children}
       </p>
     </button>
