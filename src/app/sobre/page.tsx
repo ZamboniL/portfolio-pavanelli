@@ -8,11 +8,11 @@ export default function About() {
     <main className="flex flex-col items-center px-5 pt-14 tracking-tighter text-white md:pt-20 2xl:px-0">
       <div className="flex max-w-8xl flex-col items-center gap-12 pt-12 md:gap-14 md:pt-24">
         <h2 className="text-[32px] font-semibold leading-[32px] md:text-[64px] md:leading-[74px]">
-          About Daniel Bennett
+          Sobre Lucas Pavanelli
         </h2>
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           <img
-            src="/about-example.png"
+            src="/about.jpeg"
             alt=""
             className="rounded-[20px] object-cover md:h-[400px] md:w-[350px] md:flex-[0_0_auto]"
           />

@@ -1,7 +1,9 @@
 'use client';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { default as NextLink } from 'next/link';
+import Link from './Link';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -13,7 +15,15 @@ export default function Header() {
         <div className="items-center justify-between rounded-[36px] border border-white/15 p-8 backdrop-blur-md">
           <div className="flex items-center justify-between">
             <div className="flex gap-2">
-              <div className="size-10 rounded-md bg-white" />
+              <motion.div whileTap={{ scale: 0.9 }}>
+                <NextLink href="/">
+                  <img
+                    className="size-10 rounded-md bg-white object-cover"
+                    alt=""
+                    src="/about.jpeg"
+                  />
+                </NextLink>
+              </motion.div>
               <div className="flex flex-col ">
                 <span className="text-sm font-bold text-white">Lucas Pavanelli.</span>
                 <span className="text-sm text-white/50">Designer</span>
@@ -30,25 +40,19 @@ export default function Header() {
           <nav>
             <ul className="my-8 flex flex-col gap-6 border-y border-white/15 py-8 text-2xl font-medium text-white">
               <li>
-                <a href="/" className={twMerge(pathname === '/' ? 'text-white' : 'text-white/50')}>
+                <Link href="/" active={pathname === '/'}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio"
-                  className={twMerge(pathname === '/portfolio' ? 'text-white' : 'text-white/50')}
-                >
+                <Link href="/portfolio" active={pathname === '/portfolio'}>
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/sobre"
-                  className={twMerge(pathname === '/sobre' ? 'text-white' : 'text-white/50')}
-                >
+                <Link href="/sobre" active={pathname === '/sobre'}>
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <button className="h-10 w-full rounded-full bg-primary-600 text-base">
@@ -57,26 +61,26 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <ul className="flex justify-center gap-8 opacity-50">
+          <ul className="flex justify-center gap-8">
             <li>
-              <a href="">
+              <Link href="https://www.instagram.com/lucaspavanelli/">
                 <img src="icon/x.png" alt="x" width={20} height={20} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
                 <img src="icon/linkedin.png" alt="x" width={20} height={20} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link href="https://www.instagram.com/lucaspavanelli/">
                 <img src="icon/instagram.png" alt="x" width={20} height={20} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link href="https://www.instagram.com/lucaspavanelli/">
                 <img src="icon/behance.png" alt="x" width={20} height={20} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -92,7 +96,15 @@ export default function Header() {
       >
         <div className="flex items-center justify-between">
           <div className="flex gap-2">
-            <div className="size-8 rounded-md bg-white md:size-10" />
+            <motion.div whileTap={{ scale: 0.9 }}>
+              <NextLink href="/">
+                <img
+                  className="size-8 rounded-md bg-white object-cover md:size-10"
+                  alt=""
+                  src="/about.jpeg"
+                />
+              </NextLink>
+            </motion.div>
             <div className="flex flex-col ">
               <span className="text-xs font-bold text-white md:text-sm">Lucas Pavanelli.</span>{' '}
               <span className="text-xs text-white/50 md:text-sm">Designer</span>
@@ -113,25 +125,19 @@ export default function Header() {
         md:items-center md:gap-12 md:border-none md:py-0 md:text-base"
           >
             <li>
-              <a href="/" className={twMerge(pathname === '/' ? 'text-white' : 'text-white/50')}>
+              <Link href="/" active={pathname === '/'}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/portfolio"
-                className={twMerge(pathname === '/portfolio' ? 'text-white' : 'text-white/50')}
-              >
+              <Link href="/portfolio" active={pathname === '/portfolio'}>
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/sobre"
-                className={twMerge(pathname === '/sobre' ? 'text-white' : 'text-white/50')}
-              >
+              <Link href="/sobre" active={pathname === '/sobre'}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
               <button className="rounded-xl border border-white/15 px-4 py-2 text-white/50">
@@ -142,24 +148,24 @@ export default function Header() {
         </nav>
         <ul className="hidden">
           <li>
-            <a href="">
+            <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
               <img src="icon/x.png" alt="x" width={20} height={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
               <img src="icon/linkedin.png" alt="x" width={20} height={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link href="https://www.instagram.com/lucaspavanelli/">
               <img src="icon/instagram.png" alt="x" width={20} height={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link href="https://www.instagram.com/lucaspavanelli/">
               <img src="icon/behance.png" alt="x" width={20} height={20} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
