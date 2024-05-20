@@ -5,7 +5,7 @@ import Statistics from "src/components/Statistics";
 
 export default function About() {
   return (
-    <main className="flex flex-col items-center text-white px-5 md:px-0 pt-14 tracking-tighter md:pt-20">
+    <main className="flex flex-col items-center text-white px-5 2xl:px-0 pt-14 tracking-tighter md:pt-20">
       <div className="pt-12 md:pt-24 flex flex-col gap-12 md:gap-14 items-center max-w-8xl">
         <h2 className="text-[32px] leading-[32px] font-semibold md:text-[64px] md:leading-[74px]">
           About Daniel Bennett
@@ -16,7 +16,7 @@ export default function About() {
             alt=""
             className="rounded-[20px] md:w-[350px] md:h-[400px] md:flex-[0_0_auto] object-cover"
           />
-          <div className="text-white/50 flex flex-col gap-7 leading-7 w-[60%]">
+          <div className="text-white/50 flex flex-col gap-7 leading-7 md:w-[60%]">
             <p>
               Meet Daniel Bennett, the Creative Mind Behind the Designs In the
               ever-evolving landscape of design and technology, Daniel Bennett
@@ -69,7 +69,7 @@ export default function About() {
         <h3 className="text-[32px] leading-10 font-semibold md:text-5xl">
           Stacks
         </h3>
-        <div className="bg-zinc-900 rounded-[20px] flex gap-20 py-8 text-xl font-semibold text-white/50">
+        <div className="bg-primary-900 rounded-[20px] flex gap-20 py-8 text-xl font-semibold text-white/50">
           <img src="/cube/notion.png" alt="" height={35} width={35} />
           <img src="/cube/notion.png" alt="" height={35} width={35} />
           <img src="/cube/notion.png" alt="" height={35} width={35} />

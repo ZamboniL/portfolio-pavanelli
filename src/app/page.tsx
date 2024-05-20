@@ -8,7 +8,7 @@ export default function Home() {
     <main className="text-white pt-14 md:pt-20 px-5 flex flex-col items-center">
       <div className="pt-12 pb-20 md:py-24 flex flex-col items-center gap-12 max-w-8xl">
         <div className="flex gap-3 text-sm text-white items-center px-3 py-1 border border-white/15 rounded-full">
-          <div className="w-2.5 h-2.5 bg-violet-700 rounded-full" />
+          <div className="w-2.5 h-2.5 bg-primary-400 rounded-full" />
           Available for freelance
         </div>
         <hgroup className="text-5xl leading-[58px] font-bold text-center md:text-[72px] md:leading-[82px]">

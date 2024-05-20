@@ -8,13 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          400: "#A866FF",
+          500: "#6f00ff",
+          600: "#7218E5",
+          900: "#101010"
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       width: {
-        '8xl': '1360px'
+        "8xl": "1360px",
       },
       maxWidth: {
         "8xl": "1360px",

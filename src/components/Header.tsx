@@ -62,7 +62,7 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <button className="bg-violet-700 w-full rounded-full h-10 text-base">
+                <button className="bg-primary-600 w-full rounded-full h-10 text-base">
                   Say Hello
                 </button>
               </li>
