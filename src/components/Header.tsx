@@ -11,7 +11,7 @@ export default function Header() {
 
   if (open) {
     return (
-      <header className="fixed z-20 w-full max-w-8xl p-2">
+      <header className="fixed z-40 w-full max-w-8xl p-2">
         <div className="items-center justify-between rounded-[36px] border border-white/15 p-8 backdrop-blur-md">
           <div className="flex items-center justify-between">
             <div className="flex gap-2">
@@ -89,7 +89,7 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed z-20 w-full max-w-8xl md:top-5">
+    <header className="fixed z-40 w-full max-w-8xl md:top-5">
       <div
         className="border-b border-white/15 bg-black/60 px-5 py-2 backdrop-blur-md md:flex md:items-center md:justify-between 
       md:rounded-[20px] md:border md:px-2.5"
