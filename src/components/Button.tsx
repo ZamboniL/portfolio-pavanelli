@@ -2,13 +2,27 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface ButtonProps {
   children?: React.ReactNode;
+  href?: string;
   className?: string;
 }
 
-export default function Button({ className, children }: ButtonProps) {
+export default function Button({ className, href, children }: ButtonProps) {
+  if (href) {
+    return (
+      <Link href={href}>
+        <Internal className={className}>{children}</Internal>
+      </Link>
+    );
+  }
+
+  return <Internal className={className}>{children}</Internal>;
+}
+
+function Internal({ children, className }: ButtonProps) {
   return (
     <motion.button
       className={twMerge(

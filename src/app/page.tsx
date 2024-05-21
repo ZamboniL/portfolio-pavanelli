@@ -1,9 +1,17 @@
+import { getEntries } from 'src/api';
 import Button from 'src/components/Button';
 import Card from 'src/components/Card';
 import DreamProject from 'src/components/DreamProject';
 import NumberedListItem from 'src/components/NumberedListItem';
 
-export default function Home() {
+async function highlightedEntries() {
+  const entries = await getEntries('fields.highlight=true&order=fields.order');
+
+  return entries.data;
+}
+
+export default async function Home() {
+  const entries = await highlightedEntries();
   return (
     <main className="flex flex-col items-center px-5 pt-14 text-white md:pt-20">
       <div className="flex max-w-8xl flex-col items-center gap-12 pb-20 pt-12 md:py-24">
@@ -35,12 +43,21 @@ export default function Home() {
       </div>
       <div className="flex max-w-8xl flex-col items-center gap-12 py-24">
         <div className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-5">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {entries.items.map((e) => (
+            <Card
+              key={e.sys.id}
+              title={e.fields.title}
+              subtitle={e.fields.subtitle}
+              slug={e.fields.slug}
+              link={e.fields.link}
+              image={
+                entries.includes.Asset.find((asset) => asset.sys.id === e.fields.image?.sys.id)
+                  ?.fields.file.url
+              }
+            />
+          ))}
         </div>
-        <Button>See all projects</Button>
+        <Button href="/portfolio">See all projects</Button>
       </div>
       <div className="relative flex max-w-8xl flex-col items-center gap-12 py-24 md:grid md:grid-cols-2 md:items-start">
         <div className="flex flex-col items-center gap-12 md:sticky md:top-32 md:items-start">

@@ -2,7 +2,15 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export default function Card() {
+interface CardProps {
+  title: string;
+  subtitle: string;
+  link?: string;
+  slug?: string;
+  image?: string;
+}
+
+export default function Card({ image, link, slug, subtitle, title }: CardProps) {
   return (
     <motion.div
       className="relative flex flex-col gap-6 overflow-hidden rounded-2xl md:h-full md:max-h-[400px]"
@@ -10,19 +18,17 @@ export default function Card() {
       whileHover="hover"
       whileTap={{ scale: 0.95 }}
     >
-      <Link href="/">
+      <Link href={link ?? `/portfolio/${slug}`}>
         <motion.div
           className="md:absolute md:bottom-5 md:left-5 md:z-20"
           variants={{ hover: { opacity: 0 } }}
         >
-          <h4 className="text-xl font-semibold">AutoGizmo</h4>
-          <p className="text-sm text-white/50 md:text-base md:font-medium">
-            Branding & Digital Marketing (2023)
-          </p>
+          <h4 className="text-xl font-semibold">{subtitle}</h4>
+          <p className="text-sm text-white/50 md:text-base md:font-medium">{title}</p>
         </motion.div>
         <div className="relative max-h-full w-full rounded-2xl">
           <motion.div
-            className="absolute left-0 top-0 z-10 hidden size-full bg-gradient-to-b from-white/0 from-50% to-black opacity-50 hover:bg-black md:block"
+            className="absolute left-0 top-0 z-10 hidden size-[200%] bg-gradient-to-b from-white/0 from-50% to-black opacity-50 hover:bg-black md:block"
             variants={{ rest: {}, hover: { opacity: 0.75 } }}
           />
           <motion.div
@@ -55,7 +61,7 @@ export default function Card() {
             </motion.div>
           </motion.div>
           <motion.img
-            src="/card-example.png"
+            src={image}
             alt=""
             variants={{ hover: { scale: 1.05 } }}
             className="max-h-full w-full rounded-2xl  object-cover"

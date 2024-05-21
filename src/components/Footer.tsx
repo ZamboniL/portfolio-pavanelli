@@ -7,22 +7,22 @@ export default function Footer() {
       <ul className="flex justify-center gap-8">
         <li>
           <Link href="https://www.instagram.com/lucaspavanelli/">
-            <img src="icon/x.png" alt="x" width={20} height={20} />
+            <img src="/icon/x.png" alt="x" width={20} height={20} />
           </Link>
         </li>
         <li>
           <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
-            <img src="icon/linkedin.png" alt="x" width={20} height={20} />
+            <img src="/icon/linkedin.png" alt="x" width={20} height={20} />
           </Link>
         </li>
         <li>
           <Link href="https://www.instagram.com/lucaspavanelli/">
-            <img src="icon/instagram.png" alt="x" width={20} height={20} />
+            <img src="/icon/instagram.png" alt="x" width={20} height={20} />
           </Link>
         </li>
         <li>
           <Link href="https://www.instagram.com/lucaspavanelli/">
-            <img src="icon/behance.png" alt="x" width={20} height={20} />
+            <img src="/icon/behance.png" alt="x" width={20} height={20} />
           </Link>
         </li>
       </ul>
