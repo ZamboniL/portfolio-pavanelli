@@ -1,11 +1,11 @@
+import CubeTicker from 'src/components/CubeTicker';
 import DreamProject from 'src/components/DreamProject';
 import Experience from 'src/components/Experience';
 import Service from 'src/components/Service';
-import Statistics from 'src/components/Statistics';
 
 export default function About() {
   return (
-    <main className="flex flex-col items-center px-5 pt-14 tracking-tighter text-white md:pt-20 2xl:px-0">
+    <main className="flex max-w-full flex-col items-center px-5 pt-14 tracking-tighter text-white md:pt-20 2xl:px-0">
       <div className="flex max-w-8xl flex-col items-center gap-12 pt-12 md:gap-14 md:pt-24">
         <h2 className="text-[32px] font-semibold leading-[32px] md:text-[64px] md:leading-[74px]">
           Sobre Lucas Pavanelli
@@ -38,7 +38,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Statistics />
       <div className="flex max-w-8xl flex-col gap-1 pt-24 md:gap-14">
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Experience</h3>
         <div className="flex flex-col gap-8">
@@ -58,10 +57,8 @@ export default function About() {
       </div>
       <div className="flex w-full max-w-8xl flex-col gap-12 py-24 md:gap-14">
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Stacks</h3>
-        <div className="flex gap-20 rounded-[20px] bg-primary-900 py-8 text-xl font-semibold text-white/50">
-          <img src="/cube/notion.png" alt="" height={35} width={35} />
-          <img src="/cube/notion.png" alt="" height={35} width={35} />
-          <img src="/cube/notion.png" alt="" height={35} width={35} />
+        <div className="overflow-hidden rounded-[20px] bg-primary-900 py-8 text-xl font-semibold">
+          <CubeTicker />
         </div>
       </div>
       <DreamProject />
