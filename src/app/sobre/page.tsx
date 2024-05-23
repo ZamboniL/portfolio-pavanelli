@@ -18,22 +18,24 @@ export default function About() {
           />
           <div className="flex flex-col gap-7 leading-7 text-white/50 md:w-3/5">
             <p>
-              Meet Daniel Bennett, the Creative Mind Behind the Designs In the ever-evolving
-              landscape of design and technology, Daniel Bennett stands as a passionate creative
-              force, breathing life into digital and visual experiences. With a career spanning over
-              a decade, Daniel has not only mastered the art of graphic design and front-end
-              development but has also become a visionary storyteller in the world of design.{' '}
+              Olá! Meu nome é Lucas Pavanelli, tenho 24 anos e sou um UX/UI designer apaixonado pela
+              minha profissão. Desde que comecei a me aprofundar no mundo do design, descobri uma
+              verdadeira paixão por criar experiências digitais que não apenas sejam funcionais, mas
+              também encantem os usuários. Cada projeto é uma nova oportunidade de explorar a
+              interseção entre estética e usabilidade, buscando sempre soluções inovadoras e
+              eficazes.
             </p>
             <p>
-              The Journey of a Young Creative {"Daniel's"} journey into the realm of design began
-              with humble origins. From an early age, he displayed an innate talent for drawing and
-              an insatiable curiosity for the world of visual art. Armed with sketchbooks and an
-              unquenchable thirst for creativity, he embarked on a path that would eventually lead
-              him to the intersection of art and technology. As a teenager, Daniel delved into the
-              fascinating world of web design. He learned the intricacies of HTML and CSS, and
-              before he knew it, he had coded his very first website. It was a moment of epiphany,
-              where he realized that he could combine his artistic inclinations with the limitless
-              possibilities offered by the digital canvas.
+              Além do design, outra grande paixão minha é viajar. Adoro explorar novos lugares,
+              conhecer diferentes culturas e tirar inspiração das diversas paisagens e estilos de
+              vida que encontro pelo mundo. Viajar não apenas amplia meus horizontes pessoais, mas
+              também me traz novas perspectivas que aplico em meus projetos, tornando meu trabalho
+              mais rico e diversificado.
+            </p>
+            <p>
+              Com uma combinação de criatividade, curiosidade e carinho pelos detalhes, estou sempre
+              em busca de novos desafios e oportunidades para crescer como profissional e como
+              pessoa.
             </p>
           </div>
         </div>
@@ -48,11 +50,13 @@ export default function About() {
         </div>
       </div>
       <div className="flex w-full max-w-8xl flex-col gap-12 pt-24 md:gap-14">
-        <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Services</h3>
+        <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Serviços</h3>
         <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-5">
-          <Service />
-          <Service />
-          <Service />
+          <Service tag="01" title="UX/UI Design" />
+          <Service tag="02" title="Web Design" />
+          <Service tag="03" title="Identidade visual" />
+          <Service tag="04" title="Research" />
+          <Service tag="05" title="Desenvolvimento Front-End" />
         </div>
       </div>
       <div className="flex w-full max-w-8xl flex-col gap-12 py-24 md:gap-14">

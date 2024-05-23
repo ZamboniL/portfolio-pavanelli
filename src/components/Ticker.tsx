@@ -44,7 +44,7 @@ export default function Ticker({
     );
   }, [children, tickerId]);
 
-  const numDupes = tickerContentWidth === 0 ? 1 : 3;
+  const numDupes = tickerContentWidth === 0 ? 1 : 2;
 
   return (
     <div

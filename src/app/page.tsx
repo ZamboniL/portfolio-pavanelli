@@ -17,16 +17,16 @@ export default async function Home() {
     <main className="flex max-w-full flex-col items-center px-5 pt-14 text-white md:pt-20">
       <div className="flex max-w-8xl flex-col items-center gap-12 pb-20 pt-12 md:py-24">
         <div className="flex items-center gap-3 rounded-full border border-white/15 px-3 py-1 text-sm text-white">
-          <div className="size-2.5 rounded-full bg-primary-400" />
-          Available for freelance
+          <div className="">👋</div>
+          Seja bem-vindo!
         </div>
         <hgroup className="text-center text-5xl font-bold leading-[58px] md:text-[72px] md:leading-[82px]">
-          <h1>Hey, {"I'm"} Daniel.</h1>
-          <h1>{"I'm"} a Designer & Developer.</h1>
+          <h1>Hey! Eu sou o Lucas.</h1>
+          <h1>Designer & Desenvolvedor.</h1>
         </hgroup>
         <p className="max-w-4xl text-center leading-7 text-white/50">
-          Daniel Bennett is a versatile designer & developer based in the UK, dedicated to crafting
-          innovative and visually appealing digital experiences.
+          Especialista em criar experiências digitais inovadoras para ajudar meus clientes a atingir
+          seus objetivos.
         </p>
       </div>
       <div className="max-w-full overflow-hidden xl:max-w-8xl">
@@ -48,27 +48,49 @@ export default async function Home() {
             />
           ))}
         </div>
-        <Button href="/portfolio">See all projects</Button>
+        <Button href="/portfolio">Ver todos os projetos</Button>
       </div>
       <div className="relative flex max-w-8xl flex-col items-center gap-12 py-24 md:grid md:grid-cols-2 md:items-start">
         <div className="flex flex-col items-center gap-12 md:sticky md:top-32 md:items-start">
           <div className="rounded-full border border-white/15 px-4 py-2 font-medium text-white/50">
-            Skills & Expertise
+            Processos & Habilidades
           </div>
           <h3 className="text-[32px] font-semibold leading-10 md:text-5xl md:leading-[58px]">
-            My Skills that Shine, <br />
-            Expertise You Can Trust
+            Habilidades que se destacam. <br />
+            Experiência que você pode confiar.
           </h3>
-          <Button className="hidden md:flex">More about me</Button>
+          <Button href="/sobre" className="hidden md:flex">
+            Mais sobre mim
+          </Button>
         </div>
         <div className="relative flex flex-col gap-5">
-          <NumberedListItem />
-          <NumberedListItem />
-          <NumberedListItem />
-          <NumberedListItem />
-          <NumberedListItem />
+          <NumberedListItem
+            tag="01"
+            title=" UX/UI Design"
+            description="Transformando necessidades complexas em soluções intuitivas e cativantes. Combinando pesquisa, design visual e usabilidade, crio interfaces que encantam os usuários."
+          />
+          <NumberedListItem
+            tag="02"
+            title="Web Design"
+            description="Combinando estética e usabilidade, desenvolvo interfaces que oferecem uma experiência de usuário envolvente e intuitiva, ajudando a transformar ideias em realidades digitais impactantes."
+          />
+          <NumberedListItem
+            tag="03"
+            title="Identidade visual"
+            description="Crio marcas que comunicam de forma clara e impactante os valores e a essência de uma empresa, desenvolvendo identidades que se destacam e permanecem na mente do público."
+          />
+          <NumberedListItem
+            tag="04"
+            title="Research"
+            description="Utilizando métodos qualitativos e quantitativos, como entrevistas, testes de usabilidade e análise de dados, coleto insights valiosos sobre comportamentos e necessidades dos usuários."
+          />
+          <NumberedListItem
+            tag="05"
+            title="Desenvolvimento Front-End"
+            description="Utilizando tecnologias como NextJS, React, Framer, crio experiências de usuário fluidas e envolventes, otimizadas para desempenho em diversos dispositivos."
+          />
         </div>
-        <Button className="md:hidden">More about me</Button>
+        <Button className="md:hidden"> Mais sobre mim</Button>
       </div>
       <DreamProject />
     </main>

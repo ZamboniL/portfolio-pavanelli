@@ -46,18 +46,21 @@ export default function Header() {
               </li>
               <li>
                 <Link href="/portfolio" active={pathname === '/portfolio'}>
-                  Portfolio
+                  Projetos
                 </Link>
               </li>
               <li>
                 <Link href="/sobre" active={pathname === '/sobre'}>
-                  About
+                  Sobre
                 </Link>
               </li>
               <li>
-                <button className="h-10 w-full rounded-full bg-primary-600 text-base">
-                  Say Hello
-                </button>
+                <NextLink
+                  href="/contato"
+                  className="h-10 w-full rounded-full bg-primary-600 text-base"
+                >
+                  Contato
+                </NextLink>
               </li>
             </ul>
           </nav>
@@ -131,18 +134,21 @@ export default function Header() {
             </li>
             <li>
               <Link href="/portfolio" active={pathname === '/portfolio'}>
-                Portfolio
+                Projetos
               </Link>
             </li>
             <li>
               <Link href="/sobre" active={pathname === '/sobre'}>
-                About
+                Sobre
               </Link>
             </li>
             <li>
-              <button className="rounded-xl border border-white/15 px-4 py-2 text-white/50">
-                Say Hello
-              </button>
+              <NextLink
+                href="/contato"
+                className="rounded-xl border border-white/15 px-4 py-2 text-white/50"
+              >
+                Contato
+              </NextLink>
             </li>
           </ul>
         </nav>

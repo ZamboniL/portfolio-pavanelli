@@ -8,14 +8,14 @@ export default function DreamProject() {
       }}
     >
       <div className="flex flex-col items-center gap-8 text-center md:w-full md:max-w-[600px]">
-        <h3 className="text-4xl font-semibold md:text-5xl">Have a dream project?</h3>
+        <h3 className="text-4xl font-semibold md:text-5xl">Vamos conversar?</h3>
         <p className="text-white/50">
-          {"Let's"} transform your vision into stunning reality. Reach out today and start the
-          journey to a remarkable brand presence.
+          Vamos transformar sua ideia em uma realidade impressionante! Entre em contato hoje mesmo e
+          vamos juntos começar essa jornada.
         </p>
       </div>
       <div className="rounded-full bg-black px-12 py-6 text-[32px] font-semibold md:text-[64px]">
-        {"Let's"} talk
+        Vamos!
       </div>
     </div>
   );
