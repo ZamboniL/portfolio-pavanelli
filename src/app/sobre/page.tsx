@@ -14,7 +14,7 @@ export default function About() {
           <img
             src="/about.jpeg"
             alt=""
-            className="rounded-[20px] object-cover md:h-[400px] md:w-[350px] md:flex-[0_0_auto]"
+            className="rounded-main object-cover md:h-[400px] md:w-[350px] md:flex-[0_0_auto]"
           />
           <div className="flex flex-col gap-7 leading-7 text-white/50 md:w-3/5">
             <p>
@@ -40,13 +40,45 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex max-w-8xl flex-col gap-1 pt-24 md:gap-14">
-        <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Experience</h3>
+      <div className="flex  w-full max-w-8xl flex-col gap-1 pt-24 md:gap-14">
+        <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Experiência</h3>
         <div className="flex flex-col gap-8">
-          <Experience />
-          <Experience />
-          <Experience />
-          <Experience />
+          <Experience
+            period="Out 2022 - Atualmente"
+            title="Product Designer Pleno"
+            company="Paiper"
+            description=""
+          />
+          <Experience
+            period="Abr 2022 - Jul 2022"
+            title="Designer Pleno"
+            company="Seri.e Design"
+            description=""
+          />
+          <Experience
+            period="Ago 2020 - Abr 2022"
+            title="Designer Júnior II"
+            company="Seri.e Design"
+            description=""
+          />
+          <Experience
+            period="Fev 2020 - Ago 2020"
+            title="Designer Júnior"
+            company="Seri.e Design"
+            description=""
+          />
+          <Experience
+            period="Dez 2019 - Fev 2020"
+            title="Workplace Services Apprentice"
+            company="Salesforce"
+            description=""
+          />
+          <Experience
+            period="Mar 2019 - Dez 2019"
+            title="Employee Sucess Apprentice"
+            company="Salesforce"
+            description=""
+          />
         </div>
       </div>
       <div className="flex w-full max-w-8xl flex-col gap-12 pt-24 md:gap-14">
@@ -61,7 +93,7 @@ export default function About() {
       </div>
       <div className="flex w-full max-w-8xl flex-col gap-12 py-24 md:gap-14">
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Stacks</h3>
-        <div className="overflow-hidden rounded-[20px] bg-primary-900 py-8 text-xl font-semibold">
+        <div className="overflow-hidden rounded-main bg-primary-900 py-8 text-xl font-semibold">
           <CubeTicker />
         </div>
       </div>

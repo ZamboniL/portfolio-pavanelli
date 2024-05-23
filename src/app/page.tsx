@@ -16,8 +16,8 @@ export default async function Home() {
   return (
     <main className="flex max-w-full flex-col items-center px-5 pt-14 text-white md:pt-20">
       <div className="flex max-w-8xl flex-col items-center gap-12 pb-20 pt-12 md:py-24">
-        <div className="flex items-center gap-3 rounded-full border border-white/15 px-3 py-1 text-sm text-white">
-          <div className="">👋</div>
+        <div className="flex items-center gap-2 rounded-full border border-white/15 bg-gradient-tag px-3 py-1 text-sm text-white">
+          <div className="text-lg">👋</div>
           Seja bem-vindo!
         </div>
         <hgroup className="text-center text-5xl font-bold leading-[58px] md:text-[72px] md:leading-[82px]">

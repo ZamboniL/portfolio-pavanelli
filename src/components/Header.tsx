@@ -11,14 +11,14 @@ export default function Header() {
 
   if (open) {
     return (
-      <header className="fixed z-40 w-full max-w-8xl p-2">
+      <header className="fixed z-40 w-full max-w-[1380px] p-2">
         <div className="items-center justify-between rounded-[36px] border border-white/15 p-8 backdrop-blur-md">
           <div className="flex items-center justify-between">
             <div className="flex gap-2">
               <motion.div whileTap={{ scale: 0.9 }}>
                 <NextLink href="/">
                   <img
-                    className="size-10 rounded-md bg-white object-cover"
+                    className="size-10 rounded-small bg-white object-cover"
                     alt=""
                     src="/about.jpeg"
                   />
@@ -66,11 +66,6 @@ export default function Header() {
           </nav>
           <ul className="flex justify-center gap-8">
             <li>
-              <Link href="https://www.instagram.com/lucaspavanelli/">
-                <img src="/icon/x.png" alt="x" width={20} height={20} />
-              </Link>
-            </li>
-            <li>
               <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
                 <img src="/icon/linkedin.png" alt="x" width={20} height={20} />
               </Link>
@@ -80,11 +75,6 @@ export default function Header() {
                 <img src="/icon/instagram.png" alt="x" width={20} height={20} />
               </Link>
             </li>
-            <li>
-              <Link href="https://www.instagram.com/lucaspavanelli/">
-                <img src="/icon/behance.png" alt="x" width={20} height={20} />
-              </Link>
-            </li>
           </ul>
         </div>
       </header>
@@ -92,17 +82,17 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed z-40 w-full max-w-8xl md:top-5">
+    <header className="fixed z-40 w-full max-w-[1380px] md:top-5">
       <div
         className="border-b border-white/15 bg-black/60 px-5 py-2 backdrop-blur-md md:flex md:items-center md:justify-between 
-      md:rounded-[20px] md:border md:px-2.5"
+      md:rounded-main md:border md:px-2.5"
       >
         <div className="flex items-center justify-between">
           <div className="flex gap-2">
             <motion.div whileTap={{ scale: 0.9 }}>
               <NextLink href="/">
                 <img
-                  className="size-8 rounded-md bg-white object-cover md:size-10"
+                  className="size-8 rounded-small bg-white object-cover md:size-10"
                   alt=""
                   src="/about.jpeg"
                 />
@@ -155,22 +145,12 @@ export default function Header() {
         <ul className="hidden">
           <li>
             <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
-              <img src="/icon/x.png" alt="x" width={20} height={20} />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/in/lucas-pavanelli-navarro-dos-reis-14420b18a/">
               <img src="/icon/linkedin.png" alt="x" width={20} height={20} />
             </Link>
           </li>
           <li>
             <Link href="https://www.instagram.com/lucaspavanelli/">
               <img src="/icon/instagram.png" alt="x" width={20} height={20} />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.instagram.com/lucaspavanelli/">
-              <img src="/icon/behance.png" alt="x" width={20} height={20} />
             </Link>
           </li>
         </ul>

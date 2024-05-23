@@ -7,7 +7,7 @@ export default function Image(props: HTMLMotionProps<'img'>) {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: 'easeInOut' }}
       src="https://framerusercontent.com/images/lirZEuMgn3dZcLiBP3A2pI48Bs.webp"
-      className="h-auto w-full rounded-[20px] object-contain md:max-w-full md:object-cover"
+      className="rounded-main h-auto w-full object-contain md:max-w-full md:object-cover"
       {...props}
     />
   );

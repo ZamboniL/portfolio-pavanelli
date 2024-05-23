@@ -1,7 +1,7 @@
 export default function DreamProject() {
   return (
     <div
-      className="flex flex-col items-center gap-10 rounded-[20px] border border-white/15 p-8 md:w-full md:max-w-8xl md:py-14"
+      className="rounded-main flex flex-col items-center gap-10 border border-white/15 p-8 md:w-full md:max-w-8xl md:py-14"
       style={{
         background:
           'radial-gradient(100% 100% at 50% 3.33067e-14%, rgba(0, 0, 0, 0) 0%, rgb(79, 0, 196) 51.0417%, rgb(172, 117, 255) 100%)'
