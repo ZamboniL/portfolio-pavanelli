@@ -12,11 +12,14 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.19.6",
     "@contentful/rich-text-types": "^16.3.5",
+    "@emailjs/browser": "^4.3.3",
     "axios": "^1.7.2",
     "framer-motion": "^11.2.4",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.5",
+    "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

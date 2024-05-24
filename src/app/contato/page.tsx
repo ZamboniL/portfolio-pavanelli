@@ -1,3 +1,5 @@
+import ContactForm from 'src/components/ContactForm';
+
 export default function Contact() {
   return (
     <main className="flex max-w-3xl flex-col px-5 text-white md:pt-20  2xl:px-0">
@@ -14,26 +16,7 @@ export default function Contact() {
           </a>
         </p>
       </div>
-      <div className="flex flex-col gap-3.5 pb-16 md:pb-0">
-        <div className="grid grid-cols-2 gap-3.5">
-          <input
-            type="text"
-            placeholder="Nome"
-            className="rounded-2xl bg-primary-900 px-5 py-2.5"
-          />
-          <input
-            type="text"
-            placeholder="E-mail"
-            className="rounded-2xl bg-primary-900 px-5 py-2.5"
-          />
-        </div>
-        <textarea
-          placeholder="Me conte mais sobre sua proposta"
-          className="w-full resize-none rounded-2xl bg-primary-900 px-5 py-2.5"
-          rows={6}
-        />
-        <button className="w-full rounded-2xl bg-primary-600 px-5 py-2.5 font-bold ">Enviar</button>
-      </div>
+      <ContactForm />
     </main>
   );
 }
