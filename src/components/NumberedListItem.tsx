@@ -1,13 +1,24 @@
+'use client';
+import { MotionValue } from 'framer-motion';
+import { motion } from 'framer-motion';
+
 interface NumberedListItemProps {
+  scale?: MotionValue<number>;
   tag: string;
   title: string;
   description: string;
 }
 
-export default function NumberedListItem({ description, tag, title }: NumberedListItemProps) {
+export default function NumberedListItem({
+  scale,
+  description,
+  tag,
+  title
+}: NumberedListItemProps) {
   return (
-    <div
-      className="rounded-main sticky top-20 z-0 flex gap-8 bg-gradient-to-b from-[rgba(15,_15,_15,_0.5)] to-[rgb(29,_0,_66)]
+    <motion.div
+      style={{ scale }}
+      className="sticky top-20 z-0 flex gap-8 rounded-main bg-gradient-to-b from-[rgba(15,_15,_15,_0.5)] to-[rgb(29,_0,_66)]
     p-8 shadow-[rgba(255,_255,_255,_0.5)_0px_0px_2px_0px_inset] backdrop-blur-md md:top-32"
     >
       <h4 className="text-xl font-semibold">{tag}</h4>
@@ -15,6 +26,6 @@ export default function NumberedListItem({ description, tag, title }: NumberedLi
         <h4 className="text-xl font-semibold">{title}</h4>
         <p className="font-medium leading-7 text-white/50">{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
