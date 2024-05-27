@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { default as NextLink } from 'next/link';
 import Link from './Link';
+import HeaderButton from './HeaderButton';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -55,12 +56,14 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <NextLink
+                <HeaderButton isMobile />
+
+                {/* <NextLink
                   href="/contato"
                   className="h-10 w-full rounded-full bg-primary-600 text-base"
                 >
                   Contato
-                </NextLink>
+                </NextLink> */}
               </li>
             </ul>
           </nav>
@@ -133,12 +136,13 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <NextLink
+              <HeaderButton />
+              {/* <NextLink
                 href="/contato"
                 className="rounded-xl border border-white/15 px-4 py-2 text-white/50"
               >
                 Contato
-              </NextLink>
+              </NextLink> */}
             </li>
           </ul>
         </nav>
