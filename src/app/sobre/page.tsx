@@ -1,22 +1,55 @@
+'use client';
 import CubeTicker from 'src/components/CubeTicker';
 import DreamProject from 'src/components/DreamProject';
 import Experience from 'src/components/Experience';
 import Service from 'src/components/Service';
+import { motion } from 'framer-motion';
+
+const transition = {
+  type: 'spring',
+  stiffness: 300,
+  mass: 3,
+  damping: 100
+};
+
+const initial = {
+  y: 150,
+  opacity: 0.001
+};
+
+const inView = {
+  y: 0,
+  opacity: 1,
+  transition
+};
 
 export default function About() {
   return (
     <main className="flex max-w-full flex-col items-center px-5 pt-14 tracking-tighter text-white md:pt-20 2xl:px-0">
       <div className="flex max-w-8xl flex-col items-center gap-12 pt-12 md:gap-14 md:pt-24">
-        <h2 className="text-[32px] font-semibold leading-[32px] md:text-[64px] md:leading-[74px]">
+        <motion.h2
+          className="text-[32px] font-semibold leading-[32px] md:text-[64px] md:leading-[74px]"
+          initial={initial}
+          whileInView={inView}
+          viewport={{ once: true }}
+        >
           Sobre Lucas Pavanelli
-        </h2>
+        </motion.h2>
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
-          <img
+          <motion.img
             src="/about.jpeg"
             alt=""
             className="rounded-main object-cover md:h-[400px] md:w-[350px] md:flex-[0_0_auto]"
+            initial={initial}
+            whileInView={{ ...inView, transition: { ...transition, delay: 0.1 } }}
+            viewport={{ once: true }}
           />
-          <div className="flex flex-col gap-7 leading-7 text-white/50 md:w-3/5">
+          <motion.div
+            className="flex flex-col gap-7 leading-7 text-white/50 md:w-3/5"
+            initial={initial}
+            whileInView={{ ...inView, transition: { ...transition, delay: 0.2 } }}
+            viewport={{ once: true }}
+          >
             <p>
               Olá! Meu nome é Lucas Pavanelli, tenho 24 anos e sou um UX/UI designer apaixonado pela
               minha profissão. Desde que comecei a me aprofundar no mundo do design, descobri uma
@@ -37,10 +70,15 @@ export default function About() {
               em busca de novos desafios e oportunidades para crescer como profissional e como
               pessoa.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="flex  w-full max-w-8xl flex-col gap-1 pt-24 md:gap-14">
+      <motion.div
+        className="flex  w-full max-w-8xl flex-col gap-1 pt-24 md:gap-14"
+        initial={initial}
+        whileInView={inView}
+        viewport={{ once: true }}
+      >
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Experiência</h3>
         <div className="flex flex-col gap-8">
           <Experience
@@ -80,8 +118,8 @@ export default function About() {
             description=""
           />
         </div>
-      </div>
-      <div className="flex w-full max-w-8xl flex-col gap-12 pt-24 md:gap-14">
+      </motion.div>
+      <motion.div className="flex w-full max-w-8xl flex-col gap-12 pt-24 md:gap-14">
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Serviços</h3>
         <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-5">
           <Service tag="01" title="UX/UI Design" />
@@ -90,13 +128,18 @@ export default function About() {
           <Service tag="04" title="Research" />
           <Service tag="05" title="Desenvolvimento Front-End" />
         </div>
-      </div>
-      <div className="flex w-full max-w-8xl flex-col gap-12 py-24 md:gap-14">
+      </motion.div>
+      <motion.div
+        className="flex w-full max-w-8xl flex-col gap-12 py-24 md:gap-14"
+        initial={initial}
+        whileInView={inView}
+        viewport={{ once: true }}
+      >
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Stacks</h3>
         <div className="overflow-hidden rounded-main bg-primary-900 py-8 text-xl font-semibold">
           <CubeTicker />
         </div>
-      </div>
+      </motion.div>
       <DreamProject />
     </main>
   );

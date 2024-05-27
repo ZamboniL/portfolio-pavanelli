@@ -16,6 +16,13 @@ export default function Card({ image, link, slug, subtitle, title }: CardProps) 
       className="relative flex flex-col gap-6 overflow-hidden rounded-2xl md:h-full md:max-h-[400px]"
       initial="rest"
       whileHover="hover"
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: { type: 'spring', stiffness: 300, mass: 3, damping: 100 }
+      }}
+      viewport={{ once: true }}
+      variants={{ rest: { y: 160, opacity: 0.001 } }}
       whileTap={{ scale: 0.95 }}
     >
       <Link href={link ?? `/portfolio/${slug}`}>

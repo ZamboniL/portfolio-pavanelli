@@ -6,6 +6,19 @@ import { useEffect, useState } from 'react';
 const variants = ['top', 'left', 'bottom', 'right'];
 const duration = 1;
 
+const transition = {
+  type: 'spring',
+  stiffness: 300,
+  mass: 3,
+  damping: 100
+};
+
+const inView = {
+  y: 0,
+  opacity: 1,
+  transition
+};
+
 export default function DreamProject() {
   const [curr, setCurr] = useState('top');
   const [hover, setHover] = useState(false);
@@ -19,11 +32,19 @@ export default function DreamProject() {
 
   return (
     <motion.div
-      className="flex flex-col items-center gap-10 rounded-main border border-white/15 p-8 md:w-full md:max-w-8xl md:py-14"
+      className="flex flex-col items-center gap-10 rounded-main border border-white/15 p-8 md:-mb-16 md:w-full md:max-w-8xl md:py-14"
       initial="initial"
-      animate={hover ? 'hover' : 'initial'}
+      animate={hover ? 'hover' : 'rest'}
+      whileInView={inView}
+      viewport={{ once: true }}
       variants={{
         initial: {
+          background:
+            'radial-gradient(35% 25% at 50% 3.3%, rgba(0, 0, 0, 0) 0%, rgba(79, 0, 196, 0) 51.0417%, rgba(172, 117, 255, 0) 100%)',
+          y: 150,
+          opacity: 0.001
+        },
+        rest: {
           background:
             'radial-gradient(35% 25% at 50% 3.3%, rgba(0, 0, 0, 0) 0%, rgba(79, 0, 196, 0) 51.0417%, rgba(172, 117, 255, 0) 100%)'
         },

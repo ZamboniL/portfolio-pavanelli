@@ -19,10 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col items-center bg-black tracking-tight`}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`h-min min-h-screen w-auto bg-black`}>
+        <div
+          className={`${inter.className} flex h-min flex-col items-center overflow-clip bg-black tracking-tight`}
+        >
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

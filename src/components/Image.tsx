@@ -1,13 +1,32 @@
 'use client';
 import { HTMLMotionProps, motion } from 'framer-motion';
+
+const transition = {
+  type: 'spring',
+  stiffness: 300,
+  mass: 3,
+  damping: 100
+};
+
+const initial = {
+  y: 150,
+  opacity: 0.001
+};
+
+const inView = {
+  y: 0,
+  opacity: 1,
+  transition
+};
+
 export default function Image(props: HTMLMotionProps<'img'>) {
   return (
     <motion.img
-      initial={{ opacity: 0, scale: 1.1 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, ease: 'easeInOut' }}
+      initial={initial}
+      whileInView={inView}
+      viewport={{ once: true }}
       src="https://framerusercontent.com/images/lirZEuMgn3dZcLiBP3A2pI48Bs.webp"
-      className="rounded-main h-auto w-full object-contain md:max-w-full md:object-cover"
+      className="h-auto w-full rounded-main object-contain md:max-w-full md:object-cover"
       {...props}
     />
   );

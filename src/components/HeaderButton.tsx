@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const variants = ['top', 'left', 'bottom', 'right'];
@@ -73,48 +74,52 @@ export default function HeaderButton({ isMobile }: { isMobile?: boolean }) {
 
   if (isMobile) {
     return (
-      <motion.button
-        animate={curr}
-        transition={{ duration, ease: 'linear' }}
-        whileHover={`${curr}-hover`}
-        className="relative w-full rounded-[30px] bg-white/15 px-4 py-2"
-      >
-        <div className="absolute inset-0.5 z-10 rounded-[30px] bg-primary-600" />
-
-        <motion.div
-          className="absolute inset-0 rounded-[30px]"
+      <Link href="/contato">
+        <motion.button
+          animate={curr}
           transition={{ duration, ease: 'linear' }}
-          variants={borderVariants}
-        />
-        <div className="relative z-20 text-base font-medium text-white">Contato</div>
-      </motion.button>
+          whileHover={`${curr}-hover`}
+          className="relative w-full rounded-[30px] bg-white/15 px-4 py-2"
+        >
+          <div className="absolute inset-0.5 z-10 rounded-[30px] bg-primary-600" />
+
+          <motion.div
+            className="absolute inset-0 rounded-[30px]"
+            transition={{ duration, ease: 'linear' }}
+            variants={borderVariants}
+          />
+          <div className="relative z-20 text-base font-medium text-white">Contato</div>
+        </motion.button>
+      </Link>
     );
   }
 
   return (
-    <motion.button
-      animate={curr}
-      transition={{ duration, ease: 'linear' }}
-      whileHover={`${curr}-hover`}
-      className="relative w-full rounded-small bg-white/15 px-4 py-2 md:w-fit"
-    >
-      <motion.div
-        className="absolute inset-0.5 z-10 rounded-lg bg-primary-600"
-        variants={fillVariants}
-      />
-      <motion.div
-        className="absolute inset-0 rounded-main blur-[15px]"
+    <Link href="/contato">
+      <motion.button
+        animate={curr}
         transition={{ duration, ease: 'linear' }}
-        variants={borderVariants}
-      />
-      <motion.div
-        className="absolute inset-0 rounded-small"
-        transition={{ duration, ease: 'linear' }}
-        variants={borderVariants}
-      />
-      <motion.div className="relative z-20 font-medium text-white/50" variants={textVariants}>
-        Contato
-      </motion.div>
-    </motion.button>
+        whileHover={`${curr}-hover`}
+        className="relative w-full rounded-small bg-white/15 px-4 py-2 md:w-fit"
+      >
+        <motion.div
+          className="absolute inset-0.5 z-10 rounded-lg bg-primary-600"
+          variants={fillVariants}
+        />
+        <motion.div
+          className="absolute inset-0 rounded-main blur-[15px]"
+          transition={{ duration, ease: 'linear' }}
+          variants={borderVariants}
+        />
+        <motion.div
+          className="absolute inset-0 rounded-small"
+          transition={{ duration, ease: 'linear' }}
+          variants={borderVariants}
+        />
+        <motion.div className="relative z-20 font-medium text-white/50" variants={textVariants}>
+          Contato
+        </motion.div>
+      </motion.button>
+    </Link>
   );
 }
