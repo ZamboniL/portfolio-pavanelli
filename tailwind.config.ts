@@ -32,6 +32,9 @@ const config: Config = {
       },
       maxWidth: {
         '8xl': '1360px'
+      },
+      transform: {
+        'safari-fix': 'translate3d(0, 0, 0)'
       }
     }
   },

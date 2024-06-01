@@ -56,7 +56,10 @@ export default function ContactForm() {
       </button>
       <Toaster
         position="bottom-right"
-        toastOptions={{ className: '!bg-white/20 backdrop-blur-md !text-white/80' }}
+        toastOptions={{
+          className: '!bg-white/20 backdrop-blur-md !text-white/80',
+          style: { transform: 'translate3d(0,0,0)' }
+        }}
       />
     </form>
   );

@@ -82,6 +82,7 @@ export default function Header() {
       <div
         className="border-b border-white/15 bg-black/60 px-5 py-2 backdrop-blur-md md:mx-2 md:flex md:items-center 
       md:justify-between md:rounded-main md:border md:px-2.5 2xl:mx-0"
+        style={{ transform: 'translate3d(0, 0, 0)' }}
       >
         <div className="flex items-center justify-between">
           <div className="flex gap-2">
