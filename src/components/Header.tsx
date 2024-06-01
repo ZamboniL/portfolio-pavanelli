@@ -56,14 +56,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <HeaderButton isMobile />
-
-                {/* <NextLink
-                  href="/contato"
-                  className="h-10 w-full rounded-full bg-primary-600 text-base"
-                >
-                  Contato
-                </NextLink> */}
+                <HeaderButton isMobile active={pathname === '/contato'} />
               </li>
             </ul>
           </nav>
@@ -87,8 +80,8 @@ export default function Header() {
   return (
     <header className="fixed z-40 w-full max-w-[1380px] md:top-5">
       <div
-        className="border-b border-white/15 bg-black/60 px-5 py-2 backdrop-blur-md md:flex md:items-center md:justify-between 
-      md:rounded-main md:border md:px-2.5"
+        className="border-b border-white/15 bg-black/60 px-5 py-2 backdrop-blur-md md:mx-2 md:flex md:items-center 
+      md:justify-between md:rounded-main md:border md:px-2.5 2xl:mx-0"
       >
         <div className="flex items-center justify-between">
           <div className="flex gap-2">
@@ -136,13 +129,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <HeaderButton />
-              {/* <NextLink
-                href="/contato"
-                className="rounded-xl border border-white/15 px-4 py-2 text-white/50"
-              >
-                Contato
-              </NextLink> */}
+              <HeaderButton active={pathname === '/contato'} />
             </li>
           </ul>
         </nav>

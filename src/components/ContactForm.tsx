@@ -48,7 +48,10 @@ export default function ContactForm() {
         rows={6}
         {...form.register('description', { required: true })}
       />
-      <button className="w-full rounded-2xl bg-primary-600 px-5 py-2.5 font-bold" type="submit">
+      <button
+        className="w-full rounded-2xl bg-primary-600 px-5 py-2.5 font-bold transition-all hover:bg-primary-700"
+        type="submit"
+      >
         Enviar
       </button>
       <Toaster

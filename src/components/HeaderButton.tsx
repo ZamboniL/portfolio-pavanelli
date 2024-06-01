@@ -62,7 +62,13 @@ const textVariants = {
   'top-hover': { color: '#FFFFFFFF' }
 };
 
-export default function HeaderButton({ isMobile }: { isMobile?: boolean }) {
+export default function HeaderButton({
+  isMobile,
+  active
+}: {
+  isMobile?: boolean;
+  active?: boolean;
+}) {
   const [curr, setCurr] = useState('top');
 
   useEffect(() => {
@@ -76,7 +82,8 @@ export default function HeaderButton({ isMobile }: { isMobile?: boolean }) {
     return (
       <Link href="/contato">
         <motion.button
-          animate={curr}
+          initial={curr}
+          animate={active ? `${curr}-hover` : curr}
           transition={{ duration, ease: 'linear' }}
           whileHover={`${curr}-hover`}
           className="relative w-full rounded-[30px] bg-white/15 px-4 py-2"
@@ -97,7 +104,8 @@ export default function HeaderButton({ isMobile }: { isMobile?: boolean }) {
   return (
     <Link href="/contato">
       <motion.button
-        animate={curr}
+        initial={curr}
+        animate={active ? `${curr}-hover` : curr}
         transition={{ duration, ease: 'linear' }}
         whileHover={`${curr}-hover`}
         className="relative w-full rounded-small bg-white/15 px-4 py-2 md:w-fit"

@@ -13,7 +13,7 @@ interface ButtonProps {
 export default function Button({ className, href, children }: ButtonProps) {
   if (href) {
     return (
-      <Link href={href}>
+      <Link href={href} className={className}>
         <Internal className={className}>{children}</Internal>
       </Link>
     );

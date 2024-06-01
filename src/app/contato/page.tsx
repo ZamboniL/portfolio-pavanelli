@@ -40,7 +40,7 @@ export default function Contact() {
         >
           Adoraria saber mais sobre seu projeto e como posso ajudá-lo. Sinta-se à vontade para
           compartilhar todos os detalhes usando o formulário abaixo. Se preferir enviar um e-mail,
-          você pode entrar em contato comigo em
+          você pode entrar em contato comigo em{" "}
           <a href="mailto:aalayrasoolmowlana@gmail.com" className="text-white">
             lucaspavanellinreis@gmail.com
           </a>

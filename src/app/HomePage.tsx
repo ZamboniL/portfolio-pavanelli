@@ -31,7 +31,7 @@ interface HomePageProps {
 
 export default function HomePage({ entries }: HomePageProps) {
   return (
-    <main className="flex max-w-full flex-col items-center px-5 pt-14 text-white md:pt-20">
+    <main className="flex max-w-full flex-col items-center px-5 pt-14 text-white md:pt-20 2xl:px-0">
       <div className="flex max-w-8xl flex-col items-center gap-12 pb-20 pt-12 md:py-24">
         <motion.div
           className="flex items-center gap-2 rounded-full border border-white/15 bg-gradient-tag px-3 py-1 text-sm text-white"
@@ -44,7 +44,7 @@ export default function HomePage({ entries }: HomePageProps) {
         </motion.div>
         <motion.hgroup
           className="text-center text-5xl font-bold leading-[58px] md:text-[72px] md:leading-[82px]"
-          whileInView={{...inView, transition: { ...transition, delay: 0.1 }}}
+          whileInView={{ ...inView, transition: { ...transition, delay: 0.1 } }}
           viewport={{ once: true }}
           initial={initial}
         >
@@ -53,7 +53,7 @@ export default function HomePage({ entries }: HomePageProps) {
         </motion.hgroup>
         <motion.p
           className="max-w-4xl text-center leading-7 text-white/50"
-          whileInView={{...inView, transition: { ...transition, delay: 0.2 }}}
+          whileInView={{ ...inView, transition: { ...transition, delay: 0.2 } }}
           viewport={{ once: true }}
           initial={initial}
         >
@@ -63,8 +63,7 @@ export default function HomePage({ entries }: HomePageProps) {
       </div>
       <motion.div
         className="max-w-full overflow-hidden xl:max-w-8xl"
-        whileInView={{...inView, transition: { ...transition, delay: 0.3 }}}
-
+        whileInView={{ ...inView, transition: { ...transition, delay: 0.3 } }}
         viewport={{ once: true }}
         initial={{ y: 150, opacity: 0 }}
       >
@@ -86,7 +85,9 @@ export default function HomePage({ entries }: HomePageProps) {
             />
           ))}
         </div>
-        <Button href="/portfolio">Ver todos os projetos</Button>
+        <Button href="/portfolio" className="w-full">
+          Ver todos os projetos
+        </Button>
       </div>
       <ProcessesSkills />
       <DreamProject />

@@ -25,7 +25,10 @@ export default function Card({ image, link, slug, subtitle, title }: CardProps) 
       variants={{ rest: { y: 160, opacity: 0.001 } }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link href={link ?? `/portfolio/${slug}`}>
+      <Link
+        href={link ?? `/portfolio/${slug}`}
+        className="flex flex-col gap-6"
+      >
         <motion.div
           className="md:absolute md:bottom-5 md:left-5 md:z-20"
           variants={{ hover: { opacity: 0, zIndex: 10 } }}
