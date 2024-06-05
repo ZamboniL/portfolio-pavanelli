@@ -34,7 +34,7 @@ export default function HomePage({ entries }: HomePageProps) {
     <main className="flex max-w-full flex-col items-center px-5 pt-14 text-white md:pt-20 2xl:px-0">
       <div className="flex max-w-8xl flex-col items-center gap-12 pb-20 pt-12 md:py-24">
         <motion.div
-          className="flex items-center gap-2 rounded-full border border-white/15 bg-gradient-tag px-3 py-1 text-sm text-white"
+          className="flex items-center gap-2 rounded-full border border-white/15 bg-gradient-tag py-1 pl-3 pr-[18px] text-sm text-white"
           whileInView={inView}
           viewport={{ once: true }}
           initial={initial}
