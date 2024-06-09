@@ -74,7 +74,7 @@ export default function About() {
         </div>
       </div>
       <motion.div
-        className="flex  w-full max-w-8xl flex-col gap-1 pt-24 md:gap-14"
+        className="flex  w-full max-w-8xl flex-col gap-10 pt-24 md:gap-14"
         initial={initial}
         whileInView={inView}
         viewport={{ once: true }}

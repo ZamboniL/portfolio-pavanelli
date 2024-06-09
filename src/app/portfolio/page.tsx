@@ -4,7 +4,7 @@ import ProjectsPage from './ProjectsPage';
 async function allEntries() {
   const entries = await getEntries('order=fields.order');
 
-  return entries.data;
+  return entries;
 }
 
 export default async function Portfolio() {
