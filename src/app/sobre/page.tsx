@@ -81,8 +81,13 @@ export default function About() {
       >
         <h3 className="text-[32px] font-semibold leading-10 md:text-5xl">Experiência</h3>
         <div className="flex flex-col gap-8">
-          <Experience
-            period="Out 2022 - Atualmente"
+        <Experience
+            period="Jul 2024 - Atualmente"
+            title="UX/UI Designer"
+            company="Hospital Israelita Albert Einstein"
+            description=""
+          /><Experience
+            period="Out 2022 - Jul 2024"
             title="Product Designer Pleno"
             company="Paiper"
             description=""
